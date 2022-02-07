@@ -34,3 +34,22 @@ function century(year) {
 	return Math.ceil(year / 100);
 }
 // console.log(century(2022));
+
+//Джейден Смит, сын Уилла Смита, является звездой таких фильмов, как «Каратэ-пацан» (2010) и «После Земли» (2013). Джейден также известен своей философией, которую он распространяет через Twitter. Когда он пишет в Твиттере, он известен тем, что почти всегда пишет каждое слово с большой буквы. Для простоты вам придется писать каждое слово с заглавной буквы. Посмотрите, какими должны быть сокращения в приведенном ниже примере.
+// Ваша задача состоит в том, чтобы преобразовать строки в то, как они были бы написаны Джейденом Смитом. Строки являются настоящими цитатами Джейдена Смита, но они не написаны с заглавной буквы так, как он их изначально напечатал.
+// const toJadenCase = function (str) {
+// 	return str.split(` `).map(n => {
+// 		let [q, ...w] = n;
+// 		n = [q.toUpperCase(), ...w].join(``);
+// 		return n;
+// 	}).join(` `);
+// };
+// toJadenCase("How can mirrors be real if our eyes aren't real");
+// console.log(toJadenCase("How can mirrors be real if our eyes aren't real"));
+// String.prototype.toJadenCase = function () {
+// 	return this.split(` `).map(n => {
+// 		let [q, ...w] = n;
+// 		n = [q.toUpperCase(), ...w].join(``);
+// 		return n;
+// 	}).join(` `);
+// };

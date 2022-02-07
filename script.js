@@ -21,3 +21,16 @@ function fakeBin(x) {
 }
 // fakeBin(`243425034918137`);
 // console.log(fakeBin(`243425034918137`));
+
+// Первое столетие охватывает период с 1 года по 100 год включительно, второе столетие — с 101 года по 200 год включительно и т. д.
+function century(year) {
+	// console.log(year / 10);
+	// if ((year % 100 !== 0) && ((year / 10 > 100) || (year / 10 < 100))) {
+	// 	console.log(`Вы живете в ${Math.floor(year / 100) + 1} веке`);
+	// } else {
+	// 	console.log(`Вы живете в ${Math.floor(year / 100)} веке`);
+	// }
+	// return;
+	return Math.ceil(year / 100);
+}
+// console.log(century(2022));

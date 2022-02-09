@@ -69,3 +69,10 @@ function century(year) {
 // 	return Number.isInteger(num) ? (num + 1) ** 2 : -1;
 // }
 // console.log(findNextSquare(120));
+
+// function bmi(weight, height) {
+// 	let bmi = weight / height ** 2;
+// 	console.log(bmi);
+// 	return (bmi <= 18.5) ? "Underweight" : (bmi <= 25.0) ? "Normal" : (bmi <= 30.0) ? "Overweight" : "Obese";
+// }
+// console.log(bmi(60, 1.40));

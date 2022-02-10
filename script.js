@@ -76,3 +76,9 @@ function century(year) {
 // 	return (bmi <= 18.5) ? "Underweight" : (bmi <= 25.0) ? "Normal" : (bmi <= 30.0) ? "Overweight" : "Obese";
 // }
 // console.log(bmi(60, 1.40));
+
+// ПРоверка на панграмму
+function isPangram(string) {
+	return new Set(string.toLowerCase().replace(/[^a-z]/gi, ``)).size == 26;
+}
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));

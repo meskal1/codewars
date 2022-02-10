@@ -77,6 +77,14 @@ function century(year) {
 // }
 // console.log(bmi(60, 1.40));
 
+// Вам будет дан массив a и значение x. Все, что вам нужно сделать, это проверить, содержит ли предоставленный массив значение.
+// Массив может содержать числа или строки. Х может быть любым.
+// Возвращает true, если массив содержит значение, и false, если нет.
+// function check(a, x) {
+// 	return a.includes(x);
+// }
+// console.log(check([1, 5, 2, 5, 9, `ewq`], 2));
+
 // ПРоверка на панграмму
 function isPangram(string) {
 	return new Set(string.toLowerCase().replace(/[^a-z]/gi, ``)).size == 26;

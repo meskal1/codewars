@@ -95,3 +95,19 @@ function century(year) {
 // 	return +str;
 // }
 // console.log(stringToNumber(1212));
+
+//В этой ката вы должны, учитывая строку, заменить каждую букву ее позицией в алфавите.
+// Если что-то в тексте не является буквой, игнорируйте это и не возвращайте.
+// "a" = 1, "b" = 2, etc.
+// alphabetPosition("The sunset sets at twelve o' clock.")
+// Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
+// function alphabetPosition(text) {
+// 	let r = text.toLowerCase().replace(/[^a-z]/g, ``);
+// 	let a = 'abcdefghijklmnopqrstuvwxyz';
+// 	let array = [];
+// 	for (let i = 0; i < r.length; i++) {
+// 		array.push(r.slice(i, i + 1).replace(r[i], a.indexOf(r[i]) + 1));
+// 	}
+// 	return array.join(` `);
+// }
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."));

@@ -111,3 +111,16 @@ function century(year) {
 // 	return array.join(` `);
 // }
 // console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
+// function alphabetPosition1(text) {
+// 	console.log(text.toLowerCase());
+// 	console.log(text.toLowerCase().match(/[a-z]/gi));
+// 	console.log(text.toLowerCase().match(/[a-z]/gi).map((c) => c.charCodeAt() - 96));
+// 	console.log(`r`.charCodeAt());
+// 	return text
+// 		.toUpperCase()
+// 		.match(/[a-z]/gi)
+// 		.map((c) => c.charCodeAt() - 64)
+// 		.join(' ');
+// }
+// console.log(alphabetPosition1("The sunset sets at twelve o' clock."));

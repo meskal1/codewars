@@ -86,7 +86,12 @@ function century(year) {
 // console.log(check([1, 5, 2, 5, 9, `ewq`], 2));
 
 // ПРоверка на панграмму
-function isPangram(string) {
-	return new Set(string.toLowerCase().replace(/[^a-z]/gi, ``)).size == 26;
-}
-console.log(isPangram("The quick brown fox jumps over the lazy dog"));
+// function isPangram(string) {
+// 	return new Set(string.toLowerCase().replace(/[^a-z]/gi, ``)).size == 26;
+// }
+// console.log(isPangram("The quick brown fox jumps over the lazy dog"));
+
+// const stringToNumber = function (str) {
+// 	return +str;
+// }
+// console.log(stringToNumber(1212));

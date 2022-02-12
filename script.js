@@ -131,3 +131,11 @@ function century(year) {
 // 	return (a + b).toString(2);
 // }
 // console.log(addBinary(5, 9));
+
+// Сможете ли вы найти иголку в стоге сена?
+// Напишите функцию findNeedle(), которая принимает массив, полный мусора, но содержащий одну «иглу».
+// После того, как ваша функция найдет иглу, она должна вернуть сообщение (в виде строки), в котором говорится: "найдена игла в положении " плюс индекс, в котором она нашла иглу, поэтому:
+// function findNeedle(haystack) {
+// 	return `found the needle at position ${haystack.indexOf(`needle`)}`;
+// }
+// console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));

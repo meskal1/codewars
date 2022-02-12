@@ -144,3 +144,11 @@ function century(year) {
 // 	return arr.filter(x => x > 0).reduce((a, b) => a + b, 0);
 // }
 // console.log(positiveSum([1, -4, 7, 12]));
+
+// Ваша задача — создать функцию, которая выполняет четыре основные математические операции.
+// Функция должна принимать три аргумента - операция(строка/символ), значение1(число), значение2(число).
+// Функция должна возвращать числовой результат после применения выбранной операции.
+// function basicOp(operation, value1, value2) {
+// 	return operation == `*` ? value1 * value2 : operation == `/` ? value1 / value2 : operation == `+` ? value1 + value2 : operation == `-` ? value1 - value2 : operation;
+// }
+// console.log(basicOp(`*`, 2, 3));

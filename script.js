@@ -139,3 +139,8 @@ function century(year) {
 // 	return `found the needle at position ${haystack.indexOf(`needle`)}`;
 // }
 // console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
+
+// function positiveSum(arr) {
+// 	return arr.filter(x => x > 0).reduce((a, b) => a + b, 0);
+// }
+// console.log(positiveSum([1, -4, 7, 12]));

@@ -124,3 +124,10 @@ function century(year) {
 // 		.join(' ');
 // }
 // console.log(alphabetPosition1("The sunset sets at twelve o' clock."));
+
+// Реализуйте функцию, которая складывает два числа и возвращает их сумму в двоичном виде. Преобразование может быть выполнено до или после добавления.
+// Возвращаемое двоичное число должно быть строкой.
+// function addBinary(a, b) {
+// 	return (a + b).toString(2);
+// }
+// console.log(addBinary(5, 9));

@@ -159,3 +159,21 @@ function century(year) {
 // 	return parseInt(`${arr.join(``)}`, 2);
 // };
 // console.log(binaryArrayToNumber([0, 0, 1, 0]));
+
+// Вам будет предоставлен массив чисел. Вы должны отсортировать нечетные числа в порядке возрастания, оставив четные числа на их исходных позициях.
+// function sortArray(array) {
+// 	let a = array.filter(x => x % 2 !== 0).sort((a, b) => a - b);
+// 	for (let i = 0; i < a.length; i++) {
+// 		delete array[array.indexOf(a[i])];
+// 	}
+// 	qwe: for (let i = 0; i < a.length; i++) {
+// 		for (let j = 0; j < array.length; j++) {
+// 			if (array[j] == undefined) {
+// 				array[j] = a[i];
+// 				continue qwe;
+// 			}
+// 		}
+// 	}
+// 	return array;
+// }
+// console.log(sortArray([5, 8, 6, 3, 7, 3, 5, 4]));

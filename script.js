@@ -232,3 +232,12 @@ function century(year) {
 // 		4: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`,
 // 	}[Math.min(4, names.length)]
 // }
+
+// Изограмма — это слово, в котором нет повторяющихся букв, последовательных или непоследовательных. Реализуйте функцию, определяющую, является ли строка, содержащая только буквы, изограммой. Предположим, что пустая строка является изограммой. Игнорировать регистр букв.
+// function isIsogram(str) {
+// 	return new Set(str.toLowerCase()).size == str.length;
+// }
+// console.log(isIsogram("Dermatoglyphics"));
+// function isIsogram(str){ 
+// 	return !/(\w).*\1/i.test(str)
+//  }

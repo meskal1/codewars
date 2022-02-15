@@ -191,3 +191,16 @@ function century(year) {
 // 	return array.reduce((a, b) => a + b, 0) % 2 ? `odd` : `even`;
 // }
 // console.log(oddOrEven([0, 1, 4]));
+
+// Ваша цель в этом ката — реализовать функцию разности, которая вычитает один список из другого и возвращает результат.
+// Он должен удалить все значения из списка a, которые присутствуют в списке b, сохраняя их порядок.
+// function arrayDiff(a, b) {
+// 	for (let i of b) {
+// 		a = a.filter(x => x !== i);
+// 	}
+// 	return a;
+// }
+// console.log(arrayDiff([1, 2, 2, 2, 3, 4], [2, 3]));
+// function array_diff(a, b) {
+// 	return a.filter(e => !b.includes(e));
+// }

@@ -253,3 +253,8 @@ function century(year) {
 // 	return words.split(' ').sort((a, b) => a.match(/\d/) - b.match(/\d/)).join(' ');
 // }
 // console.log(order("is2 Thi1s T4est 3a"));
+
+// function find_average(array) {
+// 	return array.length !== 0 ? array.reduce((a, b) => a + b, 0) / array.length : 0;
+// }
+// console.log(find_average([]));

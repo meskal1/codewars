@@ -241,3 +241,15 @@ function century(year) {
 // function isIsogram(str){ 
 // 	return !/(\w).*\1/i.test(str)
 //  }
+
+// Ваша задача — отсортировать заданную строку. Каждое слово в строке будет содержать одно число. Это число и есть позиция, которую должно занимать слово в результате.
+// Примечание. Цифры могут быть от 1 до 9. Таким образом, первым словом будет 1 (а не 0).
+// Если входная строка пуста, вернуть пустую строку. Слова во входной строке будут содержать только допустимые последовательные числа.
+// function order(words) {
+// 	return words ? words.split(` `).map(c => c.match(/[1-9]/g) + c).sort().map(c => c.replace(c[0], ``)).join(` `) : ``;
+// }
+// console.log(order("is2 Thi1s T4est 3a"));
+// function order(words) {
+// 	return words.split(' ').sort((a, b) => a.match(/\d/) - b.match(/\d/)).join(' ');
+// }
+// console.log(order("is2 Thi1s T4est 3a"));

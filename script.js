@@ -258,3 +258,21 @@ function century(year) {
 // 	return array.length !== 0 ? array.reduce((a, b) => a + b, 0) / array.length : 0;
 // }
 // console.log(find_average([]));
+
+// Завершите решение так, чтобы оно возвращало true, если первый переданный аргумент (строка) заканчивается вторым аргументом (тоже строкой).
+// solution('abc', 'bc') // returns true
+// solution('abc', 'd') // returns false
+// function solution(str, ending) {
+// 	let a = str.split(``);
+// 	let b = a.length;
+// 	let c = ending.split(``).length;
+// 	for (let i = 0; i < (b - c); i++) {
+// 		a.shift();
+// 	}
+// 	return a.join(``) == ending;
+// }
+// console.log(solution('abcde', 'cde'));
+// function solution(str, ending) {
+// 	return str.endsWith(ending);
+// }
+// console.log(solution('abcde', 'cde'));

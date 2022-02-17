@@ -276,3 +276,11 @@ function century(year) {
 // 	return str.endsWith(ending);
 // }
 // console.log(solution('abcde', 'cde'));
+
+// Завершите функцию, которая принимает строковый параметр и переворачивает каждое слово в строке. Все пробелы в строке должны быть сохранены.
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces"      ==> "elbuod  secaps"
+// function reverseWords(str) {
+// 	return str.split(` `).map(c => c.split(``).reverse().join(``)).join(` `);
+// }
+// console.log(reverseWords("This is an example!"));

@@ -311,3 +311,13 @@ function century(year) {
 // 	return busStops.map(c => c[0] - c[1]).reduce((a, b) => a + b, 0);
 // }
 // console.log(number([[10, 0], [3, 5], [5, 8]])); // 5
+
+// Дан массив целых чисел.
+// Возвращает массив, где первый элемент — это количество положительных чисел, а второй элемент — сумма отрицательных чисел. 0 не является ни положительным, ни отрицательным.
+// Если входной массив пуст или нулевой, верните пустой массив.
+// function countPositivesSumNegatives(input) {
+// 	return (input !== undefined) && (input.toString() !== `0,0`) ? [input.reduce((a, b) => (a < 0 ? 0 : a) + ((b <= 0) ? 0 : 1), 0), input.reduce((a, b) => (a < 0 ? a : 0) + ((b < 0) ? b : 0), 0)] : [];
+// }
+// console.log(countPositivesSumNegatives([0, 0]));
+// [10, -65]
+// [8, -50]

@@ -321,3 +321,15 @@ function century(year) {
 // console.log(countPositivesSumNegatives([0, 0]));
 // [10, -65]
 // [8, -50]
+
+// function repeatStr(n, s) {
+// 	let a = s;
+// 	for (let i = 1; i < n; i++) {
+// 		a = s + a;
+// 	}
+// 	return a;
+// }
+// console.log(repeatStr(5, `d`));
+// function repeatStr(n, s) {
+// 	return s.repeat(n);
+// }

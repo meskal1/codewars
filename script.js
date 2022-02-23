@@ -357,3 +357,7 @@ function century(year) {
 // function countSmileys(arr) {
 // 	return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
 // }
+
+// let str = "+7(903)-123-45-67";
+// let numbers = str.match(/\d{1,}/g);
+// console.log(numbers); // 7,903,123,45,67

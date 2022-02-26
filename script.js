@@ -361,3 +361,34 @@ function century(year) {
 // let str = "+7(903)-123-45-67";
 // let numbers = str.match(/\d{1,}/g);
 // console.log(numbers); // 7,903,123,45,67
+
+//На этот раз мы хотим написать вычисления с использованием функций и получить результаты. Давайте посмотрим на некоторые примеры:
+// Требования:
+// Должна быть функция для каждого числа от 0 ("ноль") до 9 ("девять")
+// Должна быть функция для каждой из следующих математических операций: плюс, минус, умножить, разделить на
+// Каждое вычисление состоит ровно из одной операции и двух чисел
+// Самая внешняя функция представляет левый операнд, самая внутренняя функция представляет правый операнд.
+// Деление должно быть целочисленным. Например, это должно возвращать 2, а не 2.667766...:
+// seven(times(five())); // must return 35
+// four(plus(nine())); // must return 13
+// eight(minus(three())); // must return 5
+// six(dividedBy(two())); // must return 3
+function fun(a, b) { return a ? Math.floor(a(b)) : b }
+function zero(a) { return fun(a, 0) }
+function one(a) { return fun(a, 1) }
+function two(a) { return fun(a, 2) }
+function three(a) { return fun(a, 3) }
+function four(a) { return fun(a, 4) }
+function five(a) { return fun(a, 5) }
+function six(a) { return fun(a, 6) }
+function seven(a) { return fun(a, 7) }
+function eight(a) { return fun(a, 8) }
+function nine(a) { return fun(a, 9) }
+
+function plus(c) { return d => d + c }
+function minus(c) { return d => d - c }
+function times(c) { return d => d * c }
+function dividedBy(c) { return d => d / c }
+// console.log(nine(dividedBy(two())));
+// console.log(eight(minus(three())));
+// const make = (f, n) => f ? f(n) : n;

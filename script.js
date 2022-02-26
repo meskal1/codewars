@@ -392,3 +392,10 @@ function dividedBy(c) { return d => d / c }
 // console.log(nine(dividedBy(two())));
 // console.log(eight(minus(three())));
 // const make = (f, n) => f ? f(n) : n;
+
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+// function solution(str) {
+// 	return str.split(``).reverse().join(``);
+// }
+// console.log(solution('world'));

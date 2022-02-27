@@ -403,4 +403,4 @@ function century(year) {
 // function a(a, b) {
 // 	return a + b
 // }
-// console.log(a(2, 4));
+// console.log(a(2, 4));1

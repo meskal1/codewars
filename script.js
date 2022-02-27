@@ -238,7 +238,7 @@ function century(year) {
 // 	return new Set(str.toLowerCase()).size == str.length;
 // }
 // console.log(isIsogram("Dermatoglyphics"));
-// function isIsogram(str){ 
+// function isIsogram(str){
 // 	return !/(\w).*\1/i.test(str)
 //  }
 
@@ -373,22 +373,22 @@ function century(year) {
 // four(plus(nine())); // must return 13
 // eight(minus(three())); // must return 5
 // six(dividedBy(two())); // must return 3
-function fun(a, b) { return a ? Math.floor(a(b)) : b }
-function zero(a) { return fun(a, 0) }
-function one(a) { return fun(a, 1) }
-function two(a) { return fun(a, 2) }
-function three(a) { return fun(a, 3) }
-function four(a) { return fun(a, 4) }
-function five(a) { return fun(a, 5) }
-function six(a) { return fun(a, 6) }
-function seven(a) { return fun(a, 7) }
-function eight(a) { return fun(a, 8) }
-function nine(a) { return fun(a, 9) }
+// function fun(a, b) { return a ? Math.floor(a(b)) : b }
+// function zero(a) { return fun(a, 0) }
+// function one(a) { return fun(a, 1) }
+// function two(a) { return fun(a, 2) }
+// function three(a) { return fun(a, 3) }
+// function four(a) { return fun(a, 4) }
+// function five(a) { return fun(a, 5) }
+// function six(a) { return fun(a, 6) }
+// function seven(a) { return fun(a, 7) }
+// function eight(a) { return fun(a, 8) }
+// function nine(a) { return fun(a, 9) }
 
-function plus(c) { return d => d + c }
-function minus(c) { return d => d - c }
-function times(c) { return d => d * c }
-function dividedBy(c) { return d => d / c }
+// function plus(c) { return d => d + c }
+// function minus(c) { return d => d - c }
+// function times(c) { return d => d * c }
+// function dividedBy(c) { return d => d / c }
 // console.log(nine(dividedBy(two())));
 // console.log(eight(minus(three())));
 // const make = (f, n) => f ? f(n) : n;
@@ -399,3 +399,8 @@ function dividedBy(c) { return d => d / c }
 // 	return str.split(``).reverse().join(``);
 // }
 // console.log(solution('world'));
+
+// function a(a, b) {
+// 	return a + b
+// }
+// console.log(a(2, 4));

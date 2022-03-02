@@ -413,3 +413,10 @@ function century(year) {
 // 	return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
 // }
 // console.log(hoopCount(10));
+
+// Создайте функцию, которая выдает персонализированное приветствие. Эта функция принимает два параметра: имя и владелец.
+// Используйте условные выражения, чтобы вернуть правильное сообщение:
+// function greet(name, owner) {
+// 	return name === owner ? 'Hello boss' : 'Hello guest';
+// }
+// console.log(greet(`Daniel`, `Daniel`));

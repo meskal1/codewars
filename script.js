@@ -420,3 +420,15 @@ function century(year) {
 // 	return name === owner ? 'Hello boss' : 'Hello guest';
 // }
 // console.log(greet(`Daniel`, `Daniel`));
+
+// В этом простом упражнении вы создадите программу, которая будет принимать два списка целых чисел, a и b. Каждый список будет состоять из 3 положительных целых чисел выше 0, представляющих размеры прямоугольных параллелепипедов a и b. Вы должны найти разницу объемов прямоугольных параллелепипедов независимо от того, какой из них больше.
+// Например, если переданы параметры ([2, 2, 3], [5, 4, 1]), громкость a равна 12, а громкость b равна 20. Следовательно, функция должна вернуть 8.
+// Ваша функция будет проверена как на готовых примерах, так и на случайных.
+// Если можете, попробуйте написать это одной строкой кода.
+// function findDifference(a, b) {
+// 	return (a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b)) > 0 ? a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b) : -1 * (a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b))
+// }
+// console.log(findDifference([3, 2, 5], [1, 4, 4]));
+// function find_difference(a, b) {
+// 	return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
+//  }

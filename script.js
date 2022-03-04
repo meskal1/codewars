@@ -432,3 +432,13 @@ function century(year) {
 // function find_difference(a, b) {
 // 	return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
 //  }
+
+// Напишите функцию, которая принимает список строк в качестве аргумента и возвращает отфильтрованный список, содержащий те же элементы, но с удаленными «гусями».
+// Гуси — это любые строки в следующем массиве, который предварительно заполнен в вашем решении:
+// ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+// function gooseFilter(birds) {
+// 	var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+// 	return birds.filter((a) => !geese.includes(a))
+// };
+// console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
+// ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]

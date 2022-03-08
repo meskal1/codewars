@@ -443,3 +443,13 @@ function century(year) {
 // console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
 // ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
 
+// Напишите простую функцию, которая принимает в качестве параметра объект даты и возвращает логическое значение, указывающее, является ли дата сегодняшней или нет.
+// Убедитесь, что ваша функция не возвращает ложное срабатывание, просто проверив только день.
+// function isToday(date) {
+// 	return (new Date().getDate() === new Date(date).getDate()) && (new Date().getFullYear() === new Date(date).getFullYear())
+// }
+// console.log(isToday('December 25, 1995 23:15:30'));
+// console.log(isToday('2122-03-08T21:13:05.875Z'));
+// function isToday(date) {
+// 	return new Date().toDateString() === date.toDateString();
+// }

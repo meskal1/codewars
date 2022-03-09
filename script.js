@@ -469,3 +469,12 @@ function century(year) {
 // 	return [2 * q[0] - p[0], 2 * q[1] - p[1]]
 // }
 // console.log(symmetricPoint([2, 6], [-2, -6])); //[-6, -18]
+
+
+// Учитывая число n, вернуть количество положительных нечетных чисел меньше n, ЛЕГКО!
+// oddCount(7) //=> 3, i.e [1, 3, 5]
+// oddCount(15) //=> 7, i.e [1, 3, 5, 7, 9, 11, 13]
+// function oddCount(n) {
+// 	return Math.floor(n / 2)
+// }
+// console.log(oddCount(15));

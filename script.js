@@ -514,3 +514,18 @@ function century(year) {
 // function greet(name){
 // 	return `Hello, ${name} how are you doing today?`
 // }
+
+// Ваша задача состоит в том, чтобы сделать две функции (максимум и минимум или максимум и минимум и т. д., в зависимости от языка), которые получают на вход список целых чисел и возвращают, соответственно, наибольшее и наименьшее число в этом списке.
+// Examples (Input -> Output)
+// * [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+// * [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+// * [42, 54, 65, 87, 0]             -> min = 0, max = 87
+// * [5]                             -> min = 5, max = 5
+// var min = function (list) {
+// 	return list.sort((a, b) => a - b)[0];
+// }
+// var max = function (list) {
+// 	return list.sort((a, b) => a - b)[list.length - 1]
+// }
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);

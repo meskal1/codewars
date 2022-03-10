@@ -498,3 +498,13 @@ function century(year) {
 // console.log(isPalindrome(`olllo`)); //false
 // console.log(isPalindrome(``)); //true
 // const isPalindrome = x => x.toLowerCase().split('').reverse().join('') == x.toLowerCase();
+
+// Учитывая строку, вы должны вернуть строку, в которой каждый символ (с учетом регистра) повторяется один раз.
+// Examples (Input -> Output):
+// * "String"      -> "SSttrriinngg"
+// * "Hello World" -> "HHeelllloo  WWoorrlldd"
+// * "1234!_ "     -> "11223344!!__  "
+// function doubleChar(str) {
+// 	return str.split(``).map(a => a + a).join(``)
+// }
+// console.log(doubleChar(`Adidas`)); //AAddiiddaass

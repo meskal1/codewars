@@ -470,7 +470,6 @@ function century(year) {
 // }
 // console.log(symmetricPoint([2, 6], [-2, -6])); //[-6, -18]
 
-
 // Учитывая число n, вернуть количество положительных нечетных чисел меньше n, ЛЕГКО!
 // oddCount(7) //=> 3, i.e [1, 3, 5]
 // oddCount(15) //=> 7, i.e [1, 3, 5, 7, 9, 11, 13]
@@ -478,3 +477,24 @@ function century(year) {
 // 	return Math.floor(n / 2)
 // }
 // console.log(oddCount(15));
+
+// Напишите функцию, которая проверяет, является ли заданная строка (без учета регистра) палиндромом.
+// function isPalindrome(x) {
+// 	if (x == ``) {
+// 		return true
+// 	}
+// 	let a = x.toLowerCase().split(``)
+// 	for (let i = a.length; i !== 1; i--) {
+// 		if (a[0] === a[a.length - 1]) {
+// 			a.shift()
+// 			a.pop()
+// 		} else return false
+// 	}
+// 	return true
+// }
+// console.log(isPalindrome(`Abba`)); //true
+// console.log(isPalindrome(`Madam`)); //true
+// console.log(isPalindrome(`hello`)); //false
+// console.log(isPalindrome(`olllo`)); //false
+// console.log(isPalindrome(``)); //true
+// const isPalindrome = x => x.toLowerCase().split('').reverse().join('') == x.toLowerCase();

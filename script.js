@@ -529,3 +529,11 @@ function century(year) {
 // }
 // const min = (list) => Math.min(...list);
 // const max = (list) => Math.max(...list);
+
+// Завершите функцию, которая вычисляет площадь красного квадрата, когда в качестве входных данных задана длина дуги окружности A. Возвращает результат, округленный до двух знаков после запятой.
+// Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)
+// function squareArea(A) {
+// 	let r = 2 * A / Math.PI
+// 	return Math.floor(r * r * 100) / 100
+// }
+// console.log(squareArea(2)); 

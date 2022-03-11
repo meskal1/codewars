@@ -536,4 +536,18 @@ function century(year) {
 // 	let r = 2 * A / Math.PI
 // 	return Math.floor(r * r * 100) / 100
 // }
-// console.log(squareArea(2)); 
+// console.log(squareArea(2));
+
+// Завершите функцию, которая принимает два целых числа (a, b, где a < b), и верните массив всех целых чисел между входными параметрами, включая их.
+// Например:
+// a = 1
+// b = 4
+// --> [1, 2, 3, 4]
+// function between(a, b) {
+// 	let z = [];
+// 	for (let i = a; i <= b; i++) {
+// 		z.push(i);
+// 	}
+// 	return z;
+// }
+// console.log(between(1, 4)); //[1, 2, 3, 4]

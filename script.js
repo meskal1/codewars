@@ -568,3 +568,16 @@ function century(year) {
 // 	return list.reverse()
 // }
 // console.log(reverseList([1, 2, 3, 4]));
+
+// Мы реализовали функцию wrap(value), которая принимает значение произвольного типа и заключает его в новый объект JavaScript или Python Dict, устанавливая ключ «value» в новом объекте или Dict в переданное значение.
+// Так, например, если мы выполним следующий код:
+// wrapper_obj = wrap("my_wrapped_string");
+//  # wrapper_obj should be  {"value":"my_wrapped_string"}
+//  Тогда мы ожидаем, что следующее утверждение будет истинным:
+//  wrapper_obj["value"] == "my_wrapped_string"
+// К сожалению, код не работает так, как задумано. Пожалуйста, исправьте код, чтобы он работал как указано.
+// function wrap(value) {
+// 	let n = { "value": value }
+// 	return n
+// }
+// console.log(wrap("my_wrapped_string"));

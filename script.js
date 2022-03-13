@@ -581,3 +581,19 @@ function century(year) {
 // 	return n
 // }
 // console.log(wrap("my_wrapped_string"));
+
+// Возле дороги стоят столбы. Расстояние между столбами одинаковое и ширина столбов одинаковая. Ваша функция принимает три аргумента:
+// 1) количество столбов(≥ 1);
+// 2) расстояние между столбами(10 – 30 метров);
+// 3) ширина столба(10 – 50 сантиметров).
+// Рассчитайте расстояние между первым и последним столбом в сантиметрах (без ширины первого и последнего столба).
+// function pillars(num_pill, dist, width) {
+// 	let a = Math.round(((num_pill - 1) * dist + (num_pill - 2) * width / 100) * 100)
+// 	return a < 0 ? 0 : a
+// }
+// console.log(pillars(11, 15, 30)); //15270
+// console.log(pillars(2, 20, 25)); //2000
+// console.log(pillars(1, 10, 10)); //0
+// function pillars(num_pill, dist, width) {
+// 	return num_pill>1?(num_pill-1)*dist*100+(num_pill-2)*width:0;
+//  }

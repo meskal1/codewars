@@ -603,3 +603,17 @@ function century(year) {
 // 	return arr.splice(0, n)
 // }
 // console.log(take([0, 1, 2, 3, 5, 8, 13], 3)); //[0, 1, 2] "should return the first 3 items"
+
+// В этом Ката мы передаем число (n) в функцию.
+// Ваш код определит, является ли переданное число четным (или нет).
+// Функция должна возвращать либо истину, либо ложь.
+// Числа могут быть положительными или отрицательными, целыми числами или числами с плавающей запятой.
+// Поплавки с десятичной частью, отличной от нуля, считаются НЕчетными для этой ката.
+// function testEven(n) {
+// 	return n % 2 == 0
+// }
+// console.log(testEven(0)); //true
+// console.log(testEven(0.5)); //false
+// console.log(testEven(1)); //false
+// console.log(testEven(2)); //true
+// console.log(testEven(-4)); //true

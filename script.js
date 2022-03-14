@@ -597,3 +597,9 @@ function century(year) {
 // function pillars(num_pill, dist, width) {
 // 	return num_pill>1?(num_pill-1)*dist*100+(num_pill-2)*width:0;
 //  }
+
+// Создайте функцию, которая принимает список/массив и число n и возвращает список/массив первых n элементов из списка/массива.
+// function take(arr, n) {
+// 	return arr.splice(0, n)
+// }
+// console.log(take([0, 1, 2, 3, 5, 8, 13], 3)); //[0, 1, 2] "should return the first 3 items"

@@ -617,3 +617,20 @@ function century(year) {
 // console.log(testEven(1)); //false
 // console.log(testEven(2)); //true
 // console.log(testEven(-4)); //true
+
+
+// Вы получаете любую карту в качестве аргумента. Ваша задача вернуть масть этой карты.
+// Наша колода (предустановлена):
+// deck = ['2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','Q♣','K♣','A♣',
+//         '2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','J♦','Q♦','K♦','A♦',
+//         '2♥','3♥','4♥','5♥','6♥','7♥','8♥','9♥','10♥','J♥','Q♥','K♥','A♥',
+//         '2♠','3♠','4♠','5♠','6♠','7♠','8♠','9♠','10♠','J♠','Q♠','K♠','A♠'];
+// ('3♣') -> return 'clubs'
+// ('3♦') -> return 'diamonds'
+// ('3♥') -> return 'hearts'
+// ('3♠') -> return 'spades'
+// function defineSuit(card) {
+// 	let a = card[card.length - 1]
+// 	return a == '♣' ? 'clubs' : a == '♦' ? 'diamonds' : a == '♥' ? 'hearts' : 'spades'
+// }
+// console.log(defineSuit(`3♣`));

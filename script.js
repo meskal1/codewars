@@ -691,3 +691,10 @@ function century(year) {
 // 	return parseInt(hexString, 16)
 // }
 // console.log(hexToDec("FF")); //255
+
+// Бобу нужен быстрый способ вычисления объема прямоугольного параллелепипеда с тремя значениями: длина, ширина и высота прямоугольного параллелепипеда. Напишите функцию, которая поможет Бобу в этом вычислении.
+// class Kata {
+// 	static getVolumeOfCuboid(length, width, height) {
+// 		return length * width * height
+// 	}
+// }

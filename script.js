@@ -685,3 +685,9 @@ function century(year) {
 // function lovefunc(flower1, flower2){
 // 	return flower1 % 2 !== flower2 % 2;
 //  }
+
+// Завершите функцию, которая преобразует шестнадцатеричное число (заданное в виде строки) в десятичное число.
+// function hexToDec(hexString) {
+// 	return parseInt(hexString, 16)
+// }
+// console.log(hexToDec("FF")); //255

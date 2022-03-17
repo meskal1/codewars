@@ -698,3 +698,19 @@ function century(year) {
 // 		return length * width * height
 // 	}
 // }
+
+// Убрать восклицательный знак в конце строки. Для начинающего ката можно считать, что входные данные всегда являются строкой, проверять ее не нужно.
+// remove("Hi!") === "Hi"
+// remove("Hi!!!") === "Hi!!"
+// remove("!Hi") === "!Hi"
+// remove("!Hi!") === "!Hi"
+// remove("Hi! Hi!") === "Hi! Hi"
+// remove("Hi") === "Hi"
+// function remove(string) {
+// 	return string[string.length - 1] === '!' ? string.split(``).splice(0, string.length - 1).join(``) : string
+// }
+// console.log(remove("!Hi!"));
+// const remove = s => s.replace(/!$/, '');
+// function remove(s) {
+// 	return s.endsWith('!') ? s.slice(0, -1) : s;
+//  }

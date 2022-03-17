@@ -741,3 +741,14 @@ function century(year) {
 // console.log(animals(500, 0)); // "No solutions"
 // console.log(animals(5, -55)); // "No solutions"
 // console.log(animals(0, 0)); // "No solutions"
+
+// Вам даны длина и ширина четырехугольника. Многоугольник может быть прямоугольным или квадратным.
+// Если это квадрат, вернуть его площадь. Если это прямоугольник, верните его периметр.
+// area_or_perimeter(6, 10) --> 32
+// area_or_perimeter(3, 3) --> 9
+// Примечание: для целей этого ката вы будете считать, что это квадрат, если его длина и ширина равны, в противном случае это прямоугольник.
+// const areaOrPerimeter = function (l, w) {
+// 	return l === w ? l * w : 2 * l + 2 * w
+// };
+// console.log(areaOrPerimeter(4, 4)); //16
+// console.log(areaOrPerimeter(6, 10)); //32

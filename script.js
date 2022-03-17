@@ -752,3 +752,16 @@ function century(year) {
 // };
 // console.log(areaOrPerimeter(4, 4)); //16
 // console.log(areaOrPerimeter(6, 10)); //32
+
+// Определите метод hello, который возвращает "Hello, Name!" на заданное имя или говорит Hello, World! если имя не указано (или передано как пустая строка).
+// Предполагая, что это имя является строкой, и оно проверяет пользовательские опечатки, чтобы вернуть имя с первой заглавной буквой (Xxxx).
+// Примеры:
+// * With `name` = "john"  => return "Hello, John!"
+// * With `name` = "aliCE" => return "Hello, Alice!"
+// * With `name` not given
+//   or `name` = ""        => return "Hello, World!"
+// function hello(name = "") {
+// 	return name === '' ? `Hello, World!` : `Hello, ${name.split(``)[0].toUpperCase() + name.toLowerCase().split(``).splice(1).join(``)}!`
+// }
+// console.log(hello());
+// const hello = s => `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`;

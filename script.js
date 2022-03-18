@@ -795,3 +795,11 @@ function century(year) {
 // console.log(isLockNessMonster("Your girlscout cookies are ready to ship. Your total comes to tree fiddy"));
 // console.log(isLockNessMonster("Yo, I heard you were on the lookout for Nessie. Let me know if you need assistance. 3.50"));
 // const isLockNessMonster = (s) => /tree fiddy|three fifty|3.50/.test(s);
+
+// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+// "1a2b3c4d5e" <=> "1A2B3C4D5E"
+// String.prototype.toAlternatingCase = function () {
+// 	return this.split(``).map((r) => /[a-z]/.test(r) ? r.toUpperCase() : r.toLowerCase()).join(``)
+// }
+// console.log('altERnaTIng cAsE'.toAlternatingCase());

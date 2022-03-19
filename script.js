@@ -882,3 +882,31 @@ function century(year) {
 // console.log(aspectRatio(960, 720)); //[1280,720]
 // console.log(aspectRatio(1440, 1080)); //[1920,1080]
 // console.log(aspectRatio(1920, 1440))// [2560,1440]
+
+// Найдите сумму всех кратных n меньше m
+// n и m - натуральные числа (целые положительные числа)
+// m исключается из кратных
+// sumMul(2, 9)   ==> 2 + 4 + 6 + 8 = 20
+// sumMul(3, 13)  ==> 3 + 6 + 9 + 12 = 30
+// sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
+// sumMul(4, -7)  ==> "INVALID"
+// function sumMul(n, m) {
+// 	let a = 0
+// 	if (n <= 0 || m <= 0) {
+// 		return "INVALID"
+// 	}
+// 	for (let i = 1; i <= (m - (m % n)) / n; i++) {
+// 		a += n * i
+// 	}
+// 	return a
+// }
+// console.log(sumMul(2, 9));
+// console.log(sumMul(3, 13));
+// function sumMul(n,m){
+// 	if (n >= m) return "INVALID";
+//  var sum = 0;
+// 	for (var i = n; i < m; i+=n) {
+// 	  sum += i;
+// 	}
+// 	return sum;
+//  }

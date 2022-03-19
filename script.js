@@ -808,8 +808,44 @@ function century(year) {
 // Метод AddExtra добавляет новый элемент в список и возвращает список. Новым элементом может быть любой объект, и это не имеет значения. (допустим, вы добавляете целочисленное значение, например 13)
 // В нашем тестовом случае мы проверяем, чтобы в возвращаемом списке было на один элемент больше, чем во входном списке. Однако метод нуждается в некоторой модификации, чтобы пройти этот тест.
 // P.S. Вы должны создать новый список и добавить в него новый элемент. (Эта Kata изначально разработана для языка C# и показывает, что добавление нового элемента в список ввода не будет работать, даже если параметр передается по значению, но значение указывает на ссылку списка и любое изменение в параметр будет виден вызывающему абоненту)
+// Add an item to the list:
+// AddExtra method adds a new item to the list and returns the list. The new item can be any object, and it does not matter. (lets say you add an integer value, like 13)
+// In our test case we check to assure that the returned list has one more item than the input list. However the method needs some modification to pass this test.
+// P.S. You have to create a new list and add a new item to that. (This Kata is originally designed for C# language and it shows that adding a new item to the input list is not going to work, even though the parameter is passed by value, but the value is poining to the reference of list and any change on parameter will be seen by caller)
+// describe("Tests", () => {
+// 	it("test", () => {
+//  Test.assertEquals(addExtra([1,2,3]).length, 4)
+//  Test.assertEquals(addExtra([1,2]).length, 3)
+//  Test.assertEquals(addExtra([]).length, 1)
+
+//  var arr = [1,2,3];
+//  Test.assertNotEquals(addExtra(arr),arr, "Description: ...You have to create a new list..." )
+
+// 	});
+//  });
 // function addExtra(listOfNumbers) {
 // 	return [...listOfNumbers, null];
 // }
 // console.log(addExtra([1, 2, 3]).length); // 4
 // console.log(addExtra([1, 2, 3])); // 3
+// Херня полнейшая
+
+
+// Напишите функцию, которая принимает два целых числа и возвращает остаток от деления большего значения на меньшее.
+// Деление на ноль должно возвращать NaN.
+// n = 17
+// m = 5
+// result = 2 (remainder of `17 / 5`)
+// n = 13
+// m = 72
+// result = 7 (remainder of `72 / 13`)
+// n = 0
+// m = -1
+// result = 0 (remainder of `0 / -1`)
+// n = 0
+// m = 1
+// result - division by zero (refer to the specifications on how to handle this in your language)
+// function remainder(n, m) {
+// 	return n > m ? n % m : m % n
+// }
+// console.log(remainder(17, 5));

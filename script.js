@@ -958,3 +958,22 @@ function century(year) {
 // 	return `${a[0].slice(0, 1)}.${a[1].slice(0, 1)}`
 // }
 // console.log(abbrevName("Sam Harris"));//"S.H"
+
+// Предупреждение: в настоящее время у этого ката нет известных поддерживаемых версий для JavaScript. Это может быть невозможно завершить из-за зависимости от устаревших библиотек/языковых версий.
+// Описание:
+// Удалите все восклицательные знаки из предложения, но убедитесь, что восклицательный знак стоит в конце строки. Для начинающего ката вы можете предположить, что входные данные всегда представляют собой непустую строку, ее не нужно проверять.
+// remove("Hi!") === "Hi!"
+// remove("Hi!!!") === "Hi!"
+// remove("!Hi") === "Hi!"
+// remove("!Hi!") === "Hi!"
+// remove("Hi! Hi!") === "Hi Hi!"
+// remove("Hi") === "Hi!"
+// function remove(string) {
+// 	// return string.replaceAll('!', '') + `!`
+// 	return string.split(``).filter(a => a !== '!').join(``) + `!`
+// }
+// console.log(remove('Hi!!!'));
+// console.log(remove('Hi! Hi!'));
+// function remove(s) {
+// 	return s.replace(/!+/g, '') + '!';
+//  }

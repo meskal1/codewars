@@ -928,3 +928,13 @@ function century(year) {
 // }
 // console.log(isDivisible(3, 3, 4)); //false
 // console.log(isDivisible(12, 3, 4)); //true
+
+// На каждую хорошую идею ката приходится немало плохих!
+// В этом ката вам нужно проверить предоставленный массив (x) на наличие хороших идей «хорошо» и плохих идей «плохо». Если есть одна или две хорошие идеи, верните «Опубликовать!», если их больше 2, верните «Чую серию!». Если нет хороших идей, как это часто бывает, верните «Fail!».
+// function well(x) {
+// 	let z = x.filter((a) => a == 'good').length
+// 	return z > 2 ? 'I smell a series!' : z ? 'Publish!' : 'Fail!'
+// }
+// console.log(well(['bad', 'bad', 'bad']));//'Fail!'
+// console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));//'Publish!'
+// console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));//'I smell a series!'

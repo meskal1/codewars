@@ -947,3 +947,14 @@ function century(year) {
 // function removeChar(str) {
 // 	return str.slice(1, -1);
 // }
+
+// Напишите функцию для преобразования имени в инициалы. Это ката строго состоит из двух слов с одним пробелом между ними.
+// На выходе должны быть две заглавные буквы с точкой, разделяющей их.
+// Это должно выглядеть так:
+// Sam Harris => S.H
+// patrick feeney => P.F
+// function abbrevName(name) {
+// 	let a = name.toUpperCase().split(` `)
+// 	return `${a[0].slice(0, 1)}.${a[1].slice(0, 1)}`
+// }
+// console.log(abbrevName("Sam Harris"));//"S.H"

@@ -1034,3 +1034,20 @@ function century(year) {
 // 	return a;
 // }
 // console.log(eachCons([1, 2, 3, 4, 5, 6], 3));// [[1,2,3],[2,3,4]]
+
+// Создайте функцию, которая возвращает массив целых чисел от n до 1, где n>0.
+// n=5 --> [5,4,3,2,1]
+// const reverseSeq = n => {
+// 	let a = [n]
+// 	for (let i = 1; i < n; i++) {
+// 		a.push(n - i)
+// 	}
+// 	return a;
+// };
+// console.log(reverseSeq(5));//[5,4,3,2,1]
+// const reverseSeq = n => {
+// 	let arr = [];
+// 	  for (let i=n; i>0; i--) {
+// 		 arr.push(i);
+// 		 } return arr;
+// 	};

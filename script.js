@@ -1063,3 +1063,14 @@ function century(year) {
 // function digitize(n) {
 // 	return String(n).split('').map(Number).reverse()
 //  }
+
+// Напишите функцию get_char() / getChar(), которая принимает число и возвращает соответствующий символ ASCII для этого значения.
+// Example:
+// get_char(65)
+// should return:
+// 'A'
+// function getChar(c) {
+// 	return String.fromCharCode(c)
+// }
+// console.log(getChar(65)); //'A'
+// const getChar = String.fromCharCode;

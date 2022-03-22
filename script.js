@@ -1051,3 +1051,15 @@ function century(year) {
 // 		 arr.push(i);
 // 		 } return arr;
 // 	};
+
+// Преобразовать число в перевернутый массив цифр
+// Учитывая случайное неотрицательное число, вы должны вернуть цифры этого числа в массиве в обратном порядке.
+// 348597 => [7,9,5,8,4,3]
+// 0 => [0]
+// function digitize(n) {
+// 	return `${n}`.split(``).reverse().map(a => a - 0)
+// }
+// console.log(digitize(348597)); //[7,9,5,8,4,3]
+// function digitize(n) {
+// 	return String(n).split('').map(Number).reverse()
+//  }

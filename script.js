@@ -1098,3 +1098,7 @@ function century(year) {
 // }
 // console.log(getAge("4 years old")); //4
 // const getAge = parseInt;
+
+// function maps(x){
+// 	return x.map(a=>a*2)
+// 	}

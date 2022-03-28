@@ -1102,3 +1102,25 @@ function century(year) {
 // function maps(x){
 // 	return x.map(a=>a*2)
 // 	}
+
+// Examples
+// remove("Hi!") === "Hi"
+// remove("Hi!!!") === "Hi"
+// remove("!Hi") === "!Hi"
+// remove("!Hi!") === "!Hi"
+// remove("Hi! Hi!") === "Hi! Hi"
+// remove("Hi") === "Hi"
+// function remove(string) {
+// 	let a = string
+// 	for (let i = 0; i < string.length; i++) {
+// 		if (a.endsWith('!')) a = a.slice(0, a.length - 1)
+// 	}
+// 	return a
+// }
+// console.log(remove("Hi! Hi!"));
+// console.log(remove("Hi!!!"));
+// console.log(remove("!Hi!!!"));
+// console.log(remove("sqwy!!!!!!"));
+// function remove(s) {
+// 	return s.replace(/!+$/, '');
+// }

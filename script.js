@@ -1124,3 +1124,18 @@ function century(year) {
 // function remove(s) {
 // 	return s.replace(/!+$/, '');
 // }
+
+// Учитывая неотрицательное целое число, например 3, верните строку с бормотанием: «1 овца... 2 овцы... 3 овцы...». Ввод всегда будет действительным, т. е. без отрицательных целых чисел.
+// var countSheep = function (num) {
+// 	let a = []
+// 	for (let i = 1; i <= num; i++) {
+// 		a.push(i + ' sheep...')
+// 	}
+// 	return num === 0 ? '' : a.join('')
+// }
+// console.log(countSheep(3));
+// var countSheep = function (num){
+// 	let str = "";
+// 	for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+// 	return str;
+//  }

@@ -1136,6 +1136,15 @@ function century(year) {
 // console.log(countSheep(3));
 // var countSheep = function (num){
 // 	let str = "";
-// 	for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+// 	for(let i = 1; i <= num; i++) {
+// 		str+= `${i} sheep...`;
+// 	}
 // 	return str;
 //  }
+
+// "Robin Singh" ==> ["Robin", "Singh"]
+// * "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+// function stringToArray(string) {
+// 	return string.split(` `)
+// }
+// console.log(stringToArray("Robin Singh"));

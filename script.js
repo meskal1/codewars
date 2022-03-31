@@ -1179,3 +1179,10 @@ function century(year) {
 // }
 // console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); //first, 6
 // console.log(firstNonConsecutive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); //first, 6
+
+// Вы отдыхали с друзьями далеко от дома, но когда пришло время возвращаться, вы понимаете, что топливо на исходе, а ближайшая заправка находится в 50 милях от вас! Вы знаете, что в среднем ваш автомобиль расходует около 25 миль на галлон. Осталось 2 галлона. Учитывая эти факторы, напишите функцию, которая говорит вам, можно ли добраться до насоса или нет. Функция должна возвращать true (1 в Prolog, NASM и COBOL), если это возможно, и false (0 в Prolog, NASM и COBOL), если нет. Входные значения всегда положительны.
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+// 	return distanceToPump / mpg <= fuelLeft
+// };
+// console.log(zeroFuel(50, 25, 2));// true
+// console.log(zeroFuel(100, 50, 1));// false

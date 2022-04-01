@@ -1197,3 +1197,16 @@ function century(year) {
 // console.log(uniTotal("aaa"));//291
 // console.log(uniTotal(""));//0
 // const uniTotal = str => [...str].reduce((acc, char) => acc + char.charCodeAt(0), 0);
+
+// Создайте функцию с именем ярлык для удаления строчных гласных (a, e, i, o, u) в заданной строке.
+// "hello"     -->  "hll"
+// "codewars"  -->  "cdwrs"
+// "goodbye"   -->  "gdby"
+// "HELLO"     -->  "HELLO"
+// function shortcut(string) {
+// 	return [...string].map(a => a.replace(/[oaeiu]/, '')).join(``)
+// }
+// console.log(shortcut('goodbye'));
+// function shortcut(string){
+// 	return string.replace(/[aeiou]/g,'')
+//  }

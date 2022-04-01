@@ -1186,3 +1186,14 @@ function century(year) {
 // };
 // console.log(zeroFuel(50, 25, 2));// true
 // console.log(zeroFuel(100, 50, 1));// false
+
+// Вам будет предоставлена ​​строка, и вы должны будете вернуть сумму всех символов в виде целого числа. Функция должна иметь возможность обрабатывать все символы ASCII.
+// Примеры:
+// uniTotal("а") == 97 uniTotal("ааа") == 291
+// function uniTotal(string) {
+// 	return string ? string.split(``).map(a => a.charCodeAt(0)).reduce((a, b) => a + b) : 0
+// }
+// console.log(uniTotal("Mary Had A Little Lamb"));//1873
+// console.log(uniTotal("aaa"));//291
+// console.log(uniTotal(""));//0
+// const uniTotal = str => [...str].reduce((acc, char) => acc + char.charCodeAt(0), 0);

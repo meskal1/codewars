@@ -1210,3 +1210,26 @@ function century(year) {
 // function shortcut(string){
 // 	return string.replace(/[aeiou]/g,'')
 //  }
+
+// rps('scissors', 'paper') // Player 1 won!
+// rps('scissors', 'rock') // Player 2 won!
+// rps('paper', 'paper') // Draw!
+// const rps = (p1, p2) => {
+// 	let a = p1.length - p2.length
+// 	return a === 3 || a === -4 || a === 1 ? 'Player 1 won!' : a === 4 || a === -3 || a === -1 ? 'Player 2 won!' : 'Draw!'
+// };
+// console.log(rps('rock', 'scissors'));
+// console.log(rps('scissors', 'paper'));
+// console.log(rps('paper', 'rock'));
+// console.log(rps('scissors', 'rock'));
+// console.log(rps('paper', 'scissors'));
+// console.log(rps('rock', 'paper'));
+// console.log(rps('paper', 'paper'));
+// console.log(rps('scissors', 'scissors'));
+// console.log(rps('rock', 'rock'));
+// const rps = (p1, p2) => {
+// 	if(p1 === p2) {
+// 	  return 'Draw!'
+// 	};
+// 	return `Player ${/rockscissors|scissorspaper|paperrock/.test(p1+p2)? 1 : 2} won!`;
+//  }

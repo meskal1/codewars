@@ -1243,3 +1243,22 @@ function century(year) {
 // 	return dna.replace(/T/g, 'U')
 // }
 // console.log(DNAtoRNA("GCAT"));
+
+// В этом простом упражнении вы создадите программу, которая принимает значение integer и возвращает список его кратных значений до другого значения limit . Если предел кратен целому числу, он также должен быть включен. В функцию всегда будут передаваться только положительные целые числа, не состоящие из 0. Предел всегда будет выше основания.
+// Например, если переданы параметры (2, 6), функция должна вернуть [2, 4, 6], поскольку 2, 4 и 6 кратны от 2 до 6.
+// Если можете, попробуйте написать это только одной строкой кода.
+// function findMultiples(integer, limit) {
+// 	let a = integer
+// 	let b = []
+// 	while (a <= limit) {
+// 		b.push(a)
+// 		a += integer
+// 	}
+// 	return Array(Math.floor(limit / integer))
+// }
+// console.log(findMultiples(5, 25));//[5, 10, 15, 20, 25]
+// console.log(findMultiples(5, 7));//[5]
+// console.log(findMultiples(4, 27));//[4, 8, 12, 16, 20, 24]
+// function findMultiples(int, limit) {
+	// return Array(Math.floor(limit / int)).fill(1).map((x, i) => int * (i + 1));
+// }

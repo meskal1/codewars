@@ -1260,5 +1260,14 @@ function century(year) {
 // console.log(findMultiples(5, 7));//[5]
 // console.log(findMultiples(4, 27));//[4, 8, 12, 16, 20, 24]
 // function findMultiples(int, limit) {
-	// return Array(Math.floor(limit / int)).fill(1).map((x, i) => int * (i + 1));
+// return Array(Math.floor(limit / int)).fill(1).map((x, i) => int * (i + 1));
 // }
+
+// Возьмите массив и удалите каждый второй элемент из массива. Всегда сохраняйте первый элемент и начинайте удаление со следующего элемента.
+// Ни один из массивов не будет пустым, так что вам не о чем беспокоиться!
+// ["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+// function removeEveryOther(arr) {
+// 	return arr.map((a, i) => i % 2 ? '' : a).filter(a => a !== '')
+// }
+// console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));//['Hello', 'Hello Again']
+// console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));//[1, 3, 5, 7, 9]

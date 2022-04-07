@@ -1282,3 +1282,19 @@ function century(year) {
 // 	return Array(size).fill(1).map((a, i) => i % 2 ? 0 : 1).join(``)
 // }
 // console.log(stringy(5));
+// function stringy(size) {
+// 	var str='';
+// 	for( var i=1; i<=size; i++ )
+// 	  str+=i%2;
+// 	return str;
+//  }
+
+// '! !'                 -> '! !'
+// '123456789'           -> ''
+// 'This looks5 grea8t!' -> 'This looks great!'
+// function stringClean(s) {
+// 	return s.replace(/[0-9]/g, '')
+// }
+// console.log(stringClean('123456789'));
+// console.log(stringClean('! !'));
+// console.log(stringClean('This looks5 grea8t!'));

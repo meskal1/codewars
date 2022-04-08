@@ -1310,15 +1310,29 @@ function century(year) {
 // ["PT92", 6] => 2 (6 streets 3 bullets each)
 // ["M4A1", 6] => 1
 // Возврат всегда будет целым числом, так как параметры.
-function magNumber(info) {
-	let PT92 = 17
-	let M4A1 = 30
-	let M16A2 = 30
-	let PSG1 = 5
-	// if(info[0]==='PT92')
-	return info[0] === 'PT92' ? info[1] * 3 / 17 : 0
-}
-console.log(magNumber(["PT92", 6]));
+// function magNumber(info) {
+// 	switch (info[0]) {
+// 		case "PT92":
+// 			return Math.ceil(info[1] * 3 / 17)
+// 		case "M4A1":
+// 			return Math.ceil(info[1] * 3 / 30)
+// 		case "M16A2":
+// 			return Math.ceil(info[1] * 3 / 30)
+// 		case "PSG1":
+// 			return Math.ceil(info[1] * 3 / 5)
+// 	}
+// }
+// console.log(magNumber(["PT92", 6]));
+// console.log(magNumber(["M4A1", 750]));
+// function magNumber(info){
+// 	const dict = new Map([
+// 	  ["PT92", 17],
+// 	  ["M4A1", 30],
+// 	  ["M16A2", 30],
+// 	  ["PSG1", 5]
+// 	]);
+// 	return Math.ceil(info[1] * 3 / dict.get(info[0]));
+//  }
 
 // Example
 // Input: 1,3,5,6,7,8

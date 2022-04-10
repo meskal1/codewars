@@ -1405,3 +1405,10 @@ function century(year) {
 // }
 // console.log(betterThanAverage([2, 3], 5));//true
 // console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75)); //true
+
+// Напишите функцию, которая возвращает строку, в которой имя заменено на фамилию.
+// nameShuffler('john McClane'); => "McClane john"
+// function nameShuffler(str) {
+// 	return str.split(` `).reverse().join(` `)
+// }
+// console.log(nameShuffler('john McClane'));//"McClane john"

@@ -1384,3 +1384,24 @@ function century(year) {
 // console.log(finalGrade(0, 2));
 // console.log(finalGrade(0, 10));
 // console.log(finalGrade(75, 5));
+
+// form.onclick = function (event) {
+// 	event.currentTarget.style.backgroundColor = 'yellow';
+// браузеру нужно некоторое время, чтобы зарисовать всё жёлтым
+// setTimeout(() => {
+// 	alert("target = " + event.target.tagName + ", this=" + this.tagName);
+// 	event.target.style.backgroundColor = ''
+// }, 0);
+// };
+
+// В вашем классе был тест, и вы его прошли. Поздравляем!
+// Но вы амбициозный человек. Вы хотите знать, лучше ли вы, чем средний ученик в вашем классе.
+// Вы получаете массив с результатами тестов ваших сверстников. Теперь посчитайте среднее и сравните свой результат!
+// Верните True, если вам лучше, иначе False!
+// Примечание:
+// Ваши баллы не включены в массив баллов вашего класса. Для расчета среднего балла вы можете добавить свой балл в данный массив!
+// function betterThanAverage(classPoints, yourPoints) {
+// 	return classPoints.reduce((a, b) => a + b) / classPoints.length < yourPoints
+// }
+// console.log(betterThanAverage([2, 3], 5));//true
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75)); //true

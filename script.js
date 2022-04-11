@@ -1422,21 +1422,32 @@ function century(year) {
 // exponential = exponent
 // subtraction = subt
 // Note: All math operations will be: a (operation) b
-function add(a, b) {
-	return a + b
-}
-function divide(a, b) {
-	return a / b
-}
-function multiply(a, b) {
-	return a * b
-}
-function mod(a, b) {
-	return a % b
-}
-function exponent(a, b) {
-	return Math.pow(a, b)
-}
-function subt(a, b) {
-	return a - b
-}
+// function add(a, b) {
+// 	return a + b
+// }
+// function divide(a, b) {
+// 	return a / b
+// }
+// function multiply(a, b) {
+// 	return a * b
+// }
+// function mod(a, b) {
+// 	return a % b
+// }
+// function exponent(a, b) {
+// 	return Math.pow(a, b)
+// }
+// function subt(a, b) {
+// 	return a - b
+// }
+
+// Учитывая 2 строки, a и b, верните строку формы короткая + длинная + короткая, с более короткой строкой снаружи и более длинной строкой внутри. Строки не будут одинаковой длины, но могут быть пустыми (нулевой длины).
+// Подсказка для пользователей R:
+// Длина строки не всегда совпадает с количеством символов
+// Например: (Ввод1, Ввод2) --> вывод
+// ("1", "22") --> "1221"
+// ("22", "1") --> "1221"
+// function solution(a, b) {
+// 	return a.length > b.length ? b + a + b : a + b + a
+// }
+// console.log(solution('45', '1'));//'1451'

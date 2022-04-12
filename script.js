@@ -1459,3 +1459,24 @@ function century(year) {
 // 	return word[0].toUpperCase() + word.replace(word[0], '')
 // }
 // console.log(capitalizeWord('word'));
+// function capitalizeWord(word) {
+// 	return word[0].toUpperCase() + word.slice(1);
+//  }
+
+// Напишите функцию, которая проверяет, имеют ли два заданных символа один и тот же регистр.
+// Если какой-либо из символов не является буквой, вернуть -1
+// Если оба символа имеют одинаковый регистр, вернуть 1
+// Если оба символа являются буквами и имеют разный регистр, вернуть 0
+// Examples
+// 'a' and 'g' returns 1
+// 'A' and 'C' returns 1
+// 'b' and 'G' returns 0
+// 'B' and 'g' returns 0
+// '0' and '?' returns -1
+// function sameCase(a, b) {
+// 	return /[A-Z]/g.test(b) && /[A-Z]/g.test(a) || /[a-z]/g.test(a) && /[a-z]/g.test(b) ? 1
+// 		: /[^a-zA-Z]/g.test(a) || /[^a-zA-Z]/g.test(b) ? -1 : 0
+// }
+// console.log(sameCase('C', 'B')); //1
+// console.log(sameCase('A', 's')); //0
+// console.log(sameCase('\t', 'Z')); //-1

@@ -1480,3 +1480,15 @@ function century(year) {
 // console.log(sameCase('C', 'B')); //1
 // console.log(sameCase('A', 's')); //0
 // console.log(sameCase('\t', 'Z')); //-1
+
+// Напишите метод, который будет получать массив целых чисел в качестве параметра и будет обрабатывать каждое число из этого массива.
+// Вернуть новый массив с обработкой каждого числа входного массива следующим образом:
+// Если число имеет целый квадратный корень, возьмите его, иначе возведите число в квадрат.
+// [4, 3, 9, 7, 2, 1] -> [2, 9, 3, 49, 4, 1]
+// function squareOrSquareRoot(array) {
+// 	return array.map(a => Number.isInteger(Math.sqrt(a)) ? Math.sqrt(a) : a * a)
+// }
+// console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
+// function squareOrSquareRoot(array) {
+// 	return array.map(a => Math.sqrt(a) % 1 == 0 ? Math.sqrt(a) : (a * a));
+// }

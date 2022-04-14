@@ -1525,3 +1525,9 @@ function century(year) {
 // function sixToast(num) {
 // 	return Math.abs(num-6)
 //  }
+
+// Напишите функцию, которая преобразует входную строку в верхний регистр.
+// function makeUpperCase(str) {
+// 	return str.toUpperCase()
+// }
+// console.log(makeUpperCase("hello"));

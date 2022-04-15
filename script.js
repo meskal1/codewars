@@ -1576,3 +1576,23 @@ function century(year) {
 // console.log(quarterOf(12));
 // console.log(quarterOf(2));
 // console.log(quarterOf(1));
+// const quarterOf = (month) => {
+// 	return Math.ceil(month / 3);
+// }
+
+// Завершите функцию, чтобы она нашла среднее значение трех переданных ей баллов и вернула буквенное значение, связанное с этой оценкой.
+// Все проверенные значения находятся в диапазоне от 0 до 100. Нет необходимости проверять наличие отрицательных значений или значений, превышающих 100.
+// Numerical Score	Letter Grade
+// 90 <= score <= 100	'A'
+// 80 <= score < 90	'B'
+// 70 <= score < 80	'C'
+// 60 <= score < 70	'D'
+// 0 <= score < 60	'F'
+// Test.assertEquals(getGrade(95,90,93), 'A')
+// Test.assertEquals(getGrade(100,85,96), 'A')
+// Test.assertEquals(getGrade(92,93,94), 'A')
+// function getGrade(s1, s2, s3) {
+// 	let score = (s1 + s2 + s3) / 3
+// 	return score >= 0 && score < 60 ? 'F' : score >= 60 && score < 70 ? 'D' : score >= 70 && score < 80 ? 'C' : score >= 80 && score < 90 ? 'B' : score >= 90 && score <= 100 ? 'A' : score
+// }
+// console.log(getGrade(95, 90, 93));

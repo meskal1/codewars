@@ -1538,12 +1538,12 @@ function century(year) {
 // assert.strictEqual(updateLight("green"), "yellow");
 // assert.strictEqual(updateLight("yellow"), "red");
 // assert.strictEqual(updateLight("red"), "green");
-function updateLight(current) {
-	return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green'
-}
-console.log(updateLight("green"));
+// function updateLight(current) {
+// 	return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green'
+// }
+// console.log(updateLight("green"));
 
-// Эта функция должна проверять, является ли фактор фактором основания.
+// Эта функция должна проверять, является ли factor фактором основания.
 // Возвратите true, если это фактор или false, если это не так.
 // О факторах
 // Факторы — это числа, которые вы можете перемножить, чтобы получить другое число.
@@ -1552,3 +1552,15 @@ console.log(updateLight("green"));
 // Вы можете использовать оператор мода (%) на большинстве языков для проверки остатка.
 // Например, 2 не является коэффициентом 7, потому что: 7 % 2 = 1
 // Примечание: основание — неотрицательное число, множитель — положительное число.
+// Test.assertEquals(checkForFactor(10,2), true)
+// Test.assertEquals(checkForFactor(63,7), true)
+// Test.assertEquals(checkForFactor(2450,5), true)
+// Test.assertEquals(checkForFactor(24612,3), true)
+// Test.assertEquals(checkForFactor(9,2), false)
+// Test.assertEquals(checkForFactor(653,7), false)
+// Test.assertEquals(checkForFactor(2453,5), false)
+// Test.assertEquals(checkForFactor(24617,3), false)
+// function checkForFactor(base, factor) {
+// 	return !(base % factor)
+// }
+// console.log(checkForFactor(10, 2));

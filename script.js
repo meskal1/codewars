@@ -1564,3 +1564,15 @@ function century(year) {
 // 	return !(base % factor)
 // }
 // console.log(checkForFactor(10, 2));
+
+// Дан месяц как целое число от 1 до 12, вернитесь к тому, к какому кварталу года он принадлежит, как целое число.
+// Например: 2-й месяц (февраль) является частью первого квартала; 6 месяц (июнь) входит во второй квартал; и месяц 11 (ноябрь) является частью четвертого квартала.
+// assert.strictEqual(quarterOf(3), 1)
+// assert.strictEqual(quarterOf(8), 3)
+// assert.strictEqual(quarterOf(11), 4)
+// const quarterOf = (month) => {
+// 	return month <= 12 && month > 9 ? 4 : month <= 9 && month > 6 ? 3 : month <= 6 && month > 3 ? 2 : 1
+// }
+// console.log(quarterOf(12));
+// console.log(quarterOf(2));
+// console.log(quarterOf(1));

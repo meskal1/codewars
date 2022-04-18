@@ -1645,11 +1645,26 @@ function century(year) {
 // Что мы тестируем
 // Мы тестируем базовые циклы и математические операции. Это для новичков, которые только изучают циклы и математические операции.
 // Продвинутым пользователям это может показаться очень простым, и они могут легко записать это в одну строку.
-function sum(numbers) {
-	return numbers.length !== 0 ? numbers.reduce((a, b) => a + b) : 0
-};
-console.log(sum([1, 5.2, 4, 0, -1]));
-console.log(sum([]));
-function sum(numbers) {
-	return numbers.reduce((a, b) => a + b, 0);
- }
+// function sum(numbers) {
+// 	return numbers.length !== 0 ? numbers.reduce((a, b) => a + b) : 0
+// };
+// console.log(sum([1, 5.2, 4, 0, -1]));
+// console.log(sum([]));
+// function sum(numbers) {
+// 	return numbers.reduce((a, b) => a + b, 0);
+//  }
+
+// Дан массив целых чисел.
+// Возвращает массив, где первый элемент — это количество положительных чисел, а второй элемент — сумма отрицательных чисел. 0 не является ни положительным, ни отрицательным.
+// Если вход представляет собой пустой массив или имеет значение null, верните пустой массив.
+// Example
+// For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+// function countPositivesSumNegatives(input) {
+// 	return input !== null && input !== [] && input.length !== 0 ? [input.filter(a => a > 0).length, input.filter(a => a < 0).length !== 0 ? input.filter(a => a < 0).reduce((a, b) => a + b) : 0] : []
+// }
+// console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));
+// console.log(countPositivesSumNegatives([]));
+// console.log(countPositivesSumNegatives(null));
+// function countPositivesSumNegatives(input) {
+// 	return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
+// }

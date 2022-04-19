@@ -1668,3 +1668,17 @@ function century(year) {
 // function countPositivesSumNegatives(input) {
 // 	return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
 // }
+
+// Ваша функция принимает два аргумента:
+// текущий возраст отца(лет)
+// текущий возраст его сына(лет)
+// Подсчитайте, сколько лет назад отец был вдвое старше сына(или через сколько лет он будет вдвое старше).
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+// 	return Math.abs((dadYearsOld - sonYearsOld) * 2 - dadYearsOld)
+// }
+// console.log(twiceAsOld(36, 7)); //22
+// console.log(twiceAsOld(55, 30)); //5
+// console.log(twiceAsOld(42, 21)); //0
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+// 	return Math.abs(dadYearsOld - 2 * sonYearsOld);
+//  }

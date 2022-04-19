@@ -1682,3 +1682,21 @@ function century(year) {
 // function twiceAsOld(dadYearsOld, sonYearsOld) {
 // 	return Math.abs(dadYearsOld - 2 * sonYearsOld);
 //  }
+
+// Простые числа Вильсона удовлетворяют следующему условию. Пусть P представляет собой простое число.
+// Тогда ((P-1)! + 1)/(P*P) должно дать целое число.
+// Ваша задача — создать функцию, возвращающую истину, если заданное число является простым числом Вильсона.
+// Test.assertEquals(amIWilson(5), true)
+// Test.assertEquals(amIWilson(9), false)
+// Test.assertEquals(amIWilson(6), false)
+// function amIWilson(p) {
+// 	let a = p - 1
+// 	if (a === 0 || a === 1) return 1;
+// 	for (let i = a - 1; i >= 1; i--) {
+// 		a *= i;
+// 	}
+// 	return ((a + 1) / (p * p)) % 1 === 0
+// }
+// console.log(amIWilson(5));
+// console.log(amIWilson(9));
+// console.log(amIWilson(6));

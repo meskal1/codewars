@@ -1710,16 +1710,19 @@ function century(year) {
 // 	false, false, true,  true]
 // Правильный ответ будет 17.
 // Подсказка: не забудьте проверить наличие неправильных значений, таких как null/undefined
-const array1 = [true, true, true, false,
-	true, true, true, true,
-	true, false, true, false,
-	true, false, false, true,
-	true, true, true, true,
-	false, false, true, true]
-function countSheeps(arrayOfSheep) {
-	return arrayOfSheep.filter(a => a === true).length
-}
-console.log(countSheeps(array1));//17
+// const array1 = [true, true, true, false,
+// 	true, true, true, true,
+// 	true, false, true, false,
+// 	true, false, false, true,
+// 	true, true, true, true,
+// 	false, false, true, true]
+// function countSheeps(arrayOfSheep) {
+// 	return arrayOfSheep.filter(a => a === true).length
+// }
+// console.log(countSheeps(array1));//17
+// function countSheeps(arrayOfSheeps) {
+// 	return arrayOfSheeps.filter(Boolean).length;
+//  }
 
 // Герой направляется в замок, чтобы выполнить свою миссию. Однако ему сказали, что замок окружен парочкой могущественных драконов! каждому дракону требуется 2 пули, чтобы быть побежденным, наш герой понятия не имеет, сколько пуль он должен нести.. Предполагая, что он собирается схватить определенное количество пуль и двигаться вперед, чтобы сразиться с другим заданным количеством драконов, выживет ли он?
 // Верните True, если да, False в противном случае :)
@@ -1729,7 +1732,7 @@ console.log(countSheeps(array1));//17
 // assert.strictEqual(hero(100, 40), true);
 // assert.strictEqual(hero(1500, 751), false);
 // assert.strictEqual(hero(0, 1), false);
-function hero(bullets, dragons) {
-	return bullets
-}
-console.log(hero(10, 5)); //true
+// function hero(bullets, dragons) {
+// 	return bullets >= dragons * 2
+// }
+// console.log(hero(10, 5)); //true

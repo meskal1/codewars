@@ -1736,3 +1736,8 @@ function century(year) {
 // 	return bullets >= dragons * 2
 // }
 // console.log(hero(10, 5)); //true
+
+// Этот код должен хранить «codewa.rs» как переменную с именем name, но он не работает. Вы можете понять, почему?
+// let a = "code";
+// let b = "wa.rs";
+// let name = a + b;

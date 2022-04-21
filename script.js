@@ -1777,12 +1777,44 @@ function century(year) {
 // 	return string.replace(/1/g, 'I').replace(/5/g, 'S').replace(/0/g, 'O')
 // }
 // console.log(correct('PAR15'));// PARIS
-const corrections = {
-	'5': 'S',
-	'0': 'O',
-	'1': 'I',
-};
+// const corrections = {
+// 	'5': 'S',
+// 	'0': 'O',
+// 	'1': 'I',
+// };
+// const correct = string => (
+// 	string.replace(/[501]/g, character => corrections[character])
+// );
 
-const correct = string => (
-	string.replace(/[501]/g, character => corrections[character])
-);
+// Вычесть сумму
+// ПРИМЕЧАНИЕ! Это ката может быть сложнее, чем обычные ката 8 кю (скажем, 7 или 6 кю).
+// Завершите функцию, которая получит входное число n, такое что n >= 10 и n < 10000, затем:
+// Сложите все цифры числа n.
+// Вычтите сумму из n, и это будет ваше новое n.
+// Если новый n находится в списке ниже, верните связанный фрукт, в противном случае вернитесь к задаче 1.
+// Пример
+// п = 325
+// сумма = 3+2+5 = 10
+// n = 325-10 = 315 (нет в списке)
+// сумма = 3+1+5 = 9
+// n = 315-9 = 306 (нет в списке)
+// сумма = 3+0+6 = 9
+// n = 306-9 = 297 (нет в списке)
+// .
+// .
+// .
+// ... пока не найдете первый n в списке ниже.
+// Там нет предварительно загруженного кода, чтобы помочь вам. Речь идет не о навыках кодирования; подумайте, прежде чем кодировать
+// Test.assertEquals(SubtractSum(10), "apple");
+// function SubtractSum(n) {
+// 	const arr = ['kiwi', 'pear', 'kiwi', 'banana', 'melon', 'banana', 'melon', 'pineapple', 'apple', 'pineapple', 'cucumber', 'pineapple', 'cucumber', 'orange', 'grape', 'orange', 'grape', 'apple', 'grape', 'cherry', 'pear', 'cherry', 'pear', 'kiwi', 'banana', 'kiwi', 'apple', 'melon', 'banana', 'melon', 'pineapple', 'melon', 'pineapple', 'cucumber', 'orange', 'apple', 'orange', 'grape', 'orange', 'grape', 'cherry', 'pear', 'cherry', 'pear', 'apple', 'pear', 'kiwi', 'banana', 'kiwi', 'banana', 'melon', 'pineapple', 'melon', 'apple', 'cucumber', 'pineapple', 'cucumber', 'orange', 'cucumber', 'orange', 'grape', 'cherry', 'apple', 'cherry', 'pear', 'cherry', 'pear', 'kiwi', 'pear', 'kiwi', 'banana', 'apple', 'banana', 'melon', 'pineapple', 'melon', 'pineapple', 'cucumber', 'pineapple', 'cucumber', 'apple', 'grape', 'orange', 'grape', 'cherry', 'grape', 'cherry', 'pear', 'cherry', 'apple', 'kiwi', 'banana', 'kiwi', 'banana', 'melon', 'banana', 'melon', 'pineapple', 'apple', 'pineapple',];
+// 	let z = n - +(n + '').split(``).reduce((a, b) => +a + +b) - 1
+// 	while (z > 100) {
+// 		z = z - +(z + '').split(``).reduce((a, b) => +a + +b) - 1
+// 	}
+// 	return arr[z]
+// }
+// console.log(SubtractSum(10)); //"apple"
+// console.log(SubtractSum(10000)); //"apple"
+// console.log(SubtractSum(4165)); //"apple"
+// console.log(SubtractSum(415)); //"apple"

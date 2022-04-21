@@ -1760,3 +1760,29 @@ function century(year) {
 // function getRealFloor(n) {
 // 	return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 //  }
+
+// Программное обеспечение для распознавания символов широко используется для оцифровки печатных текстов. Таким образом, тексты можно редактировать, искать и сохранять на компьютере.
+// Когда документы (особенно довольно старые, написанные на пишущей машинке) оцифровываются, программы распознавания символов часто допускают ошибки.
+// Ваша задача - исправить ошибки в оцифрованном тексте. Вам нужно только исправить следующие ошибки:
+// S неверно интерпретируется как 5
+// O неверно интерпретируется как 0
+// Я неправильно истолкован как 1
+// Тестовые случаи содержат числа только по ошибке.
+// assert.strictEqual(correct("L0ND0N"),"LONDON");
+// assert.strictEqual(correct("DUBL1N"),"DUBLIN");
+// assert.strictEqual(correct("51NGAP0RE"),"SINGAPORE");
+// assert.strictEqual(correct("BUDAPE5T"),"BUDAPEST");
+// assert.strictEqual(correct("PAR15"),"PARIS");
+// function correct(string) {
+// 	return string.replace(/1/g, 'I').replace(/5/g, 'S').replace(/0/g, 'O')
+// }
+// console.log(correct('PAR15'));// PARIS
+const corrections = {
+	'5': 'S',
+	'0': 'O',
+	'1': 'I',
+};
+
+const correct = string => (
+	string.replace(/[501]/g, character => corrections[character])
+);

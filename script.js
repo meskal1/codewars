@@ -1824,3 +1824,33 @@ function century(year) {
 // 	return parseInt(bin, 2)
 // }
 // console.log(binToDec("1001001"));
+
+// Ката Задание
+// У меня есть кошка и собака.
+// Я получил их одновременно с котенком/щенком. Это было по-человечески много лет назад.
+// Теперь верните их возраст как [humanYears,catYears,dogYears]
+// ПРИМЕЧАНИЯ:
+// HumanYears >= 1
+// HumanYears - только целые числа
+// Кошачьи годы
+// 15 кошачьих лет за первый год
+// +9 кошачьих лет за второй год
+// +4 кошачьих года за каждый последующий год
+// Собачьи годы
+// 15 собачьих лет за первый год
+// +9 собачьих лет за второй год
+// +5 собачьих лет за каждый последующий год
+// Test.assertSimilar(humanYearsCatYearsDogYears(1), [1,15,15]);
+// Test.assertSimilar(humanYearsCatYearsDogYears(2), [2,24,24]);
+// Test.assertSimilar(humanYearsCatYearsDogYears(10), [10,56,64]);
+// function humanYearsCatYearsDogYears(humanYears) {
+// 	const catYears = humanYears === 1 ? 15 : humanYears === 2 ? 24 : 24 + 4 * (humanYears - 2);
+// 	const dogYears = humanYears === 1 ? 15 : humanYears === 2 ? 24 : 24 + 5 * (humanYears - 2);
+// 	return [humanYears, catYears, dogYears];
+// }
+// console.log(humanYearsCatYearsDogYears(10));
+// const humanYearsCatYearsDogYears = function (y) {
+// 	if (y == 1) return [1, 15, 15]
+// 	if (y == 2) return [2, 24, 24]
+// 	return [y, (y - 2) * 4 + 24, (y - 2) * 5 + 24]
+// }

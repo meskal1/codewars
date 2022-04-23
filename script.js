@@ -1818,3 +1818,9 @@ function century(year) {
 // console.log(SubtractSum(10000)); //"apple"
 // console.log(SubtractSum(4165)); //"apple"
 // console.log(SubtractSum(415)); //"apple"
+
+// Завершите функцию, которая преобразует двоичное число (заданное в виде строки) в десятичное число.
+// function binToDec(bin) {
+// 	return parseInt(bin, 2)
+// }
+// console.log(binToDec("1001001"));

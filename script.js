@@ -1854,3 +1854,24 @@ function century(year) {
 // 	if (y == 2) return [2, 24, 24]
 // 	return [y, (y - 2) * 4 + 24, (y - 2) * 5 + 24]
 // }
+
+// Кто помнит свое время на школьном дворе, когда девочки брали цветок и рвали его лепестки, произнося каждую из следующих фраз каждый раз, когда отрывался лепесток:
+// I love you
+// a little
+// a lot
+// passionately
+// madly
+// not at all
+// Когда был сорван последний лепесток, раздались крики волнения, мечты, нахлынувшие мысли и эмоции.
+// Ваша цель в этом ката — определить, какую фразу девушки сказали бы о цветке с заданным количеством лепестков, где nb_petals > 0.
+// assert.strictEqual(howMuchILoveYou(7),"I love you")
+// assert.strictEqual(howMuchILoveYou(3),"a lot")
+// assert.strictEqual(howMuchILoveYou(6),"not at all")
+// function howMuchILoveYou(nbPetals) {
+// 	const arr = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
+// 	return arr[nbPetals % arr.length ? nbPetals % arr.length - 1 : arr.length - 1]
+// }
+// console.log(howMuchILoveYou(7));
+// function howMuchILoveYou(n) {
+// 	return arr[(n - 1) % arr.length]
+// }

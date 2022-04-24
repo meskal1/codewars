@@ -1875,3 +1875,23 @@ function century(year) {
 // function howMuchILoveYou(n) {
 // 	return arr[(n - 1) % arr.length]
 // }
+
+// Дети пьют тодди.
+// Подростки пьют колу.
+// Молодые люди пьют пиво.
+// Взрослые пьют виски.
+// Сделайте функцию, которая получает возраст и возвращает то, что они пьют.
+// 	Правила:
+// Дети до 14 лет.
+// Подростки до 18 лет.
+// Молодые до 21 года.
+// У взрослых 21 и более.
+// 13 -- > "drink toddy"
+// 17 -- > "drink coke"
+// 18 -- > "drink beer"
+// 20 -- > "drink beer"
+// 30 -- > "drink whisky"
+// function peopleWithAgeDrink(old) {
+// 	return old >= 21 ? "drink whisky" : old >= 18 ? "drink beer" : old >= 14 ? "drink coke" : 'drink toddy'
+// };
+// console.log(peopleWithAgeDrink(15));

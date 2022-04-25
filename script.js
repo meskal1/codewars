@@ -1900,18 +1900,30 @@ function century(year) {
 // Вход :: 1
 // Выход :: "Один".
 // Если ваш язык поддерживает это, попробуйте использовать оператор switch.
-function switchItUp(number) {
-	switch (number) {
-		case 0: return 'Zero'
-		case 1: return 'One'
-		case 2: return 'Two'
-		case 3: return 'Three'
-		case 4: return 'Four'
-		case 5: return 'Five'
-		case 6: return 'Six'
-		case 7: return 'Seven'
-		case 8: return 'Eight'
-		case 9: return 'Nine'
-	}
+// function switchItUp(number) {
+// 	switch (number) {
+// 		case 0: return 'Zero'
+// 		case 1: return 'One'
+// 		case 2: return 'Two'
+// 		case 3: return 'Three'
+// 		case 4: return 'Four'
+// 		case 5: return 'Five'
+// 		case 6: return 'Six'
+// 		case 7: return 'Seven'
+// 		case 8: return 'Eight'
+// 		case 9: return 'Nine'
+// 	}
+// }
+// console.log(switchItUp(1));
+
+// После тяжелой четверти в офисе вы решаете немного отдохнуть в отпуске. Итак, вы забронируете рейс для себя и своей девушки и постараетесь оставить весь беспорядок позади.
+// Вам понадобится арендованный автомобиль, чтобы передвигаться в отпуске. Менеджер по аренде автомобилей делает вам несколько хороших предложений.
+// Каждый день аренды автомобиля стоит 40 долларов. Если вы арендуете автомобиль на 7 или более дней, вы получаете скидку в размере 50 долларов США. В качестве альтернативы, если вы арендуете автомобиль на 3 или более дней, вы получаете скидку в размере 20 долларов США.
+// Напишите код, который выдает общую сумму за разные дни (d).
+// assert.strictEqual(rentalCarCost(3), 100);
+// assert.strictEqual(rentalCarCost(4), 140);
+// assert.strictEqual(rentalCarCost(5), 180);
+function rentalCarCost(d) {
+	return d >= 7 ? d * 40 - 50 : d >= 3 ? d * 40 - 20 : d * 40
 }
-console.log(switchItUp(1));
+console.log(rentalCarCost(5));

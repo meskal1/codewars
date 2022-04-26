@@ -1923,7 +1923,20 @@ function century(year) {
 // assert.strictEqual(rentalCarCost(3), 100);
 // assert.strictEqual(rentalCarCost(4), 140);
 // assert.strictEqual(rentalCarCost(5), 180);
-function rentalCarCost(d) {
-	return d >= 7 ? d * 40 - 50 : d >= 3 ? d * 40 - 20 : d * 40
+// function rentalCarCost(d) {
+// 	return d >= 7 ? d * 40 - 50 : d >= 3 ? d * 40 - 20 : d * 40
+// }
+// console.log(rentalCarCost(5));
+
+// Ваша задача — создать функцию isDivideBy (или is_divide_by), чтобы проверять, делится ли целое число на оба целых числа a и b.
+// Несколько случаев:
+// (-12, 2, -6)  ->  true
+// (-12, 2, -5)  ->  false
+// (45, 1, 6)    ->  false
+// (45, 5, 15)   ->  true
+// (4, 1, 4)     ->  true
+// (15, -5, 3)   ->  true
+function isDivideBy(number, a, b) {
+	return !(number % a || number % b)
 }
-console.log(rentalCarCost(5));
+console.log(isDivideBy(15, -5, 3));

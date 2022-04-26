@@ -1936,7 +1936,20 @@ function century(year) {
 // (45, 5, 15)   ->  true
 // (4, 1, 4)     ->  true
 // (15, -5, 3)   ->  true
-function isDivideBy(number, a, b) {
-	return !(number % a || number % b)
-}
-console.log(isDivideBy(15, -5, 3));
+// function isDivideBy(number, a, b) {
+// 	return !(number % a || number % b)
+// }
+// console.log(isDivideBy(15, -5, 3));
+
+// Таракан – одно из самых быстрых насекомых.Напишите функцию, которая получает скорость в км / ч и возвращает ее в см / с с округлением в меньшую сторону до целого числа(= с точностью до пола).
+// 	Например:
+// 1, 08 -- > 30
+// Примечание! Ввод представляет собой вещественное число(фактический тип зависит от языка) и >= 0. Результат должен быть целым числом.
+// assert.strictEqual(cockroachSpeed(1.08), 30);
+// assert.strictEqual(cockroachSpeed(1.09), 30);
+// assert.strictEqual(cockroachSpeed(0), 0);
+// function cockroachSpeed(s) {
+// 	return Math.floor(1000 / 36 * s)
+// }
+// console.log(cockroachSpeed(1.08));
+// console.log(cockroachSpeed(1.09));

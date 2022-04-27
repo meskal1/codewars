@@ -1965,3 +1965,21 @@ function century(year) {
 // 	return 180 - a - b
 // }
 // console.log(otherAngle(10, 20));//150
+
+// Вернуть N-е четное число
+// Пример (ввод --> вывод)
+// 1 --> 0 (первое четное число равно 0)
+// 3 --> 4 (третье четное число равно 4 (0, 2, 4))
+// 100 --> 198
+// 1298734 --> 2597466
+// Ввод не будет 0.
+// Test.assertEquals(nthEven(1), 0, "Wrong Value!");
+// Test.assertEquals(nthEven(2), 2, "Wrong Value!");
+// Test.assertEquals(nthEven(3), 4, "Wrong Value!");
+// Test.assertEquals(nthEven(100), 198, "Wrong Value!");
+// Test.assertEquals(nthEven(1298734), 2597466, "Wrong Value!");
+function nthEven(n) {
+	return n * 2 - 2
+}
+console.log(nthEven(100));
+console.log(nthEven(1298734));

@@ -1990,7 +1990,23 @@ function century(year) {
 // assert.strictEqual(simpleMultiplication(8),64,'Should return given argument times eight...')
 // assert.strictEqual(simpleMultiplication(4),32,'Should return given argument times eight...')
 // assert.strictEqual(simpleMultiplication(5),45,'Should return given argument times nine...')
-function simpleMultiplication(number) {
-	return number % 2 ? number * 9 : number * 8
-}
-console.log(simpleMultiplication(8));
+// function simpleMultiplication(number) {
+// 	return number % 2 ? number * 9 : number * 8
+// }
+// console.log(simpleMultiplication(8));
+
+// Функция голов Месси
+// Месси – футболист, забивший голы в трех лигах:
+// Ла Лига
+// Копа дель Рей
+// Чемпионы
+// Завершите функцию, чтобы вернуть его общее количество голов во всех трех лигах.
+// 	Примечание: ввод всегда будет действительным.
+// 		Например:
+// 5, 10, 2  -->  17
+// Test.assertEquals(goals(0,0,0), 0)
+// Test.assertEquals(goals(43, 10, 5), 58)
+// function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+// 	return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+// }
+// console.log(goals(5, 10, 2));

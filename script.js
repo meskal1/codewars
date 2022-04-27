@@ -2050,3 +2050,18 @@ function century(year) {
 // 	return [...new Set(a)]
 // }
 // console.log(distinct([1, 1, 2]));
+
+// Вы можете напечатать свое имя на рекламном щите. Узнайте, сколько это будет стоить вам. Каждое письмо имеет цену по умолчанию 30 фунтов стерлингов, но она может быть другой, если вам задано 2 параметра вместо 1.
+// Вы не можете использовать оператор множителя "*".
+// Если бы вас звали Чон-Хо Аристотелис, реклама стоила бы 600 фунтов стерлингов. 20 букв * 30 = 600 (пробел считается буквой).
+// Test.assertEquals(billboard("Paolo Oli"), 270);
+// Test.assertEquals(billboard("Hjalmar Liupold",40), 600);
+// Test.assertEquals(billboard("Simon Eadwulf"), 390);
+// function billboard(name, price = 30) {
+// 	let a = 0
+// 	for (let i = 0; i < name.split(``).length; i++) {
+// 		a += price
+// 	}
+// 	return a
+// }
+// console.log(billboard("Paolo Oli"));

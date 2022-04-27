@@ -1953,3 +1953,15 @@ function century(year) {
 // }
 // console.log(cockroachSpeed(1.08));
 // console.log(cockroachSpeed(1.09));
+
+// Вам даны два внутренних угла (в градусах) треугольника.
+// Напишите функцию, возвращающую 3-е число.
+// Примечание: будут проверены только положительные целые числа.
+// assert.strictEqual(otherAngle(30, 60), 90);
+// assert.strictEqual(otherAngle(60, 60), 60);
+// assert.strictEqual(otherAngle(43, 78), 59);
+// assert.strictEqual(otherAngle(10, 20), 150);
+// function otherAngle(a, b) {
+// 	return 180 - a - b
+// }
+// console.log(otherAngle(10, 20));//150

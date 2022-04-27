@@ -2038,7 +2038,15 @@ function century(year) {
 // В этой игре герой движется слева направо. Игрок бросает кубик и два раза передвигается на число клеток, указанное кубиком.
 // Создайте функцию для терминальной игры, которая берет текущую позицию героя и бросок (1-6) и возвращает новую позицию.
 // Test.assertEquals(move(2, 5), 12);
-function move(position, roll) {
-	return position + roll * 2
-}
-console.log(move(2, 5));
+// function move(position, roll) {
+// 	return position + roll * 2
+// }
+// console.log(move(2, 5));
+
+// Определите функцию, которая удаляет дубликаты из массива чисел и возвращает его в качестве результата.
+// Порядок последовательности должен оставаться прежним.
+// Test.assertSimilar(distinct([1,1,2]), [1,2]);
+// function distinct(a) {
+// 	return [...new Set(a)]
+// }
+// console.log(distinct([1, 1, 2]));

@@ -2016,3 +2016,9 @@ function century(year) {
 // 	return i * 2
 // }
 // console.log(doubleInteger(2));
+
+// Назначение переменной
+// Исправьте назначения переменных, чтобы этот код сохранял строку «devLab» в имени переменной.
+let a = "dev";
+let b = "Lab";
+let name = a + b;

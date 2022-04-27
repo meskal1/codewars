@@ -2010,3 +2010,9 @@ function century(year) {
 // 	return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 // }
 // console.log(goals(5, 10, 2));
+
+// Код так быстро, как вы можете! Вам нужно удвоить целое число и вернуть его.
+// function doubleInteger(i) {
+// 	return i * 2
+// }
+// console.log(doubleInteger(2));

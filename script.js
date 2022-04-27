@@ -2019,6 +2019,18 @@ function century(year) {
 
 // Назначение переменной
 // Исправьте назначения переменных, чтобы этот код сохранял строку «devLab» в имени переменной.
-let a = "dev";
-let b = "Lab";
-let name = a + b;
+// let a = "dev";
+// let b = "Lab";
+// let name = a + b;
+
+// Исправить функцию
+// Я создал эту функцию, чтобы добавить пять к любому переданному ей числу и вернуть новое значение. Он не выдает никаких ошибок, но возвращает неправильный номер.
+// Можете ли вы помочь мне исправить функцию?
+// Test.assertEquals(addFive(5), 10)
+// Test.assertEquals(addFive(0), 5)
+// Test.assertEquals(addFive(-5), 0)
+// function addFive(num) {
+// 	var total = num + 5
+// 	return total
+// }
+// console.log(addFive(5));

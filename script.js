@@ -2034,3 +2034,11 @@ function century(year) {
 // 	return total
 // }
 // console.log(addFive(5));
+
+// В этой игре герой движется слева направо. Игрок бросает кубик и два раза передвигается на число клеток, указанное кубиком.
+// Создайте функцию для терминальной игры, которая берет текущую позицию героя и бросок (1-6) и возвращает новую позицию.
+// Test.assertEquals(move(2, 5), 12);
+function move(position, roll) {
+	return position + roll * 2
+}
+console.log(move(2, 5));

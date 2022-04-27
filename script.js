@@ -1978,8 +1978,19 @@ function century(year) {
 // Test.assertEquals(nthEven(3), 4, "Wrong Value!");
 // Test.assertEquals(nthEven(100), 198, "Wrong Value!");
 // Test.assertEquals(nthEven(1298734), 2597466, "Wrong Value!");
-function nthEven(n) {
-	return n * 2 - 2
+// function nthEven(n) {
+// 	return n * 2 - 2
+// }
+// console.log(nthEven(100));
+// console.log(nthEven(1298734));
+
+// Это ката об умножении заданного числа на восемь, если оно четное, и на девять в противном случае.
+// assert.strictEqual(simpleMultiplication(2),16,'Should return double given argument..')
+// assert.strictEqual(simpleMultiplication(1),9,'Should return double given argument..')
+// assert.strictEqual(simpleMultiplication(8),64,'Should return given argument times eight...')
+// assert.strictEqual(simpleMultiplication(4),32,'Should return given argument times eight...')
+// assert.strictEqual(simpleMultiplication(5),45,'Should return given argument times nine...')
+function simpleMultiplication(number) {
+	return number % 2 ? number * 9 : number * 8
 }
-console.log(nthEven(100));
-console.log(nthEven(1298734));
+console.log(simpleMultiplication(8));

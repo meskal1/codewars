@@ -2089,3 +2089,22 @@ function century(year) {
 // console.log(expressionMatter(1, 2, 3));
 // console.log(expressionMatter(2, 1, 2));
 // console.log(expressionMatter(1, 3, 1));//5
+
+// Напишите универсальную цепочку функций
+// Напишите универсальную цепочку функций, которая принимает начальное значение и массив функций для его выполнения
+// Вход для каждой функции является выходом предыдущей функции (за исключением первой функции, которая принимает начальное значение в качестве своего входа). Возвращает окончательное значение после завершения выполнения.
+// function add(num) {
+// 	return num + 1;
+// }
+// function mult(num) {
+// 	return num * 30;
+// }
+// chain(2, [add, mult]);
+// // returns 90;
+// function chain(input, fs) {
+// 	let result = input;
+// 	for (let i = 0; i < fs.length; i++)
+// 		result = fs[i](result);
+// 	return result;
+// }
+// console.log(chain(2, [add, mult]));

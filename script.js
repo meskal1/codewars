@@ -2132,3 +2132,14 @@ function century(year) {
 // console.log(direction("S", 180));//"N"
 // console.log(direction("S", -540));//"N"
 
+// Функция Math.min перестала работать, поэтому приходится использовать собственную функцию. У нас хорошее начало, но эта функция, похоже, не справляется со всем должным образом. Добавьте соответствующие проверки, чтобы возвращать NaN для всего, что не является фактическим числом, за исключением обработки нулевого значения как 0.
+// Примечание. Эта функция min не должна обрабатывать более двух аргументов.
+// function min(a, b) {
+// 	return isNaN(a) || isNaN(b) ? NaN : ((a < b) ? +a : +b);
+// }
+// console.log(min(1, -2.5));
+// console.log(min(1.5, NaN));
+// console.log(min(1.5, undefined));
+// console.log(min(-Infinity, Infinity));
+// console.log(min(null, 2.5));
+// console.log(min(NaN, -1.5));

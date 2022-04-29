@@ -2108,3 +2108,27 @@ function century(year) {
 // 	return result;
 // }
 // console.log(chain(2, [add, mult]));
+
+// У вас есть компас с 8 ветрами, например:
+// Вы получаете направление, в котором смотрите (одно из 8 направлений: С, СВ, В, ЮВ, Ю, ЮЗ, З, СЗ) и определенный градус поворота (кратное 45, между -1080 и 1080); положительный означает по часовой стрелке, а отрицательный означает против часовой стрелки.
+// Вернитесь в том направлении, в котором вы столкнетесь после поворота.
+// "S",  180  -->  "N"
+// "SE", -45  -->  "E"
+// "W",  495  -->  "NE"
+// function direction(facing, turn) {
+// 	const compass = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+// 	const degreesTurn = turn / 45 % 8;
+// 	const directionIndex = compass.indexOf(facing);
+// 	const b = (directionIndex || 8) + degreesTurn;
+// 	return compass[
+// 		b < 0 ? 8 + b :
+// 			b >= 8 ? b - 8 :
+// 				b]
+// }
+// console.log(direction("W", 495));//"NE"
+// console.log(direction("SE", -45));//"E"
+// console.log(direction("N", -450));//"W"
+// console.log(direction("W", -315));//"NW"
+// console.log(direction("S", 180));//"N"
+// console.log(direction("S", -540));//"N"
+

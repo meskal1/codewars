@@ -2143,3 +2143,15 @@ function century(year) {
 // console.log(min(-Infinity, Infinity));
 // console.log(min(null, 2.5));
 // console.log(min(NaN, -1.5));
+
+// Завершите функцию keysAndValues, чтобы она принимала объект и возвращала ключи и значения в виде отдельных массивов.
+// Пример:
+// keysAndValues({a: 1, b: 2, c: 3}) // должно возвращать [['a', 'b', 'c'], [1, 2, 3]]
+// Точки стиля (только JS/CoffeeScript): этот ката проверяет только данные, которые используют литеральную нотацию объекта (простые объекты). Для дополнительного стиля, можете ли вы заставить свой метод проверять объекты, которые расширяют их прототип?
+// assert.deepEqual(keysAndValues({ a: 1, b: 2, c: 3 }), [['a', 'b', 'c'], [1, 2, 3]]);
+// assert.deepEqual(keysAndValues({}), [[], []]);
+// assert.deepEqual(keysAndValues({ 1: 'a', 2: 'b', 3: 'c' }), [['1', '2', '3'], ['a', 'b', 'c']]);
+// function keysAndValues(data) {
+// 	return [Object.keys(data), Object.values(data)]
+// }
+// console.log(keysAndValues({ a: 1, b: 2, c: 3 }));

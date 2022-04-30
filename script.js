@@ -2155,3 +2155,19 @@ function century(year) {
 // 	return [Object.keys(data), Object.values(data)]
 // }
 // console.log(keysAndValues({ a: 1, b: 2, c: 3 }));
+
+// Для этого упражнения вы должны создать класс JavaScript, подобный объекту, с именем «Животное», который принимает аргументы name и type. Он должен иметь метод toString, который возвращает удобочитаемую строку, указывающую переданную информацию аргумента. Он также должен позволять устанавливать свойство имени.
+// Ниже приведен пример того, как будет использоваться окончательный код и какими должны быть ожидаемые возвращаемые значения:
+// create your Animal class like object here
+class Animal {
+	constructor(name, type) {
+		this.name = name;
+		this.type = type;
+	}
+	toString() { return `${this.name} is a ${this.type}` }
+}
+const dog = new Animal('Max', 'dog');
+dog.toString(); // should return 'Max is a dog'
+dog.type; // should == 'dog'
+dog.name; // should == 'Max'
+dog.name = 'Lassie'; // should set name to 'Lassie'

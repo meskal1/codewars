@@ -2159,15 +2159,34 @@ function century(year) {
 // Для этого упражнения вы должны создать класс JavaScript, подобный объекту, с именем «Животное», который принимает аргументы name и type. Он должен иметь метод toString, который возвращает удобочитаемую строку, указывающую переданную информацию аргумента. Он также должен позволять устанавливать свойство имени.
 // Ниже приведен пример того, как будет использоваться окончательный код и какими должны быть ожидаемые возвращаемые значения:
 // create your Animal class like object here
-class Animal {
-	constructor(name, type) {
-		this.name = name;
-		this.type = type;
-	}
-	toString() { return `${this.name} is a ${this.type}` }
-}
-const dog = new Animal('Max', 'dog');
-dog.toString(); // should return 'Max is a dog'
-dog.type; // should == 'dog'
-dog.name; // should == 'Max'
-dog.name = 'Lassie'; // should set name to 'Lassie'
+// class Animal {
+// 	constructor(name, type) {
+// 		this.name = name;
+// 		this.type = type;
+// 	}
+// 	toString() { return `${this.name} is a ${this.type}` }
+// }
+// const dog = new Animal('Max', 'dog');
+// dog.toString(); // should return 'Max is a dog'
+// dog.type; // should == 'dog'
+// dog.name; // should == 'Max'
+// dog.name = 'Lassie'; // should set name to 'Lassie'
+
+// Есть встроенная функция, называемая повторением строк. Он повторяет заданную строку N раз.
+// Пример:
+// 'а'.repeat(3) === 'ааа'
+// 'по всему миру' .repeat(2) === 'по всему миру по всему миру'
+// Это может быть очень полезно для таких вещей, как выравнивание текста.
+// console.log('Корневой узел')
+// console.log(' '.repeat(4) + 'Поддерево')
+// console.log(' '.repeat(8) + 'Углубленное поддерево')
+// Теперь представьте, что эта функция не была встроенной. Можете ли вы реализовать это самостоятельно?
+// String.prototype.repeat = function (count) {
+// 	let str = '' + this;
+// 	count = +count;
+// 	let rpt = '';
+// 	for (let i = 0; i < count; i++) {
+// 		rpt += str;
+// 	}
+// 	return rpt;
+// }

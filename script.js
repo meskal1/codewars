@@ -2190,3 +2190,34 @@ function century(year) {
 // 	}
 // 	return rpt;
 // }
+// String.prototype.repeat = function(count) {
+// 	return new Array(count + 1).join(this);
+//  };
+
+// Implement all required functions in order to create the following sentences by calling those functions:
+// Adam(has(a(dog()))); // must return "Adam has a dog."
+// The(name(of(the(dog(is(also(Adam()))))))); // must return "The name of the dog is also Adam."
+// function Adam(str = '.') { return str !== '.' ? 'Adam ' + str : 'Adam' + str }
+// function has(str = '.') { return str !== '.' ? 'has ' + str : 'has' + str }
+// function a(str = '.') { return str !== '.' ? 'a ' + str : 'a' + str }
+// function dog(str = '.') { return str !== '.' ? 'dog ' + str : 'dog' + str }
+// function The(str = '.') { return str !== '.' ? 'The ' + str : 'The' + str }
+// function name(str = '.') { return str !== '.' ? 'name ' + str : 'name' + str }
+// function of(str = '.') { return str !== '.' ? 'of ' + str : 'of' + str }
+// function the(str = '.') { return str !== '.' ? 'the ' + str : 'the' + str }
+// function is(str = '.') { return str !== '.' ? 'is ' + str : 'is' + str }
+// function also(str = '.') { return str !== '.' ? 'also ' + str : 'also' + str }
+// function getName(args) {
+// 	if (args.length==0) {return arguments.callee.caller.name +'.' }
+// 		return arguments.callee.caller.name +' '+ args[0];
+// 	};
+// 	function Adam() {return getName(arguments)}
+// 	function has() {return getName(arguments)}
+// 	function a() {return getName(arguments)}
+// 	function dog() {return getName(arguments)}
+// 	function The() {return getName(arguments)}
+// 	function name() {return getName(arguments)}
+// 	function of() {return getName(arguments)}
+// 	function the() {return getName(arguments)}
+// 	function is() {return getName(arguments)}
+// 	function also() {return getName(arguments)}

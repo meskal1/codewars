@@ -2235,3 +2235,12 @@ function century(year) {
 // function getCount(str) {
 // 	return (str.match(/[aeiou]/ig)||[]).length;
 //  }
+
+// Добро пожаловать. В этой ката вас просят возвести в квадрат каждую цифру числа и соединить их.
+// Например, если мы пропустим через функцию 9119, получится 811181, потому что 92 — это 81, а 12 — это 1.
+// Примечание. Функция принимает целое число и возвращает целое число.
+// assert.strictEqual(squareDigits(3212), 9414);
+// function squareDigits(num) {
+// 	return +('' + num).split(``).map(a => +a * +a).join(``)
+// }
+// console.log(squareDigits(3212));

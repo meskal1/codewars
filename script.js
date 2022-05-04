@@ -2221,3 +2221,17 @@ function century(year) {
 // 	function the() {return getName(arguments)}
 // 	function is() {return getName(arguments)}
 // 	function also() {return getName(arguments)}
+
+// Возвращает количество (количество) гласных в заданной строке.
+// Мы будем рассматривать a, e, i, o, u как гласные для этой Ката (но не y).
+// Входная строка будет состоять только из строчных букв и/или пробелов.
+// assert.strictEqual(getCount("abracadabra"), 5) ;
+// function getCount(str) {
+// 	let a = str.match(/[aeiou]/g)
+// 	return a ? a.length : 0
+// }
+// console.log(getCount('abracadabra'));
+// console.log(getCount('my pyx'));
+// function getCount(str) {
+// 	return (str.match(/[aeiou]/ig)||[]).length;
+//  }

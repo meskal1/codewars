@@ -2255,8 +2255,30 @@ function century(year) {
 // Во входной строке всегда будет хотя бы одно число.
 // Выходная строка должна состоять из двух чисел, разделенных одним пробелом, причем наибольшее число должно быть первым.
 // assert.strictEqual(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"), "42 -9");
-function highAndLow(numbers) {
-	let a = numbers.split(` `).map(a => +a)
-	return `${Math.max(...a)} ${Math.min(...a)}`
-}
-console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'));
+// function highAndLow(numbers) {
+// 	let a = numbers.split(` `).map(a => +a)
+// 	return `${Math.max(...a)} ${Math.min(...a)}`
+// }
+// console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'));
+
+// Вам дадут слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, вернуть средний символ. Если длина слова четная, верните средние 2 символа.
+// #Примеры:
+// Kata.getMiddle("test") должен возвращать "es"
+// Kata.getMiddle("testing") должен возвращать "t"
+// Kata.getMiddle("middle") должен возвращать "dd"
+// Kata.getMiddle("A") должен вернуть "A"
+// #Вход
+// Слово (строка) длиной 0 < str < 1000 (в javascript вы можете получить чуть больше 1000 в некоторых тестовых примерах из-за ошибки в тестовых примерах). Вам не нужно тестировать для этого. Это только здесь, чтобы сказать вам, что вам не нужно беспокоиться о тайм-ауте вашего решения.
+// #Выход
+// Средний символ (символы) слова, представленного в виде строки.
+
+// Test.assertEquals(getMiddle("testing"),"t");
+// Test.assertEquals(getMiddle("middle"),"dd");
+// function getMiddle(s) {
+// 	let a = s.length
+// 	return a % 2 ? s[(a - 1) / 2] : `${s[a / 2 - 1]}${s[a / 2]}`
+// }
+// console.log(getMiddle('test'));
+// function getMiddle(s) {
+// 	return s.slice((s.length - 1) / 2, s.length / 2 + 1);
+// }

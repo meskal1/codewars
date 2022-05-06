@@ -2232,3 +2232,22 @@ function century(year) {
 // }
 // console.log(descendingOrder(42145));
 // console.log(descendingOrder(1021));
+
+// Проверьте, содержит ли строка одинаковое количество «x» и «o». Метод должен возвращать логическое значение и не учитывать регистр. Строка может содержать любой символ.
+// Примеры ввода/вывода:
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// XO("zpzpzpp") => true // при отсутствии 'x' и 'o' должно возвращаться значение true
+// XO("zzoo") => false
+// function XO(str) {
+// 	let a = str.toLowerCase().split(``).filter(a => a === 'x').length
+// 	let b = str.toLowerCase().split(``).filter(b => b === 'o').length
+// 	return a === b
+// }
+// console.log(XO('zpzxopzPp'));
+// function XO(str) {
+// 	let x = str.match(/x/gi);
+// 	let o = str.match(/o/gi);
+// 	return (x && x.length) === (o && o.length);
+//  }

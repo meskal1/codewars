@@ -2222,63 +2222,13 @@ function century(year) {
 // 	function is() {return getName(arguments)}
 // 	function also() {return getName(arguments)}
 
-// Возвращает количество (количество) гласных в заданной строке.
-// Мы будем рассматривать a, e, i, o, u как гласные для этой Ката (но не y).
-// Входная строка будет состоять только из строчных букв и/или пробелов.
-// assert.strictEqual(getCount("abracadabra"), 5) ;
-// function getCount(str) {
-// 	let a = str.match(/[aeiou]/g)
-// 	return a ? a.length : 0
+// Ваша задача состоит в том, чтобы создать функцию, которая может принимать любое неотрицательное целое число в качестве аргумента и возвращать его с цифрами в порядке убывания. По сути, переставьте цифры, чтобы получить максимально возможное число.
+// Примеры:
+// Input: 42145 Output: 54421
+// Input: 145263 Output: 654321
+// Input: 123456789 Output: 987654321
+// function descendingOrder(n) {
+// 	return +(n + '').split(``).sort().reverse().join(``)
 // }
-// console.log(getCount('abracadabra'));
-// console.log(getCount('my pyx'));
-// function getCount(str) {
-// 	return (str.match(/[aeiou]/ig)||[]).length;
-//  }
-
-// Добро пожаловать. В этой ката вас просят возвести в квадрат каждую цифру числа и соединить их.
-// Например, если мы пропустим через функцию 9119, получится 811181, потому что 92 — это 81, а 12 — это 1.
-// Примечание. Функция принимает целое число и возвращает целое число.
-// assert.strictEqual(squareDigits(3212), 9414);
-// function squareDigits(num) {
-// 	return +('' + num).split(``).map(a => +a * +a).join(``)
-// }
-// console.log(squareDigits(3212));
-
-// В этом небольшом задании вам дается строка чисел, разделенных пробелами, и вы должны вернуть наибольшее и наименьшее число.
-// Примеры
-// HighAndLow("1 2 3 4 5"); // вернуть "5 1"
-// highAndLow("1 2 -3 4 5"); // вернуть "5 -3"
-// highAndLow("1 9 3 4 -5"); // вернуть "9 -5"
-// Примечания
-// Все номера действительны Int32, их не нужно проверять.
-// Во входной строке всегда будет хотя бы одно число.
-// Выходная строка должна состоять из двух чисел, разделенных одним пробелом, причем наибольшее число должно быть первым.
-// assert.strictEqual(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"), "42 -9");
-// function highAndLow(numbers) {
-// 	let a = numbers.split(` `).map(a => +a)
-// 	return `${Math.max(...a)} ${Math.min(...a)}`
-// }
-// console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4'));
-
-// Вам дадут слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, вернуть средний символ. Если длина слова четная, верните средние 2 символа.
-// #Примеры:
-// Kata.getMiddle("test") должен возвращать "es"
-// Kata.getMiddle("testing") должен возвращать "t"
-// Kata.getMiddle("middle") должен возвращать "dd"
-// Kata.getMiddle("A") должен вернуть "A"
-// #Вход
-// Слово (строка) длиной 0 < str < 1000 (в javascript вы можете получить чуть больше 1000 в некоторых тестовых примерах из-за ошибки в тестовых примерах). Вам не нужно тестировать для этого. Это только здесь, чтобы сказать вам, что вам не нужно беспокоиться о тайм-ауте вашего решения.
-// #Выход
-// Средний символ (символы) слова, представленного в виде строки.
-
-// Test.assertEquals(getMiddle("testing"),"t");
-// Test.assertEquals(getMiddle("middle"),"dd");
-// function getMiddle(s) {
-// 	let a = s.length
-// 	return a % 2 ? s[(a - 1) / 2] : `${s[a / 2 - 1]}${s[a / 2]}`
-// }
-// console.log(getMiddle('test'));
-// function getMiddle(s) {
-// 	return s.slice((s.length - 1) / 2, s.length / 2 + 1);
-// }
+// console.log(descendingOrder(42145));
+// console.log(descendingOrder(1021));

@@ -2222,32 +2222,21 @@ function century(year) {
 // 	function is() {return getName(arguments)}
 // 	function also() {return getName(arguments)}
 
-// Ваша задача состоит в том, чтобы создать функцию, которая может принимать любое неотрицательное целое число в качестве аргумента и возвращать его с цифрами в порядке убывания. По сути, переставьте цифры, чтобы получить максимально возможное число.
-// Примеры:
-// Input: 42145 Output: 54421
-// Input: 145263 Output: 654321
-// Input: 123456789 Output: 987654321
-// function descendingOrder(n) {
-// 	return +(n + '').split(``).sort().reverse().join(``)
-// }
-// console.log(descendingOrder(42145));
-// console.log(descendingOrder(1021));
-
-// Проверьте, содержит ли строка одинаковое количество «x» и «o». Метод должен возвращать логическое значение и не учитывать регистр. Строка может содержать любой символ.
-// Примеры ввода/вывода:
-// XO("ooxx") => true
-// XO("xooxx") => false
-// XO("ooxXm") => true
-// XO("zpzpzpp") => true // при отсутствии 'x' и 'o' должно возвращаться значение true
-// XO("zzoo") => false
-// function XO(str) {
-// 	let a = str.toLowerCase().split(``).filter(a => a === 'x').length
-// 	let b = str.toLowerCase().split(``).filter(b => b === 'o').length
-// 	return a === b
-// }
-// console.log(XO('zpzxopzPp'));
-// function XO(str) {
-// 	let x = str.match(/x/gi);
-// 	let o = str.match(/o/gi);
-// 	return (x && x.length) === (o && o.length);
-//  }
+// Дезоксирибонуклеиновая кислота (ДНК) представляет собой химическое вещество, находящееся в ядре клеток и несущее «инструкции» по развитию и функционированию живых организмов.
+// Если вы хотите узнать больше: http://en.wikipedia.org/wiki/DNA
+// В цепочках ДНК символы «А» и «Т» дополняют друг друга, как «С» и «G». Ваша функция получает одну сторону ДНК (строка, кроме Haskell); вам нужно вернуть другую дополнительную сторону. Нить ДНК никогда не бывает пустой или ДНК вообще не существует (опять же, кроме Haskell).
+// "ATTGC" --> "TAACG"
+// "GTAT" --> "CATA"
+// dnaStrand []        `shouldBe` []
+// dnaStrand [A,T,G,C] `shouldBe` [T,A,C,G]
+// dnaStrand [G,T,A,T] `shouldBe` [C,A,T,A]
+// dnaStrand [A,A,A,A] `shouldBe` [T,T,T,T]
+function DNAStrand(dna) {
+	return dna.split(``).map(a =>
+		a === 'A' ? 'T' :
+			a === 'T' ? 'A' :
+				a === 'C' ? 'G' : 'C'
+	).join(``)
+}
+console.log(DNAStrand("ATTGC"));
+const DNAStrand = dna => dna.replace(/./g, m => 'CGAT'['GCTA'.indexOf(m)]);

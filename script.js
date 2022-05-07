@@ -2231,12 +2231,23 @@ function century(year) {
 // dnaStrand [A,T,G,C] `shouldBe` [T,A,C,G]
 // dnaStrand [G,T,A,T] `shouldBe` [C,A,T,A]
 // dnaStrand [A,A,A,A] `shouldBe` [T,T,T,T]
-function DNAStrand(dna) {
-	return dna.split(``).map(a =>
-		a === 'A' ? 'T' :
-			a === 'T' ? 'A' :
-				a === 'C' ? 'G' : 'C'
-	).join(``)
-}
-console.log(DNAStrand("ATTGC"));
-const DNAStrand = dna => dna.replace(/./g, m => 'CGAT'['GCTA'.indexOf(m)]);
+// function DNAStrand(dna) {
+// 	return dna.split(``).map(a =>
+// 		a === 'A' ? 'T' :
+// 			a === 'T' ? 'A' :
+// 				a === 'C' ? 'G' : 'C'
+// 	).join(``)
+// }
+// console.log(DNAStrand("ATTGC"));
+// const DNAStrand = dna => dna.replace(/./g, m => 'CGAT'['GCTA'.indexOf(m)]);
+
+// Создайте функцию, которая возвращает сумму двух наименьших положительных чисел для заданного массива минимум из 4 положительных целых чисел. Не будут переданы числа с плавающей запятой или неположительные целые числа.
+// Например, когда массив передается как [19, 5, 42, 2, 77], вывод должен быть 7.
+// [10, 343445353, 3453445, 3453545353453] должен вернуть 3453455.
+// function sumTwoSmallestNumbers(numbers) {
+// 	let a1 = Math.min(...numbers.filter(a => a !== 0))
+// 	let a2 = Math.min(...numbers.filter(a => a !== a1).filter(a => a !== 0))
+// 	return a2 + a1
+// }
+// console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]));
+// console.log(sumTwoSmallestNumbers([10, 0, 3453445, 3453545353453]));

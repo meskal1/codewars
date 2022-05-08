@@ -2251,3 +2251,23 @@ function century(year) {
 // }
 // console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]));
 // console.log(sumTwoSmallestNumbers([10, 0, 3453445, 3453545353453]));
+
+// Даны два целых числа a и b, которые могут быть положительными или отрицательными, найдите сумму всех целых чисел между ними и включая их и верните ее. Если два числа равны, верните a или b.
+// Примечание: a и b не упорядочены!
+// Примеры (а, б) --> вывод (пояснение)
+// (1, 0) --> 1 (1 + 0 = 1)
+// (1, 2) --> 3 (1 + 2 = 3)
+// (0, 1) --> 1 (0 + 1 = 1)
+// (1, 1) --> 1 (1 since both are same)
+// (-1, 0) --> -1 (-1 + 0 = -1)
+// (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
+// function getSum(a, b) {
+// 	let d = [a, b].sort((a, b) => a - b);
+// 	return a === b ? a : new Array(d[1] - d[0] + 1).fill(1).map((a, i) => d[0] + i).reduce((a, b) => a + b)
+// }
+// console.log(getSum(-1, 2));
+// const GetSum = (a, b) => {
+// 	let min = Math.min(a, b),
+// 		max = Math.max(a, b);
+// 	return (max - min + 1) * (min + max) / 2;
+// }

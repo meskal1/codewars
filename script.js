@@ -2305,3 +2305,14 @@ function century(year) {
 // function isTriangle(a, b, c) {
 // 	return a + b > c && a + c > b && c + b > a;
 // }
+
+// Создайте программу, которая фильтрует список строк и возвращает список, содержащий только имена ваших друзей.
+// Если в имени ровно 4 буквы, можете быть уверены, что оно должно быть вашим другом! В противном случае, вы можете быть уверены, что он не..
+// Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+// i.e.
+// friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+// Примечание: сохраните исходный порядок имен в выводе.
+// function friend(friends) {
+// 	return friends.filter(a => a.length === 4)
+// }
+// console.log(friend(["Ryan", "Kieran", "Mark"]));

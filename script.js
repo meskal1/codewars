@@ -2289,3 +2289,19 @@ function century(year) {
 // function maskify(cc) {
 // 	return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
 // }
+
+// Реализуйте функцию, которая принимает 3 целочисленных значения a, b, c.Функция должна возвращать true, если можно построить треугольник со сторонами заданной длины, и false в любом другом случае.
+// (В этом случае все треугольники должны иметь поверхность больше 0, чтобы быть принятыми).
+// assert.strictEqual(isTriangle(1, 2, 2), true);
+// assert.strictEqual(isTriangle(7, 2, 2), false);
+// function isTriangle(a, b, c) {
+// 	return (a + b <= c) || (b + c <= a) || (a + c <= b) ? false : true;
+// }
+// console.log(isTriangle(7, 2, 2));
+// console.log(isTriangle(1, 2, 2));
+// console.log(isTriangle(9, 6, 3));//false
+// console.log(isTriangle(2, 2, 4));//false
+// console.log(isTriangle(1, 2, 3));//false
+// function isTriangle(a, b, c) {
+// 	return a + b > c && a + c > b && c + b > a;
+// }

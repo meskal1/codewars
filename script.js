@@ -2330,3 +2330,21 @@ function century(year) {
 // 	return [...new Set(s1 + s2)].sort().join(``)
 // }
 // console.log(longest(a, b));
+
+// Банкоматы позволяют использовать 4- или 6-значные PIN-коды, а PIN-коды не могут содержать ничего, кроме ровно 4 или ровно 6 цифр.
+// Если функции передана допустимая строка PIN-кода, верните true, иначе верните false.
+// Examples (Input --> Output)
+// "1234"   -->  true
+// "12345"  -->  false
+// "a234"   -->  false
+// function validatePIN(pin) {
+// 	let a = pin.length
+// 	if (a === 4 || a === 6) a = pin.replace(/[^0-9]/, '').length
+// 	return a === 4 || a === 6
+// }
+// console.log(validatePIN('123456'));
+// console.log(validatePIN('a234'));
+// console.log(validatePIN('-1234'));// false
+// function validatePIN(pin) {
+// 	return /^(\d{4}|\d{6})$/.test(pin)
+//  }

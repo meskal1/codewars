@@ -2316,3 +2316,17 @@ function century(year) {
 // 	return friends.filter(a => a.length === 4)
 // }
 // console.log(friend(["Ryan", "Kieran", "Mark"]));
+
+// Возьмите 2 строки s1 и s2, содержащие только буквы от a до z. Возвращает новую отсортированную строку, максимально длинную, содержащую различные буквы (каждая из которых взята только один раз) из s1 или s2.
+// Examples:
+// a = "xyaabbbccccdefww"
+// b = "xxxxyyyyabklmopq"
+// longest(a, b) -> "abcdefklmopqwxy"
+// a = "abcdefghijklmnopqrstuvwxyz"
+// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+// const a = "xyaabbbccccdefww"
+// const b = "xxxxyyyyabklmopq"
+// function longest(s1, s2) {
+// 	return [...new Set(s1 + s2)].sort().join(``)
+// }
+// console.log(longest(a, b));

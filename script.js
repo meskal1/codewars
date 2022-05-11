@@ -2348,3 +2348,29 @@ function century(year) {
 // function validatePIN(pin) {
 // 	return /^(\d{4}|\d{6})$/.test(pin)
 //  }
+
+// Дан треугольник последовательных нечетных чисел:
+// 				1
+// 			3     5
+// 		7     9    11
+// 	13    15    17    19
+// 21    23    25    27    29
+// Вычислите сумму чисел в n - й строке этого треугольника(начиная с индекса 1), например: (Ввод-- > Вывод)
+// 1 -- > 1
+// 2 -- > 3 + 5 = 8
+// function rowSumOddNumbers(n) {
+// 	let a = 0;
+// 	for (let i = 0; i < n; i++) {
+// 		a += n - i
+// 	}
+// 	let b = []
+// 	for (let i = 0; b.length < a; i++) {
+// 		if (i % 2 === 0) b.push(i + 1)
+// 	}
+// 	return b.slice(a - n).reduce((a, b) => a + b)
+// }
+// console.log(rowSumOddNumbers(2));//8
+// console.log(rowSumOddNumbers(42));//74088
+// function rowSumOddNumbers(n) {
+// 	return n * n * n
+// }

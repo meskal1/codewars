@@ -2407,3 +2407,18 @@ function century(year) {
 // }
 // console.log(openOrSenior(input));
 // console.log(openOrSenior([[85, 7], [62, 6], [15, 19], [85, 18], [62, 24], [61, 15], [33, 2]]));
+
+// Создайте функцию с именем divisors/Divisors, которая принимает целое число n > 1 и возвращает массив со всеми делителями целого числа (кроме 1 и самого числа), от наименьшего до наибольшего. Если число простое, верните строку '(integer) is prime'.
+// Example:
+// divisors(12); // should return [2,3,4,6]
+// divisors(25); // should return [5]
+// divisors(13); // should return "13 is prime"
+// function divisors(integer) {
+// 	const a = []
+// 	for (let i = 2; i < integer; i++) {
+// 		if (integer % i === 0) a.push(i)
+// 	}
+// 	return a.length !== 0 ? a : `${integer} is prime`
+// };
+// console.log(divisors(12));
+// console.log(divisors(13));

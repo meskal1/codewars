@@ -2422,3 +2422,37 @@ function century(year) {
 // };
 // console.log(divisors(12));
 // console.log(divisors(13));
+
+// Ваша задача — написать функцию, которая возвращает сумму следующих рядов до n-го члена (параметра).
+// Series: 1 + 1/4 + 1/7 + 1/10 + 1/13 + 1/16 +...
+// Вам нужно округлить ответ до 2 знаков после запятой и вернуть его как строку.
+// Если заданное значение равно 0, оно должно вернуть 0,00.
+// В качестве аргументов вам будут предоставлены только натуральные числа.
+// Examples:(Input --> Output)
+// 1 --> 1 --> "1.00"
+// 2 --> 1 + 1/4 --> "1.25"
+// 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
+// function SeriesSum(n) {
+// 	let a = 1.25
+// 	let b = 4
+// 	for (let i = 0; i < n - 2; i++) {
+// 		a += 1 / (b + 3)
+// 		b += 3
+// 	}
+// 	switch (n) {
+// 		case 0: return 0.00.toFixed(2)
+// 		case 1: return 1.00.toFixed(2)
+// 		case 2: return 1.25.toFixed(2)
+// 		default: return a.toFixed(2)
+// 	}
+// }
+// console.log(SeriesSum(1));
+// console.log(SeriesSum(3)); // "1.39"
+// console.log(SeriesSum(5));
+// function SeriesSum(n) {
+// 	let sum = 0;
+// 	for (var i = 0; i < n; i++) {
+// 		sum += 1 / (3 * i + 1);
+// 	}
+// 	return sum.toFixed(2);
+// }

@@ -2483,3 +2483,17 @@ function century(year) {
 // 	return a < 0 ? 0 : a
 // }
 // console.log(breakChocolate(5, 5));
+
+// Вам дан массив целых чисел нечетной длины, в котором все они одинаковы, кроме одного единственного числа.
+// Завершите метод, который принимает такой массив и возвращает это единственное другое число.
+// Входной массив всегда будет действительным! (нечетная длина >= 3)
+// [1, 1, 2] ==> 2
+// [17, 17, 3, 17, 17, 17, 17] ==> 3
+// function stray(numbers) {
+// 	let a = numbers.filter(a => a === numbers[0])
+// 	return a.length > 1 ? +('' + numbers.filter(a => a !== numbers[0])) : +('' + a)
+// }
+// console.log(stray([1, 1, 2]));//2
+// function stray(numbers) {
+// 	return numbers.reduce((a, b) => a ^ b);
+// }

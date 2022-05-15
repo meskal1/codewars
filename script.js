@@ -2519,3 +2519,21 @@ function century(year) {
 // 	}
 // 	return d;
 // }
+
+// Завершите решение, чтобы оно отсортировало переданный массив чисел. Если функция передает пустой массив или значение null/nil, она должна вернуть пустой массив.
+// solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
+// solution(null); // should return []
+// assert.deepEqual(solution([1,2,3,10,5]), [1,2,3,5,10])
+// assert.deepEqual(solution(null), [])
+// assert.deepEqual(solution([]), [])
+// assert.deepEqual(solution([20, 2, 10]), [2,10,20])
+// assert.deepEqual(solution([2, 20, 10]), [2,10,20])
+// function solution(nums) {
+// 	return nums === null || nums.length === 0 ? [] : nums.sort((a, b) => a - b)
+// }
+// console.log(solution([1, 2, 10, 50, 5]));
+// console.log(solution([]));
+// console.log(solution(null));
+// function solution(nums) {
+// 	return (nums || []).sort((a, b) => a - b)
+// }

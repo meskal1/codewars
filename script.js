@@ -2494,6 +2494,28 @@ function century(year) {
 // 	return a.length > 1 ? +('' + numbers.filter(a => a !== numbers[0])) : +('' + a)
 // }
 // console.log(stray([1, 1, 2]));//2
+// console.log(stray([17, 17, 3, 17, 17, 17, 17]));//2
 // function stray(numbers) {
 // 	return numbers.reduce((a, b) => a ^ b);
+// }
+
+// Подсчитайте количество делителей натурального числа n.
+// Случайные тесты доходят до n = 500000.
+// 4 -- > 3(1, 2, 4)
+// 5 -- > 2(1, 5)
+// 12 -- > 6(1, 2, 3, 4, 6, 12)
+// 30 -- > 8(1, 2, 3, 5, 6, 10, 15, 30)
+// function getDivisorsCnt(n) {
+// 	let a = []
+// 	for (let i = 1; i <= n; i++) {
+// 		if (n % i === 0) a.push(i)
+// 	}
+// 	return a.length
+// }
+// console.log(getDivisorsCnt(5));
+// function getDivisorsCnt(n) {
+// 	for (var d = 0, i = n; i > 0; i--) {
+// 		if (n % i == 0) d++;
+// 	}
+// 	return d;
 // }

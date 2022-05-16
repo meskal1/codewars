@@ -2553,3 +2553,43 @@ function century(year) {
 // 			operator === "multiply" ? a * b : a / b
 // }
 // console.log(arithmetic(8, 2, "subtract")); //6
+
+// У мистера Скруджа есть сумма денег «P», которую он хочет инвестировать. Прежде чем он это сделает, он хочет знать, сколько лет «Y» эта сумма «P» должна храниться в банке, чтобы она составила желаемую сумму денег «D».
+// Сумма хранится в течение Y лет в банке, где проценты I выплачиваются ежегодно. После уплаты налогов «Т» за год новая сумма реинвестируется.
+// Примечание к налогам: налогом облагается не инвестированная основная сумма, а только начисленные проценты за год.
+// Пример:
+// Let P be the Principal = 1000.00
+//   Let I be the Interest Rate = 0.05
+//   Let T be the Tax Rate = 0.18
+//   Let D be the Desired Sum = 1100.00
+// After 1st Year -->
+//   P = 1041.00
+// After 2nd Year -->
+//   P = 1083.86
+// After 3rd Year -->
+//   P = 1128.30
+// Таким образом, г-н Скрудж должен ждать 3 года, чтобы первоначальный основной капитал составил желаемую сумму.
+// Ваша задача — завершить предоставленный метод и вернуть количество лет «Y» в целом, чтобы мистер Скрудж получил желаемую сумму.
+// Предположение: предположим, что желаемый принципал «D» всегда больше, чем первоначальный принципал. Однако лучше принять во внимание, что если желаемый основной «D» равен основному «P», это должно вернуть 0 лет.
+// assert.strictEqual(calculateYears(1000, 0.05, 0.18, 1100), 3)
+// assert.strictEqual(calculateYears(1000,0.01625,0.18,1200), 14)
+// assert.strictEqual(calculateYears(1000,0.05,0.18,1000), 0)
+// function calculateYears(principal, interest, tax, desired) {
+// 	let z = principal
+// 	let count = 0
+// 	while (z < desired) {
+// 		let a = z + z * interest;
+// 		z = a - (a - z) * tax;
+// 		count++
+// 	}
+// 	return count
+// }
+// console.log(calculateYears(1000, 0.05, 0.18, 1100)); // 3
+// function calculateYears(principal, interest, tax, desired) {
+// 	let years = 0;
+// 	while (principal < desired) {
+// 		principal += (principal * interest) * (1 - tax);
+// 		years++;
+// 	}
+// 	return years;
+// }

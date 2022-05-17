@@ -2593,3 +2593,24 @@ function century(year) {
 // 	}
 // 	return years;
 // }
+
+// Ваша команда пишет новый модный текстовый редактор, и вам поручили внедрить нумерацию строк.
+// Напишите функцию, которая принимает список строк и возвращает каждую строку с правильным номером перед ним.
+// Нумерация начинается с 1. Формат n: строка.Обратите внимание на двоеточие и пробел между ними.
+// 	number([]) // => []
+// number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"]
+// const number = (array) => {
+// 	return array.map((a, i) => `${i + 1}: ${a}`)
+// }
+// console.log(number(["a", "b", "c"]));
+
+// В математике факториал неотрицательного целого числа n, обозначаемый n!, представляет собой произведение всех положительных целых чисел, меньших или равных n.Например: 5! = 5 * 4 * 3 * 2 * 1 = 120. По соглашению значение 0! 1.
+// Напишите функцию для вычисления факториала для заданных входных данных.Если входное значение меньше 0 или больше 12, генерируется исключение типа ArgumentOutOfRangeException(C#), IllegalArgumentException(Java) или RangeException(PHP), либо генерируется RangeError(JavaScript) или ValueError(Python), либо возвращается - 1(C).
+// 	Test.assertEquals(factorial(0), 1, "factorial for 0 is 1");
+// Test.assertEquals(factorial(1), 1, "factorial for 1 is 1");
+// Test.assertEquals(factorial(2), 2, "factorial for 2 is 2");
+// Test.assertEquals(factorial(3), 6, "factorial for 3 is 6");
+function factorial(n) {
+	return n
+}
+console.log(factorial(3));

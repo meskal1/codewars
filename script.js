@@ -2678,3 +2678,22 @@ function century(year) {
 // 	}
 // 	return count
 //  }
+
+// Анаграмма — это результат перестановки букв слова для получения нового слова (см. Википедию).
+// Примечание: анаграммы нечувствительны к регистру.
+// Завершите функцию, чтобы вернуть true, если два заданных аргумента являются анаграммами друг друга; в противном случае вернуть false.
+// Examples
+// "foefet" is an anagram of "toffee"
+// "Buckethead" is an anagram of "DeathCubeK"
+// .(isAnagram("foefet", "toffee"), true, 'The word foefet is an anagram of toffee')
+// .(isAnagram("Buckethead", "DeathCubeK"), true, 'The word Buckethead is an anagram of DeathCubeK')
+// .(isAnagram("Twoo", "WooT"), true, 'The word Twoo is an anagram of WooT')
+// .(isAnagram("dumble", "bumble"), false, 'Characters do not match for test case dumble, bumble')
+// .(isAnagram("ound", "round"), false, 'Missing characters for test case ound, round')
+// .(isAnagram("apple", "pale"), false, 'Same letters, but different count')
+// function isAnagram(test, original) {
+// 	const c = test.toLowerCase().split("").sort().join("");
+// 	const d = original.toLowerCase().split("").sort().join("");
+// 	return c === d;
+// }
+// console.log(isAnagram('foefet', 'todfee'));

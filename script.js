@@ -2697,3 +2697,24 @@ function century(year) {
 // 	return c === d;
 // }
 // console.log(isAnagram('foefet', 'todfee'));
+
+// Ваша задача — составить функцию, которая возвращает сумму последовательности целых чисел.
+// Последовательность определяется тремя неотрицательными значениями: начало, конец, шаг(включительно).
+// Если начальное значение больше конечного, функция должна вернуть 0
+// Examples
+// 2, 2, 2 -- > 2
+// 2, 6, 2 -- > 12(2 + 4 + 6)
+// 1, 5, 1 -- > 15(1 + 2 + 3 + 4 + 5)
+// 1, 5, 3  -- > 5(1 + 4)
+// const sequenceSum = (begin, end, step) => {
+// 	let a = [];
+// 	for (let i = begin; i <= end; i += step) {
+// 		a.push(i);
+// 	}
+// 	return begin < end ? a.reduce((a, b) => a + b) : 0
+// };
+// console.log(sequenceSum(2, 6, 2)); //12
+// console.log(sequenceSum(1, 5, 1)); //15
+// console.log(sequenceSum(1, 5, 3)); //5
+// console.log(sequenceSum(481, 493, 92)); //481
+// console.log(sequenceSum(159, 306, 29)); //1389

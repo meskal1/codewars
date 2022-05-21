@@ -2735,3 +2735,16 @@ function century(year) {
 // }
 // console.log(solution('1234567898765')); // 98765
 // console.log(solution('731674765')); // 74765
+
+// Напишите функцию с именем sumDigits, которая принимает число в качестве входных данных и возвращает сумму абсолютного значения каждой из десятичных цифр числа.
+// Например: (Ввод-- > Вывод)
+// 10 -- > 1
+// 99 -- > 18
+// 32 -- > 5
+// Предположим, что все числа во входных данных будут целыми значениями.
+function sumDigits(number) {
+	return +('' + (number < 0 ? number * (-1) : number)).split(``).reduce((a, b) => +a + +b)
+}
+console.log(sumDigits(10)); // 1
+console.log(sumDigits(99)); // 18
+console.log(sumDigits(0)); // 5

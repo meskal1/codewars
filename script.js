@@ -2761,3 +2761,12 @@ function century(year) {
 // function twoOldestAges(ages){
 // 	return ages.sort(function(a,b){return a-b;}).slice(-2);
 //  }
+
+// Завершите функцию/метод, чтобы он возвращал URL-адрес с чем-либо после удаления привязки (#).
+// "www.codewars.com#about" --> "www.codewars.com"
+// "www.codewars.com?page=1" -->"www.codewars.com?page=1"
+// function removeUrlAnchor(url) {
+// 	return url.slice(0, url.indexOf('#') > 0 ? url.indexOf('#') : url.length)
+// }
+// console.log(removeUrlAnchor("www.codewars.com#about"));
+// console.log(removeUrlAnchor('www.codewars.com/katas/'));

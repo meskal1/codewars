@@ -2742,9 +2742,22 @@ function century(year) {
 // 99 -- > 18
 // 32 -- > 5
 // Предположим, что все числа во входных данных будут целыми значениями.
-function sumDigits(number) {
-	return +('' + (number < 0 ? number * (-1) : number)).split(``).reduce((a, b) => +a + +b)
-}
-console.log(sumDigits(10)); // 1
-console.log(sumDigits(99)); // 18
-console.log(sumDigits(0)); // 5
+// function sumDigits(number) {
+// 	return +('' + (number < 0 ? number * (-1) : number)).split(``).reduce((a, b) => +a + +b)
+// }
+// console.log(sumDigits(10)); // 1
+// console.log(sumDigits(99)); // 18
+// console.log(sumDigits(0)); // 5
+
+// Необходимо завершить функцию/метод двух старейших возрастов. Он должен принимать массив чисел в качестве аргумента и возвращать два самых высоких числа в массиве. Возвращаемое значение должно быть массивом в формате [второй возраст, самый старший возраст].
+// Порядок передаваемых чисел может быть любым. Массив всегда будет включать как минимум 2 элемента. Если есть два или более самых старых возраста, верните их оба в формате массива.
+// Например:
+// twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
+// function twoOldestAges(ages) {
+// 	let a = ages.sort((a, b) => a - b).reverse()
+// 	return [a[1], a[0]]
+// }
+// console.log(twoOldestAges([1, 2, 10, 8]));
+// function twoOldestAges(ages){
+// 	return ages.sort(function(a,b){return a-b;}).slice(-2);
+//  }

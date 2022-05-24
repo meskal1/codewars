@@ -2781,3 +2781,21 @@ function century(year) {
 // 	return word.replace(/[A-Z]/g, 1).split(``).map((a, i) => a === '1' ? i : '').filter(a => a !== '')
 // };
 // console.log(capitals('CodEWaRs'));
+
+// Ваша задача — написать функцию findSum.
+// Вплоть до n включительно эта функция вернет сумму всех чисел, кратных 3 и 5.
+// Например
+// For example:
+// findSum(5) should return 8 (3 + 5)
+// findSum(10) should return 33 (3 + 5 + 6 + 9 + 10)
+// function findSum(n) {
+// 	return new Array(n).fill(0).map((a, i) => ((i + 1) % 3 === 0) || ((i + 1) % 5 === 0) ? i + 1 : 0).reduce((a, b) => a + b)
+// }
+// console.log(findSum(10));
+// function findSum(n) {
+// 	let result = 0;
+// 	for (let i = 0; i <= n; i += 1) {
+// 	  if (i % 3 ===0 || i % 5 === 0) result += i
+// 	}
+// 	return result
+//  }

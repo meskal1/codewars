@@ -2770,3 +2770,14 @@ function century(year) {
 // }
 // console.log(removeUrlAnchor("www.codewars.com#about"));
 // console.log(removeUrlAnchor('www.codewars.com/katas/'));
+// function removeUrlAnchor(url){
+// 	return url.split('#')[0];
+//  }
+
+// Напишите функцию, которая принимает одну строку(слово) в качестве аргумента.Функция должна возвращать упорядоченный список, содержащий индексы всех заглавных букв в строке.
+// 	Example
+// Test.assertSimilar(capitals('CodEWaRs'), [0, 3, 4, 6]);
+// function capitals(word) {
+// 	return word.replace(/[A-Z]/g, 1).split(``).map((a, i) => a === '1' ? i : '').filter(a => a !== '')
+// };
+// console.log(capitals('CodEWaRs'));

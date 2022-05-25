@@ -2811,3 +2811,10 @@ function century(year) {
 // };
 // console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]));
 // console.log(sortByLength(["Beg", "Life", "I", "To"]));
+
+// Напишите небольшую функцию, которая возвращает нечетные значения массива.
+// Все значения в массиве будут целыми числами. Верните хорошие значения в том порядке, в котором они заданы.
+// function noOdds(values) {
+// 	return values.map(a => a % 2 === 0 ? a : 99).filter(a => a !== 99)
+// }
+// console.log(noOdds([0, 1, 2, 3])); //[0,2]

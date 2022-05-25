@@ -2799,3 +2799,15 @@ function century(year) {
 // 	}
 // 	return result
 //  }
+
+// Напишите функцию, которая принимает массив строк в качестве аргумента и возвращает отсортированный массив, содержащий те же строки, упорядоченные от самых коротких до самых длинных.
+// Например, если этот массив был передан в качестве аргумента:
+// ["Telescopes", "Glasses", "Eyes", "Monocles"]
+// Your function would return the following array:
+// ["Eyes", "Glasses", "Monocles", "Telescopes"]
+// Все строки в массиве, переданном вашей функции, будут иметь разную длину, поэтому вам не придется решать, как упорядочить несколько строк одинаковой длины.
+// function sortByLength(array) {
+// 	return array.sort((a, b) => a.length - b.length)
+// };
+// console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]));
+// console.log(sortByLength(["Beg", "Life", "I", "To"]));

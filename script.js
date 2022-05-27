@@ -1,38 +1,38 @@
 'use strict';
 
-function lnth(str) {
-	let n = str.replace(/\s*,\s*/g, ` `).replace(/\s*!\s*/g, ``).replace(/\s* \s*/g, ` `).replace(/\s*`?`\s*/g, ``);
-	console.log(n);
-	console.log(n.split(` `));
-	let num = str.length;
-	for (let i of n.split(` `)) {
-		if (i.length < num) {
-			num = i.length;
-			console.log(num);
-		}
-	}
-}
+// function lnth(str) {
+// 	let n = str.replace(/\s*,\s*/g, ` `).replace(/\s*!\s*/g, ``).replace(/\s* \s*/g, ` `).replace(/\s*`?`\s*/g, ``);
+// 	console.log(n);
+// 	console.log(n.split(` `));
+// 	let num = str.length;
+// 	for (let i of n.split(` `)) {
+// 		if (i.length < num) {
+// 			num = i.length;
+// 			console.log(num);
+// 		}
+// 	}
+// }
 // lnth('Иии как хорош тот ,новый  мир, где есть    такие   люди!  ');
 
 // Учитывая строку цифр, вы должны заменить любую цифру ниже 5 на «0», а любую цифру 5 и выше на «1». Верните полученную строку.
-function fakeBin(x) {
-	// return x.split(``).map(n => n < 5 ? 0 : 1).join(``);
-	// return x.replace(/\d/g, d => (d < 5) ? 0 : 1);
-}
+// function fakeBin(x) {
+// return x.split(``).map(n => n < 5 ? 0 : 1).join(``);
+// return x.replace(/\d/g, d => (d < 5) ? 0 : 1);
+// }
 // fakeBin(`243425034918137`);
 // console.log(fakeBin(`243425034918137`));
 
 // Первое столетие охватывает период с 1 года по 100 год включительно, второе столетие — с 101 года по 200 год включительно и т. д.
-function century(year) {
-	// console.log(year / 10);
-	// if ((year % 100 !== 0) && ((year / 10 > 100) || (year / 10 < 100))) {
-	// 	console.log(`Вы живете в ${Math.floor(year / 100) + 1} веке`);
-	// } else {
-	// 	console.log(`Вы живете в ${Math.floor(year / 100)} веке`);
-	// }
-	// return;
-	return Math.ceil(year / 100);
-}
+// function century(year) {
+// console.log(year / 10);
+// if ((year % 100 !== 0) && ((year / 10 > 100) || (year / 10 < 100))) {
+// 	console.log(`Вы живете в ${Math.floor(year / 100) + 1} веке`);
+// } else {
+// 	console.log(`Вы живете в ${Math.floor(year / 100)} веке`);
+// }
+// return;
+// return Math.ceil(year / 100);
+// }
 // console.log(century(2022));
 
 //Джейден Смит, сын Уилла Смита, является звездой таких фильмов, как «Каратэ-пацан» (2010) и «После Земли» (2013). Джейден также известен своей философией, которую он распространяет через Twitter. Когда он пишет в Твиттере, он известен тем, что почти всегда пишет каждое слово с большой буквы. Для простоты вам придется писать каждое слово с заглавной буквы. Посмотрите, какими должны быть сокращения в приведенном ниже примере.
@@ -2818,3 +2818,21 @@ function century(year) {
 // 	return values.map(a => a % 2 === 0 ? a : 99).filter(a => a !== 99)
 // }
 // console.log(noOdds([0, 1, 2, 3])); //[0,2]
+
+// Треугольные числа называются так из - за равносторонней треугольной формы, которую они занимают, когда расположены точками.то есть
+// 1st(1)   2nd(3)    3rd(6)
+// *          **        ***
+//   	        *         **
+//                      *
+// 	Вам нужно вернуть n - е треугольное число.Вы должны вернуть 0 для значений вне диапазона:
+// For example: (Input-- > Output)
+// 0 -- > 0
+// 2 -- > 3
+// 3 -- > 6
+// - 10 -- > 0
+// function triangular(n) {
+// 	return n <= 0 ? 0 : n * (n + 1) / 2
+// }
+// console.log(triangular(4)); // 10
+// console.log(triangular(6653222202)); // 22132682837919474000 должно
+

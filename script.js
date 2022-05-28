@@ -2836,3 +2836,17 @@
 // console.log(triangular(4)); // 10
 // console.log(triangular(6653222202)); // 22132682837919474000 должно
 
+// Вам даны два массива строк a1 и a2. Каждая строка состоит из букв от a до z. Пусть x будет любой строкой в ​​первом массиве, а y будет любой строкой во втором массиве.
+// Найдите max (abs (длина (x) - длина (y)))
+// Если a1 и/или a2 пусты, верните -1.
+// Пример:
+// let a1 = ["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"]
+// let a2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"]
+// mxdiflg(a1, a2) --> 13
+// ввод: 2 строки с подстроками, разделенными ,
+// вывод: число в виде строки
+// function mxdiflg(a1, a2) {
+// 	if (a1.length == 0 || a2.length == 0) return -1;
+// 	return Math.max(Math.max(...a1.map(x => x.length)) - Math.min(...a2.map(x => x.length)), Math.max(...a2.map(x => x.length)) - Math.min(...a1.map(x => x.length)))
+// }
+// console.log(mxdiflg(a1, a2));

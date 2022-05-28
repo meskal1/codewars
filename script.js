@@ -2850,3 +2850,18 @@
 // 	return Math.max(Math.max(...a1.map(x => x.length)) - Math.min(...a2.map(x => x.length)), Math.max(...a2.map(x => x.length)) - Math.min(...a1.map(x => x.length)))
 // }
 // console.log(mxdiflg(a1, a2));
+
+// История
+// Ваш интернет-магазин любит раздавать купоны для особых случаев. Некоторые клиенты пытаются обмануть систему, вводя неверные коды или используя купоны с истекшим сроком действия.
+// Задача
+// Ваша миссия:
+// Напишите функцию с именем checkCoupon, которая проверяет, что код купона действителен и срок его действия не истек.
+// Купон перестает быть действительным на следующий день ПОСЛЕ истечения срока действия. Все даты будут переданы в виде строк в следующем формате: "ДАТА МЕСЯЦА, ГОД".
+// checkCoupon("123", "123", "July 9, 2015", "July 9, 2015")  ===  true
+// checkCoupon("123", "123", "July 9, 2015", "July 2, 2015")  ===  false
+// function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+// 	return enteredCode === correctCode && new Date(currentDate) <= new Date(expirationDate)
+// }
+// console.log(checkCoupon("123", "123", "July 9, 2015", "July 9, 2015"));
+// console.log(checkCoupon("123", "123", "July 9, 2015", "July 2, 2015"));
+// console.log(checkCoupon('123', '123', 'September 5, 2014', 'October 1, 2014'));

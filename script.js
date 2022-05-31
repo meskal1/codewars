@@ -2947,3 +2947,44 @@
 // 	return 180 * (n - 2)
 // }
 // console.log(angle(4)); //360
+
+// Создайте функцию, которая возвращает имя победителя в схватке между двумя бойцами.
+// Каждый боец ​​по очереди атакует другого, и побеждает тот, кто убьет другого первым. Смерть определяется как наличие здоровья <= 0.
+// Каждый истребитель будет объектом/экземпляром истребителя. См. класс бойца ниже на выбранном вами языке.
+// И здоровье, и DamagePerAttack (damage_per_attack для python) будут целыми числами больше 0. Вы можете видоизменять объекты Fighter.
+// Example:
+//   declare_winner(Fighter("Lew", 10, 2), Fighter("Harry", 5, 4), "Lew") => "Lew"
+//   Lew attacks Harry; Harry now has 3 health.
+//   Harry attacks Lew; Lew now has 6 health.
+//   Lew attacks Harry; Harry now has 1 health.
+//   Harry attacks Lew; Lew now has 2 health.
+//   Lew attacks Harry: Harry now has -1 health and is dead. Lew wins.
+// function Fighter(name, health, damagePerAttack) {
+// 	this.name = name;
+// 	this.health = health;
+// 	this.damagePerAttack = damagePerAttack;
+// 	this.toString = function () { return this.name; }
+// }
+// function declareWinner(fighter1, fighter2, firstAttacker) {
+// 	const f1n = fighter1.name
+// 	let f1h = fighter1.health
+// 	const f1d = fighter1.damagePerAttack
+// 	const f2n = fighter2.name
+// 	let f2h = fighter2.health
+// 	const f2d = fighter2.damagePerAttack
+// 	firstAttacker === f1n ? f2h = f2h - f1d : f1h = f1h - f2d;
+// 	if (fighter1.health === f1h) {
+// 		while (f1h > 0 && f2h > 0) {
+// 			f1h = f1h - f2d;
+// 			if (f1h > 0) f2h = f2h - f1d;
+// 		}
+// 	} else {
+// 		while (f1h > 0 && f2h > 0) {
+// 			f2h = f2h - f1d;
+// 			if (f2h > 0) f1h = f1h - f2d;
+// 		}
+// 	}
+// 	return f1h > f2h ? f1n : f2n
+// }
+// console.log(declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
+// console.log(declareWinner(new Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Harry"));

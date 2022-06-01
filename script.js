@@ -3008,3 +3008,17 @@
 // }
 // console.log(fizzbuzz(3));
 
+// Задача
+// Дана строка str, инвертировать ее, опуская все неалфавитные символы.
+// Пример
+// Для str = "krishan" вывод должен быть "nahsirk".
+// Для str = "ultr53o?n" вывод должен быть "nortlu".
+// Ввод, вывод
+// [ввод] строка ул
+// Строка состоит из строчных латинских букв, цифр и символов.
+// [выход] строка
+// Test.assertEquals(reverseLetter("krishan"),"nahsirk")
+// function reverseLetter(str) {
+// 	return str.replace(/[^a-zA-Z]/g, '').split(``).reverse().join(``)
+// }
+// console.log(reverseLetter('krishan'));

@@ -3112,3 +3112,24 @@
 // 	return c
 // }
 // console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 4, 4, 3, 3, 3, 2, 2, 1]));
+// const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+// function findOdd(arr) {
+// 	return arr.find((item, index) => arr.filter(el => el == item).length % 2)
+//  }
+
+// Цифровой корень — это рекурсивная сумма всех цифр числа.
+// Учитывая n, возьмите сумму цифр n. Если это значение имеет более одной цифры, продолжайте уменьшать таким образом, пока не будет получено однозначное число. Ввод будет неотрицательным целым числом.
+// Examples
+//     16  -->  1 + 6 = 7
+//    942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+// 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
+// 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
+// function digital_root(n) {
+// 	const a = ('' + n).split(``).reduce((a, b) => +a + +b, 0)
+// 	if (a > 9) return digital_root(a)
+// 	else return a
+// }
+// console.log(digital_root(493193));
+// function digital_root(n) {
+// 	return (n - 1) % 9 + 1;
+//  }

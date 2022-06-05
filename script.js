@@ -3140,3 +3140,11 @@
 // 	return string.split(` `).map(a => a.length > 4 ? a.split(``).reverse().join(``) : a).join(` `)
 // }
 // console.log(spinWords('Hey fellow warriors'));
+
+// Напишите функцию, которая принимает целое число в качестве входных данных и возвращает количество битов, равных единице в двоичном представлении этого числа. Вы можете гарантировать, что ввод неотрицательный.
+// Пример: двоичное представление числа 1234 равно 10011010010, поэтому в этом случае функция должна вернуть 5.
+// const countBits = (n) => {
+// 	return n.toString(2).split(``).filter(a => a === `1`).length
+// }
+// console.log(countBits(7));
+// const countBits = n => n.toString(2).split('0').join('').length;

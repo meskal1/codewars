@@ -3148,3 +3148,21 @@
 // }
 // console.log(countBits(7));
 // const countBits = n => n.toString(2).split('0').join('').length;
+
+// Переместите первую букву каждого слова в конец, а затем добавьте «ay» в конец слова. Оставьте знаки препинания нетронутыми.
+// pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+// pigIt('Hello world !');     // elloHay orldway !
+// function pigIt(str) {
+// 	return str.split(` `).map(a => {
+// 		const z = a.split(``)
+// 		if (!/[^a-zA-Z]/g.test(z.join(``))) {
+// 			z.push(z[0])
+// 			return z.slice(1).join(``) + 'ay'
+// 		} else return a
+// 	}).join(` `)
+// }
+// console.log(pigIt('O Pig latin is cool !'));
+// function pigIt(str){
+// 	return str.replace(/(\w)(\w*)(\s|$)/g, "\$2\$1ay\$3")
+//  }
+//TODO Разобрать регулярные выражения еще глубже, до уровня PRO))

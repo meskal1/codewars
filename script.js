@@ -3196,3 +3196,25 @@
 // 	return `${h < 10 ? '0' + h : h}:${m < 10 ? '0' + m : m}:${s < 10 ? '0' + s : s}`
 // }
 // console.log(humanReadable(45296));//'12:34:56'
+
+// Вам дан массив (который будет иметь длину не менее 3, но может быть очень большим), содержащий целые числа. Массив либо полностью состоит из нечетных целых чисел, либо полностью состоит из четных целых чисел, за исключением одного целого числа N. Напишите метод, который принимает массив в качестве аргумента и возвращает этот «выброс» N.
+// Examples
+// [2, 4, 0, 100, 4, 11, 2602, 36]
+// Should return: 11 (the only odd number)
+// [160, 3, 1719, 19, 11, 13, -21]
+// Should return: 160 (the only even number)
+// function findOutlier(integers) {
+// 	let odd = [];//нечетный
+// 	let even = [];//четный
+// 	for (let i = 0; i < integers.length; i++) {
+// 		integers[i] % 2 === 0 ? odd.push(integers[i]) : even.push(integers[i])
+// 	}
+// 	return odd.length > even.length ? even[0] : odd[0]
+// }
+// console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));
+// console.log(findOutlier([0, 0, 3, 0, 0]));
+// function findOutlier(int){
+// 	var even = int.filter(a=>a%2==0);
+// 	var odd = int.filter(a=>a%2!==0);
+// 	return even.length==1? even[0] : odd[0];
+//  }

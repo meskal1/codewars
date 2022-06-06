@@ -3166,3 +3166,19 @@
 // 	return str.replace(/(\w)(\w*)(\s|$)/g, "\$2\$1ay\$3")
 //  }
 //TODO Разобрать регулярные выражения еще глубже, до уровня PRO))
+
+// Напишите алгоритм, который берет массив и перемещает все нули в конец, сохраняя порядок остальных элементов.
+// moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
+// moveZeros([1,2,0,1,0,1,0,3,0,1]), [1, 2, 1, 1, 3, 1, 0, 0, 0, 0]);
+// function moveZeros(arr) {
+// 	let a = arr.filter(a => a !== 0)
+// 	for (let i = 0; i < arr.filter(a => a === 0).length; i++) {
+// 		a.push(0)
+// 	}
+// 	return a
+// }
+// console.log(moveZeros([1, 2, 0, 1, 0, 1, 0, 3, 0, 1]));
+// console.log(moveZeros([false, 1, 0, 1, 10, 2, 0, 1, 3, "a"]));
+// var moveZeros = function (arr) {
+// 	return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
+//  }

@@ -3182,3 +3182,17 @@
 // var moveZeros = function (arr) {
 // 	return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
 //  }
+
+// Напишите функцию, которая принимает неотрицательное целое число (секунды) в качестве входных данных и возвращает время в удобочитаемом формате (ЧЧ:ММ:СС)
+// HH = hours, padded to 2 digits, range: 00 - 99
+// MM = minutes, padded to 2 digits, range: 00 - 59
+// SS = seconds, padded to 2 digits, range: 00 - 59
+// Максимальное время никогда не превышает 359999 (99:59:59)
+// Вы можете найти несколько примеров в тестовых приборах.
+// function humanReadable(seconds) {
+// 	const h = Math.floor((seconds / 60) / 60)
+// 	const m = Math.floor((seconds / 60) - h * 60)
+// 	const s = seconds - Math.floor(seconds / 60) * 60
+// 	return `${h < 10 ? '0' + h : h}:${m < 10 ? '0' + m : m}:${s < 10 ? '0' + s : s}`
+// }
+// console.log(humanReadable(45296));//'12:34:56'

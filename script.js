@@ -3218,3 +3218,42 @@
 // 	var odd = int.filter(a=>a%2!==0);
 // 	return even.length==1? even[0] : odd[0];
 //  }
+
+// Ваша задача для завершения этого Ката — написать функцию, которая форматирует продолжительность, заданную в виде количества секунд, удобным для человека способом.
+// Функция должна принимать неотрицательное целое число. Если он равен нулю, он просто возвращает «сейчас». В противном случае длительность выражается комбинацией лет, дней, часов, минут и секунд.
+// Гораздо проще понять на примере:
+// * Для секунд = 62 ваша функция должна вернуться
+//     «1 минута и 2 секунды»
+// * Для секунд = 3662 ваша функция должна вернуть
+//     «1 час, 1 минута и 2 секунды»
+// Для целей этого Ката год равен 365 дням, а день равен 24 часам.
+// Обратите внимание, что пробелы важны.
+// function formatDuration(seconds) {
+// 	const y = Math.floor((seconds / (60 * 60 * 24 * 365)))
+// 	const d = Math.floor((((seconds / 60) / 60) / 24) - y * 365)
+// 	const h = Math.floor(((seconds / 60) / 60) - (d + y * 365) * 24)
+// 	const m = Math.floor(((seconds / 60) - d * 24 * 60 - h * 60 - y * 365 * 60 * 24))
+// 	const s = seconds - Math.floor(seconds / 60) * 60
+// 	const yy = y === 1 ? y + ' year, ' : y === 0 ? '' : y + ' years, '
+// 	const dd = d === 1 ? d + ' day, ' : d === 0 ? '' : d + ' days, '
+// 	const hh = h === 1 ? h + ' hour, ' : h === 0 ? '' : h + ' hours, '
+// 	const mm = m === 1 ? m + ' minute, ' : m === 0 ? '' : m + ' minutes, '
+// 	const ss = s === 1 ? s + ' second' : s === 0 ? '' : s + ' seconds'
+// 	const readable = `${yy}${dd}${hh}${mm}${ss}`
+// 	return seconds === 0 ? 'now' : (readable.replace(/,/g, '').trim().split(` `).length > 2 ? readable.split(``).reverse().join(``).trim().split(',').filter(a => a !== '').join(`,`).replace(/ ,/, ' dna ').split(``).reverse().join(``) : readable.replace(/,/, '').trim())
+// }
+// console.log(formatDuration(3662)); //"1 hour, 1 minute and 2 seconds"
+// function formatDuration (seconds) {
+// 	var time = { year: 31536000, day: 86400, hour: 3600, minute: 60, second: 1 },
+// 		 res = [];
+// 	if (seconds === 0) return 'now';
+// 	for (var key in time) {
+// 	  if (seconds >= time[key]) {
+// 		 var val = Math.floor(seconds/time[key]);
+// 		 res.push(val += val > 1 ? ' ' + key + 's' : ' ' + key);
+// 		 seconds = seconds % time[key];
+// 	  }
+// 	}
+// 	return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
+//  }
+

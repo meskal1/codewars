@@ -3284,3 +3284,30 @@
 // 	  if(d > 255 ) {return "FF";}
 // 	  return  ("0"+(Number(d).toString(16))).slice(-2).toUpperCase()
 //  }
+
+// Напишите функцию, которая принимает строку скобок и определяет, допустим ли порядок скобок. Функция должна возвращать true, если строка допустима, и false, если она недействительна.
+// Examples
+// "()"              =>  true
+// ")(()))"          =>  false
+// "("               =>  false
+// "(())((()())())"  =>  true
+// Constraints
+// 0 <= input.length <= 100
+// function validParentheses(parens) {
+// 	let z = parens
+// 	for (let i = 0; i < parens.length; i++) {
+// 		z = z.split('()').join('')
+// 	}
+// 	return z[0] != ')' && z[z.length - 1] != '('
+// }
+// console.log(validParentheses(')((()))('));//false
+// console.log(validParentheses('())(()'));//false
+// function validParentheses(parens){
+// 	let n = 0;
+// 	for (let i = 0; i < parens.length; i++) {
+// 	  if (parens[i] == '(') n++;
+// 	  if (parens[i] == ')') n--;
+// 	  if (n < 0) return false;
+// 	}
+// 	return n == 0;
+//  }

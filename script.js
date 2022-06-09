@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // function lnth(str) {
 // 	let n = str.replace(/\s*,\s*/g, ` `).replace(/\s*!\s*/g, ``).replace(/\s* \s*/g, ` `).replace(/\s*`?`\s*/g, ``);
@@ -3232,7 +3232,7 @@
 // 	const y = Math.floor((seconds / (60 * 60 * 24 * 365)))
 // 	const d = Math.floor((((seconds / 60) / 60) / 24) - y * 365)
 // 	const h = Math.floor(((seconds / 60) / 60) - (d + y * 365) * 24)
-// 	const m = Math.floor(((seconds / 60) - d * 24 * 60 - h * 60 - y * 365 * 60 * 24))
+// 	const m = Math.floor(((seconds / 60) - h * 60 - d * 24 * 60 - y * 365 * 60 * 24))
 // 	const s = seconds - Math.floor(seconds / 60) * 60
 // 	const yy = y === 1 ? y + ' year, ' : y === 0 ? '' : y + ' years, '
 // 	const dd = d === 1 ? d + ' day, ' : d === 0 ? '' : d + ' days, '
@@ -3257,3 +3257,30 @@
 // 	return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
 //  }
 
+// Функция rgb неполная.Завершите его, чтобы передача десятичных значений RGB приводила к возврату шестнадцатеричного представления.Допустимые десятичные значения для RGB: 0–255. Любые значения, выпадающие из этого диапазона, должны быть округлены до ближайшего допустимого значения.
+// 	Примечание.Ваш ответ всегда должен состоять из 6 символов, сокращение с 3 здесь не сработает.
+// Ниже приведены примеры ожидаемых выходных значений:
+// rgb(255, 255, 255) // returns FFFFFF
+// rgb(255, 255, 300) // returns FFFFFF
+// rgb(0, 0, 0) // returns 000000
+// rgb(148, 0, 211) // returns 9400D3
+// function rgb(r, g, b) {
+// 	let rr = (r > 255 ? 255 : r < 0 ? 0 : r).toString(16)
+// 	let gg = (g > 255 ? 255 : g < 0 ? 0 : g).toString(16)
+// 	let bb = (b > 255 ? 255 : b < 0 ? 0 : b).toString(16)
+// 	return ((rr.length < 2 ? '0' + rr : rr) + (gg.length < 2 ? '0' + gg : gg) + (bb.length < 2 ? '0' + bb : bb)).toUpperCase()
+// }
+// console.log(rgb(255, 255, 300));
+// console.log(rgb(173, 255, 47));
+// console.log(rgb(0, 0, 0));
+// console.log(rgb(177, 6, 76)); //'B1064C'
+// console.log(rgb(147, 15, 140)); //'930F8C'
+// function rgb(r, g, b){
+// 	return toHex(r)+toHex(g)+toHex(b);
+//  }
+
+//  function toHex(d) {
+// 	  if(d < 0 ) {return "00";}
+// 	  if(d > 255 ) {return "FF";}
+// 	  return  ("0"+(Number(d).toString(16))).slice(-2).toUpperCase()
+//  }

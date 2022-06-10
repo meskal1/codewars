@@ -3349,3 +3349,27 @@
 // 	while (pattern.test(str)) str = str.replace(pattern,'');
 // 	return str.match(/(NORTH|SOUTH|EAST|WEST)/g)||[];
 //  }
+
+// Что такое анаграмма? Ну, два слова являются анаграммами друг друга, если они оба содержат одни и те же буквы. Например:
+// 'abba' & 'baab' == true
+// 'abba' & 'bbaa' == true
+// 'abba' & 'abbba' == false
+// 'abba' & 'abca' == false
+// Напишите функцию, которая найдет все анаграммы слова из списка. Вам будет дано два входа слово и массив со словами. Вы должны вернуть массив всех анаграмм или пустой массив, если их нет. Например:
+// anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+// anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+// anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
+// function anagrams(word, words) {
+// 	const a = words.filter(a => a.length === word.length)
+// 	const b = []
+// 	fun: for (let i = 0; i < a.length; i++) {
+// 		for (let j = 0; j < word.length; j++) {
+// 			if (a[i].split(``).filter(z => z === word[j]).length != word.split(``).filter(z => z === word[j]).length) continue fun
+// 			else if (j === word.length - 1) b.push(a[i])
+// 		}
+// 	}
+// 	return b
+// }
+// console.log(anagrams('laser', ['lazing', 'lazy', 'lacer']));
+// console.log(anagrams('racer', ['crazer', 'carer', 'racar', 'caesr', 'racer']));
+// let anagrams = (word, words) => words.filter(w => w.split('').sort().join('') === word.split('').sort().join(''));

@@ -3360,16 +3360,18 @@
 // anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
 // anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 // function anagrams(word, words) {
-// 	const a = words.filter(a => a.length === word.length)
-// 	const b = []
-// 	fun: for (let i = 0; i < a.length; i++) {
-// 		for (let j = 0; j < word.length; j++) {
-// 			if (a[i].split(``).filter(z => z === word[j]).length != word.split(``).filter(z => z === word[j]).length) continue fun
-// 			else if (j === word.length - 1) b.push(a[i])
-// 		}
-// 	}
-// 	return b
+// 	return words.filter(b => b.split('').sort().join('') === word.split('').sort().join(''))
 // }
 // console.log(anagrams('laser', ['lazing', 'lazy', 'lacer']));
 // console.log(anagrams('racer', ['crazer', 'carer', 'racar', 'caesr', 'racer']));
 // let anagrams = (word, words) => words.filter(w => w.split('').sort().join('') === word.split('').sort().join(''));
+
+// ROT13 — это простой шифр с заменой букв, который заменяет букву буквой через 13 букв после нее в алфавите. ROT13 является примером шифра Цезаря.
+// Создайте функцию, которая принимает строку и возвращает строку, зашифрованную с помощью Rot13. Если в строку включены числа или специальные символы, они должны быть возвращены как есть. Сдвинуты должны быть только буквы латинского/английского алфавита, как в оригинальной "реализации" Rot13.
+// function rot13(message) {
+// 	return message.split(``).map(a => a.match(/[A-Za-z]/g) ? String.fromCharCode((a.charCodeAt() + 13) > 90 && (a.charCodeAt() + 13) <= 97 ? (a.charCodeAt() + 13) - 90 + 64 : (a.charCodeAt() + 13) > 122 ? (a.charCodeAt() + 13) - 122 + 96 : a.charCodeAt() + 13) : a).join(``)
+// }
+// console.log(rot13('test')); // grfg
+// console.log(rot13('tes2t1')); // grf2g1
+// console.log(rot13('Test')); // Grfg
+// const rot13 = str => str.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13: -13)));

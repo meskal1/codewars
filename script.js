@@ -3418,3 +3418,19 @@
 // 	}).join('');
 // 	return r.length > 140 ? false : r;
 // }
+
+// Напишите функцию, которая при задании URL-адреса в виде строки анализирует только доменное имя и возвращает его в виде строки. Например:
+// * url = "http://github.com/carbonfive/raygun" -> domain name = "github"
+// * url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
+// * url = "https://www.cnet.com"                -> domain name = cnet"
+// function domainName(url) {
+// 	return url.split(`//`).map(a => /http/.test(a) ? '' : a).join(``).split(`.`).map(a => /www/.test(a) ? '' : a).filter(a => a != '')[0]
+// }
+// console.log(domainName('http://github.com/carbonfive/raygun'));
+// console.log(domainName("http://www.zombie-bites.com"));
+// console.log(domainName("https://www.cnet.com"));
+// console.log(domainName("http://google.co.jp"));
+// console.log(domainName("www.xakep.ru"));
+// function domainName(url) {
+// 	return url.replace("https://", '').replace("http://", '').replace("www.", '').split('.')[0];
+// };

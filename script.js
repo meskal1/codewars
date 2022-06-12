@@ -3392,3 +3392,29 @@
 // 	return max
 // }
 // console.log(maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
+// Маркетинговая команда тратит слишком много времени на ввод хэштегов.
+// Давайте поможем им с нашим генератором хэштегов!
+// Вот сделка:
+// Он должен начинаться с хэштега (#).
+// Во всех словах первая буква должна быть заглавной.
+// Если окончательный результат длиннее 140 символов, он должен вернуть false.
+// Если ввод или результат представляет собой пустую строку, он должен вернуть false.
+// Примеры
+// " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
+// "    Hello     World   "                  =>  "#HelloWorld"
+// ""                                        =>  false
+// function generateHashtag(str) {
+// 	const a = '#' + str.replace(/(^|\s)\S/g, (a) => a.toUpperCase()).replace(/ /g, '')
+// 	return str.replace(/ /g, '').length === 0 || a.length > 140 ? false : a
+// }
+// console.log(generateHashtag(" Hello there thanks for trying my Kata"));
+// console.log(generateHashtag("Do We have A Hashtag"));// "#DoWeHaveAHashtag"
+// console.log(generateHashtag(" "));
+// function generateHashtag(str) {
+// 	if (!str || str.length < 1) return false;
+// 	const r = '#' + str.split(' ').map(function (el) {
+// 		return el.charAt(0).toUpperCase() + el.slice(1).toLowerCase();
+// 	}).join('');
+// 	return r.length > 140 ? false : r;
+// }

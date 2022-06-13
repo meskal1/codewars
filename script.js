@@ -3434,3 +3434,21 @@
 // function domainName(url) {
 // 	return url.replace("https://", '').replace("http://", '').replace("www.", '').split('.')[0];
 // };
+
+// Пит любит печь торты. У него есть рецепты и ингредиенты. К сожалению, он не силен в математике. Поможешь ему узнать, сколько тортов он сможет испечь, учитывая его рецепты?
+// Напишите функциюcakes(), которая принимает рецепт (объект) и доступные ингредиенты (тоже объект) и возвращает максимальное количество тортов, которые Пит может испечь (целое число). Для простоты нет единиц измерения количества (например, 1 фунт муки или 200 г сахара — это просто 1 или 200). Ингредиенты, отсутствующие в объектах, можно считать равными 0.
+// Примеры:
+// // must return 2
+// cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200});
+// // must return 0
+// cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000});
+// function cakes(recipe, available) {
+// 	const a = Object.keys(recipe)
+// 	let z = []
+// 	for (let i = 0; i < a.length; i++) {
+// 		z.push(Math.floor(available[a[i]] / recipe[a[i]]))
+// 	}
+// 	return z.includes(NaN) ? 0 : Math.min(...z)
+// }
+// console.log(cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 })); //2
+// console.log(cakes({ apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 }, { sugar: 500, flour: 2000, milk: 2000 })); //0

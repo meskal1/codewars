@@ -3452,3 +3452,51 @@
 // }
 // console.log(cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 })); //2
 // console.log(cakes({ apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 }, { sugar: 500, flour: 2000, milk: 2000 })); //0
+
+// Числа Фибоначчи — это числа в следующей целочисленной последовательности (Fn):
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
+// такие как F(n) = F(n-1) + F(n-2), где F(0) = 0 и F(1) = 1.
+// Имея число, скажем, prod (for product), мы ищем два числа Фибоначчи F(n) и F(n+1), проверяя
+// F(n) * F(n+1) = prod.
+// Ваша функция productFib принимает целое число (prod) и возвращает массив: [F(n), F(n+1), true]
+// если F(n) * F(n+1) = prod.
+// Если вы не найдете два последовательных F(n), подтверждающих F(n) * F(n+1) = prod, вы вернете
+// [F(n), F(n+1), false]
+// F(n) — наименьший, такой как F(n) * F(n+1) > prod.
+// Некоторые примеры возврата:
+// productFib(714) # should return (21, 34, true),
+//                 # since F(8) = 21, F(9) = 34 and 714 = 21 * 34
+// productFib(800) # should return (34, 55, false),
+//                 # since F(8) = 21, F(9) = 34, F(10) = 55 and 21 * 34 < 800 < 34 * 55
+// -----
+// productFib(714) # should return [21, 34, true],
+// productFib(800) # should return [34, 55, false]
+// function productFib(prod) {
+// 	const a = []
+// 	let b = 0
+// 	let c = 1
+// 	for (let i = 1; i < prod; i++) {
+// 		let z = b + c
+// 		if (b * c > prod) {
+// 			a.push(b)
+// 			a.push(c)
+// 			a.push(false)
+// 			break
+// 		} else if (b * c === prod) {
+// 			a.push(b)
+// 			a.push(c)
+// 			a.push(true)
+// 			break
+// 		}
+// 		b = c
+// 		c = z
+// 	}
+// 	return a
+// }
+// console.log(productFib(714));
+// console.log(productFib(800));
+// function productFib(prod){
+// 	let [a, b] = [0, 1];
+// 	while(a * b < prod) [a, b] = [b, a + b];
+// 	return [a, b, a * b === prod];
+//  }

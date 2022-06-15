@@ -3500,3 +3500,31 @@
 // 	while(a * b < prod) [a, b] = [b, a + b];
 // 	return [a, b, a * b === prod];
 //  }
+
+// Напишите функцию с именем first_non_repeating_letter, которая принимает на вход строку и возвращает первый символ, который нигде в строке не повторяется.
+// Например, если на вход введено 'stress', функция должна вернуть «t», так как буква t встречается в строке только один раз и встречается в строке первой.
+// В качестве дополнительной проблемы прописные и строчные буквы считаются одним и тем же символом, но функция должна возвращать правильный регистр для начальной буквы. Например, ввод «sTreSS» должен возвращать «T».
+// Если строка содержит все повторяющиеся символы, она должна возвращать пустую строку ("")
+// function firstNonRepeatingLetter(s) {
+// 	const a = [...new Set(s.toLowerCase())]
+// 	let b = ''
+// 	for (let i = 0; i < a.length; i++) {
+// 		if (s.toLowerCase().split(``).filter(b => b === a[i]).length === 1) {
+// 			b = a[i]
+// 			break
+// 		}
+// 	}
+// 	return b != '' ? (s.includes(b) ? b : b.toUpperCase()) : b
+// }
+// console.log(firstNonRepeatingLetter('moonmen'));//e
+// console.log(firstNonRepeatingLetter('stress'));//t
+// console.log(firstNonRepeatingLetter('a'));//a
+// console.log(firstNonRepeatingLetter('sTreSS'));//T
+// function firstNonRepeatingLetter(s) {
+// 	for (let i in s) {
+// 		if (s.match(new RegExp(s[i], "gi")).length === 1) {
+// 			return s[i];
+// 		}
+// 	}
+// 	return '';
+// }

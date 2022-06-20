@@ -3572,3 +3572,39 @@
 // 	return result;
 // }
 // console.log(zeros(6));
+
+// Завершите функцию scramble(str1, str2), которая возвращает true, если часть символов str1 можно переставить так, чтобы они соответствовали str2, в противном случае возвращает false.
+// Заметки:
+// Будут использоваться только строчные буквы (a-z). Никакие знаки препинания или цифры не будут включены.
+// Необходимо учитывать производительность.
+// Examples
+// scramble('rkqodlw', 'world') ==> True
+// scramble('cedewaraaossoqqyt', 'codewars') ==> True
+// scramble('katas', 'steak') ==> False
+// function scramble(str1, str2) {
+// 	let index = 0;
+// 	let len = str2.length;
+// 	let savedIndexes = {};
+// 	let isMatch = false;
+// 	while (index < len) {
+// 		let letter = str2[index];
+// 		let startingLetterIndex = (savedIndexes[letter] + 1) || 0;
+// 		let matchIndex = str1.indexOf(letter, startingLetterIndex);
+
+// 		isMatch = matchIndex > -1;
+// 		if (!isMatch)
+// 			break;
+// 		index++;
+// 		savedIndexes[letter] = matchIndex;
+// 	}
+
+// 	return isMatch;
+// }
+console.log(scramble('rkqodlw', 'world'));
+console.log(scramble('cedewaraaossoqqyt', 'codewars'));
+console.log(scramble('katas', 'steak'));
+console.log(scramble('scriptjavx', 'javascript'));
+console.log(scramble('scriptingjava', 'javascript')); //true
+function scramble(str1, str2) {
+	return [...str2].every(val => str2.split(val).length <= str1.split(val).length);
+}

@@ -3590,21 +3590,31 @@
 // 		let letter = str2[index];
 // 		let startingLetterIndex = (savedIndexes[letter] + 1) || 0;
 // 		let matchIndex = str1.indexOf(letter, startingLetterIndex);
-
 // 		isMatch = matchIndex > -1;
 // 		if (!isMatch)
 // 			break;
 // 		index++;
 // 		savedIndexes[letter] = matchIndex;
 // 	}
-
 // 	return isMatch;
 // }
-console.log(scramble('rkqodlw', 'world'));
-console.log(scramble('cedewaraaossoqqyt', 'codewars'));
-console.log(scramble('katas', 'steak'));
-console.log(scramble('scriptjavx', 'javascript'));
-console.log(scramble('scriptingjava', 'javascript')); //true
-function scramble(str1, str2) {
-	return [...str2].every(val => str2.split(val).length <= str1.split(val).length);
-}
+// console.log(scramble('rkqodlw', 'world'));
+// console.log(scramble('cedewaraaossoqqyt', 'codewars'));
+// console.log(scramble('katas', 'steak'));
+// console.log(scramble('scriptjavx', 'javascript'));
+// console.log(scramble('scriptingjava', 'javascript')); //true
+// function scramble(str1, str2) {
+// 	return [...str2].every(val => str2.split(val).length <= str1.split(val).length);
+// }
+
+// В этой Ката вам будет дана строка, которая может содержать смешанные прописные и строчные буквы, и ваша задача состоит в том, чтобы преобразовать эту строку либо только в строчные, либо только в прописные буквы на основе:
+// внести как можно меньше изменений.
+// если строка содержит одинаковое количество прописных и строчных букв, преобразовать строку в нижний регистр.
+// solve("coDe") = "code". Lowercase characters > uppercase. Change only the "D" to lowercase.
+// solve("CODe") = "CODE". Uppercase characters > lowecase. Change only the "e" to uppercase.
+// solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
+// function solve(s) {
+// 	return s.replace(/[a-z]/g, '').length > s.replace(/[A-Z]/g, '').length ? s.toUpperCase() : s.toLowerCase();
+// }
+// console.log(solve('coDE'));
+// console.log(solve('CODe'));

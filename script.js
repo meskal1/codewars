@@ -3618,3 +3618,11 @@
 // }
 // console.log(solve('coDE'));
 // console.log(solve('CODe'));
+
+// Массивы JavaScript поддерживают функцию фильтра (начиная с JavaScript 1.6). Используйте функциональность фильтра, чтобы завершить данную функцию.
+// Решение будет работать следующим образом:
+// getEvenNumbers([2,4,5,6]) // should == [2,4,6]
+// function getEvenNumbers(numbersArray) {
+// 	return numbersArray.filter(a => a % 2 == 0)
+// }
+// console.log(getEvenNumbers([2, 4, 5, 6]));

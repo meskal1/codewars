@@ -3626,3 +3626,11 @@
 // 	return numbersArray.filter(a => a % 2 == 0)
 // }
 // console.log(getEvenNumbers([2, 4, 5, 6]));
+
+// Получив строку, сделайте заглавными буквы, которые занимают четные и нечетные индексы отдельно, и верните, как показано ниже. Индекс 0 будет считаться четным.
+// For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+// Ввод будет строчной строкой без пробелов.
+// function capitalize(s) {
+// 	return [s.split(``).map((el, i) => i % 2 === 0 ? el.toUpperCase() : el).join(``), s.split(``).map((el, i) => i % 2 !== 0 ? el.toUpperCase() : el).join(``)]
+// }
+// console.log(capitalize('abcdef'));

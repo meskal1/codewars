@@ -3634,3 +3634,10 @@
 // 	return [s.split(``).map((el, i) => i % 2 === 0 ? el.toUpperCase() : el).join(``), s.split(``).map((el, i) => i % 2 !== 0 ? el.toUpperCase() : el).join(``)]
 // }
 // console.log(capitalize('abcdef'));
+
+// Напишите функцию Repeater(), которая принимает два аргумента (строку и число) и возвращает новую строку, в которой входная строка повторяется столько раз.
+// "a", 5 --> "aaaaa"
+// function repeater(string, n) {
+// 	return string.repeat(n)
+// }
+// console.log(repeater("a", 5));

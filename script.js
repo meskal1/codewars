@@ -3654,3 +3654,21 @@
 // 	return +[...new Set(values)].sort().join(``)
 // }
 // console.log(minValue([3, 1, 1]));
+
+// Мы хотим сгенерировать функцию, которая вычисляет ряд, начиная с 0 и заканчивая заданным числом.
+// Input: > 6 Output: 0 + 1 + 2 + 3 + 4 + 5 + 6 = 21
+// Input: > -15 Output: -15 < 0
+// Input: > 0 Output: 0 = 0
+// var SequenceSum = (function () {
+// 	function SequenceSum() { }
+// 	SequenceSum.showSequence = function (count) {
+// 		let sum = '0'
+// 		for (let i = 1; i <= count; i++) {
+// 			sum += '+' + i
+// 		}
+// 		return count > 0 ? sum + ' = ' + sum.split(`+`).reduce((a, b) => +a + +b, 0) : count < 0 ? count + '<0' : '0=0';
+// 	};
+// 	return SequenceSum;
+// })();
+// console.log(SequenceSum.showSequence(6));
+// console.log(SequenceSum.showSequence(-15));

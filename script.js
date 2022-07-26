@@ -3672,3 +3672,15 @@
 // })();
 // console.log(SequenceSum.showSequence(6));
 // console.log(SequenceSum.showSequence(-15));
+// var SequenceSum = {showSequence : n => n<0 ? n+'<0' : [...Array(n+1).keys()].join('+') + (n ? ' = ' : '=') + n*(n+1)/2}
+
+// Ваша задача — удалить из строки все повторяющиеся слова, оставив только одиночные (первые) слова.
+// Пример:
+// Вход:
+// 'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+// Выход:
+// 'alpha beta gamma delta'
+// function removeDuplicateWords(s) {
+// 	return [...new Set(s.split(` `))].join(` `)
+// }
+// console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));

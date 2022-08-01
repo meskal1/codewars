@@ -3736,10 +3736,24 @@
 // Первый элемент 120 — это общий вес команды 1, а второй элемент 140 — общий вес команды 2.
 // rowWeights([80]) ==>  return (80, 0)
 // Первый элемент 80 — это общий вес команды 1, а второй элемент 0 — это общий вес команды 2.
-function rowWeights(array) {
-	let first = 0
-	let second = 0
-	array.map((el, i) => {i % 2 === 0 ? first += el : second += el})
-	return [first, second]
-}
-console.log(rowWeights([13, 27, 49]));
+// function rowWeights(array) {
+// 	let first = 0
+// 	let second = 0
+// 	array.map((el, i) => {i % 2 === 0 ? first += el : second += el})
+// 	return [first, second]
+// }
+// console.log(rowWeights([13, 27, 49]));
+
+// Учитывая двумерный (вложенный) список (массив, вектор,..) размера m * n, ваша задача состоит в том, чтобы найти сумму минимальных значений в каждой строке.
+// [ [ 1, 2, 3, 4, 5 ]        #  minimum value of row is 1
+// , [ 5, 6, 7, 8, 9 ]        #  minimum value of row is 5
+// , [ 20, 21, 34, 56, 100 ]  #  minimum value of row is 20]
+// Таким образом, функция должна вернуть 26, потому что сумма минимумов равна 1 + 5 + 20 = 26.
+// Примечание. Вам всегда будет предоставлен непустой список, содержащий положительные значения.
+// function sumOfMinimums(arr) {
+// 	return arr.map(el => Math.min(...el)).reduce((a, b) => a + b)
+// }
+// console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]])); // 9
+// function sumOfMinimums(arr) {
+// 	return arr.reduce((p, c) => p + Math.min(...c), 0);
+//  }

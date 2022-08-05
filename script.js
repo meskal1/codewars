@@ -3794,3 +3794,11 @@
 // function mygcd(x,y){
 // 	return y == 0 ? x : mygcd(y, x % y)
 //  }
+
+// Напишите метод, который принимает один аргумент в качестве имени, а затем приветствует это имя, пишется с заглавной буквы и заканчивается восклицательным знаком.
+// "riley" --> "Hello Riley!"
+// "JACK"  --> "Hello Jack!"
+// function greet(name) {
+// 	return `Hello ${name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()}!`
+// }
+// console.log(greet('riley'));

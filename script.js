@@ -3802,3 +3802,12 @@
 // 	return `Hello ${name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()}!`
 // }
 // console.log(greet('riley'));
+
+// Напишите функцию которая принимает строку, содержащую до 26 уникальных буквенных символов, и возвращает строку, содержащую те же символы в алфавитном порядке.
+// "abcdef"                      -- => "abcdef"
+// "pqksuvy"                     -- => "kpqsuvy"
+// "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
+// function sortGiftCode(code) {
+// 	return code.split(``).sort().join(``)
+// }
+// console.log(sortGiftCode('pqksuvy'));

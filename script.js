@@ -3811,3 +3811,13 @@
 // 	return code.split(``).sort().join(``)
 // }
 // console.log(sortGiftCode('pqksuvy'));
+
+// Создайте функцию add(n), которая возвращает функцию, которая всегда добавляет n к любому числу.
+// var addOne = add(1);
+// addOne(3); // 4
+// function add(n) {
+// 	return function (a) {
+// 		return a + n
+// 	}
+// }
+// console.log(addOne(3));

@@ -3821,3 +3821,28 @@
 // 	}
 // }
 // console.log(addOne(3));
+// const add = n => x => x + n;
+
+// Мы хотим знать индекс гласных в данном слове, например, в слове супер две гласные (вторая и четвертая буквы).
+// Таким образом, учитывая строку «супер», мы должны вернуть список из [2, 4].
+// Some examples:
+// Mmmm  => []
+// Super => [2,4]
+// Apple => [1,5]
+// YoMama -> [1,2,4,6]
+// Гласные в этом контексте относятся к: a e i o u y (включая верхний регистр)
+// Это индексируется от [1..n] (не нулевой индекс!)
+// function vowelIndices(word) {
+// 	return word.toLowerCase().split(``).map((el, i) => +el.replace(/[aeiouy]/g,i+1)).filter(el => /[0-9]/g.test(el))
+// }
+// console.log(vowelIndices('Supera'));
+// console.log(vowelIndices('supercalifragilisticexpialidocious'));
+// function vowelIndices(word) {
+// 	var arr = [];
+// 	for(var i = 0; i < word.length; i++) {
+// 	  if(/[aeioyu]/i.test(word[i])) {
+// 		 arr.push(i+1);
+// 	  }
+// 	}
+// 	return arr;
+//  }

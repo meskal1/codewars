@@ -3846,3 +3846,16 @@
 // 	}
 // 	return arr;
 //  }
+
+// Завершите метод, который принимает массив целых чисел и возвращает одно из следующих значений:
+// "yes, ascending" - если числа в массиве отсортированы по возрастанию
+// "yes, descending" - если числа в массиве отсортированы по убыванию
+// "no" - otherwise
+// Вы можете предположить, что массив всегда будет действительным, и всегда будет один правильный ответ.
+// function isSortedAndHow(array) {
+// 	return array + '' === [...array].sort((a, b) => a - b).reverse() + '' ? "yes, descending" :
+// 		array + '' === [...array].sort((a, b) => a - b) + '' ? "yes, ascending" : "no"
+// }
+// console.log(isSortedAndHow([15, 7, 3, -8])); //'yes, descending'
+// console.log(isSortedAndHow([4, 2, 30]));
+// console.log(isSortedAndHow([1, 2])); 

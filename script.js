@@ -3858,4 +3858,19 @@
 // }
 // console.log(isSortedAndHow([15, 7, 3, -8])); //'yes, descending'
 // console.log(isSortedAndHow([4, 2, 30]));
-// console.log(isSortedAndHow([1, 2])); 
+// console.log(isSortedAndHow([1, 2]));
+
+// В этой ката вы должны просто определить, является ли данный год високосным или нет. Если вы не знаете правил, вот они:
+// years делятся на 4, являются високосными
+// но years кратные 100, не являются високосными
+// но years кратные 400, являются високосными
+// Будут проверены только действительные годы (положительные целые числа), поэтому вам не нужно их проверять.
+// function isLeapYear(year) {
+// 	return year % 4 === 0 && year % 100 !== 0 ? true : year % 400 === 0 ? true : false
+// }
+// console.log(isLeapYear(1984)); //true
+// console.log(isLeapYear(1800));//false
+// console.log(isLeapYear(1000));//false
+// function isLeapYear(year) {
+// 	return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+// }

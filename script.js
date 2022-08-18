@@ -3893,7 +3893,63 @@
 // 4884 is a palindrome and we needed 4 steps to obtain it, so answer for 87 is 4.
 // Additional info
 // Some interesting information on the problem can be found in this Wikipedia article on Lychrel numbers.
-function palindromeChainLength(n) {
-  return 0;
-}
-console.log(palindromeChainLength());
+// function palindromeChainLength(n) {
+//   let a = n;
+//   let steps = 0;
+//   while (
+//     !(
+//       (("" + a).length % 2 === 0 &&
+//         +("" + a)
+//           .split(``)
+//           .splice(0, ("" + a).length / 2)
+//           .join(``) ===
+//           +("" + a)
+//             .split(``)
+//             .splice(("" + a).length / 2)
+//             .reverse()
+//             .join(``)) ||
+//       +("" + a)
+//         .split(``)
+//         .splice(0, ("" + a).length / 2)
+//         .join(``) ===
+//         +("" + a)
+//           .split(``)
+//           .splice(("" + a).length / 2 + 1)
+//           .reverse()
+//           .join(``)
+//     )
+//   ) {
+//     a += +("" + a).split(``).reverse().join(``);
+//     steps++;
+//   }
+//   if (
+//     (("" + a).length % 2 === 0 &&
+//       +("" + a)
+//         .split(``)
+//         .splice(0, ("" + a).length / 2)
+//         .join(``) ===
+//         +("" + a)
+//           .split(``)
+//           .splice(("" + a).length / 2)
+//           .reverse()
+//           .join(``)) ||
+//     +("" + a)
+//       .split(``)
+//       .splice(0, ("" + a).length / 2)
+//       .join(``) ===
+//       +("" + a)
+//         .split(``)
+//         .splice(("" + a).length / 2 + 1)
+//         .reverse()
+//         .join(``)
+//   )
+//     return steps;
+// }
+// console.log(palindromeChainLength(87));
+// var palindromeChainLength  = function(n) {
+// 	var x = parseInt( (""+n).split('').reverse().join('') );
+// 	if(n != x){
+// 	  return 1 + palindromeChainLength (n + x);
+// 	}
+// 	return 0;
+//  };

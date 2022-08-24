@@ -1,4 +1,4 @@
-// 'use strict';
+"use strict";
 
 // function lnth(str) {
 // 	let n = str.replace(/\s*,\s*/g, ` `).replace(/\s*!\s*/g, ``).replace(/\s* \s*/g, ` `).replace(/\s*`?`\s*/g, ``);
@@ -3968,3 +3968,13 @@
 //   return x.replace(/ /g, "");
 // }
 // console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
+
+// Поскольку Натан знает, как важно избегать обезвоживания, он выпивает 0,5 литра воды за час езды на велосипеде.
+// Вам дается время в часах, и вам нужно вернуть количество литров, которые выпьет Натан, округленное до наименьшего значения.
+// time = 3 ----> litres = 1
+// time = 6.7---> litres = 3
+// time = 11.8--> litres = 5
+// function litres(time) {
+// 	return Math.floor(time/2)
+//  }
+//  console.log(litres(6.7));

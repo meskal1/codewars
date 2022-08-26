@@ -3984,7 +3984,18 @@
 // invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
 // invert([]) == []
 // Можно предположить, что все значения являются целыми числами. Не изменяйте входной массив/список.
-function invert(array) {
-  return array.map((el) => el * -1);
-}
-console.log(invert([1, -2, 3, -4, 5]));
+// function invert(array) {
+//   return array.map((el) => el * -1);
+// }
+// console.log(invert([1, -2, 3, -4, 5]));
+
+// Создайте функцию, которая отвечает на вопрос «Вы играете на банджо?».
+// Если ваше имя начинается с буквы «R» или строчной «r», вы играете на банджо!
+// Функция принимает имя в качестве единственного аргумента и возвращает одну из следующих строк:
+// name + " plays banjo" 
+// name + " does not play banjo"
+// Names given are always valid strings.
+// function areYouPlayingBanjo(name) {
+// 	return name[0].toLowerCase() === 'r'? name + " plays banjo" : name + " does not play banjo"
+//  }
+//  console.log(areYouPlayingBanjo('Adam'));

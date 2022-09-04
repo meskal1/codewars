@@ -4088,3 +4088,20 @@
 // 	return array == null || array.length < 3 ? 0 : array.reduce((a,b)=>a+b) - Math.max(...array) - Math.min(...array)
 // }
 // console.log(sumArray([ 6, 2, 1, 8, 10 ])); //16
+
+// Напишите функцию RemoveExclamationMarks, которая удаляет все восклицательные знаки из заданной строки.
+// function removeExclamationMarks(s) {
+// 	return s.replace(/!/g,'')
+//  }
+//  console.log(removeExclamationMarks("Hello World!"));
+
+// Напишите функцию с именем setAlarm, которая получает два параметра. Первый параметр, занятости, истинен, когда вы работаете, а второй параметр, отпуск, истинен, когда вы находитесь в отпуске.
+// Функция должна возвращать true, если вы работаете, а не в отпуске (поскольку это обстоятельства, при которых вам нужно установить будильник). В противном случае он должен возвращать false. Примеры:
+// setAlarm(true, true) -> false
+// setAlarm(false, true) -> false
+// setAlarm(false, false) -> false
+// setAlarm(true, false) -> true
+// function setAlarm(employed, vacation){
+// 	return employed && !vacation 
+// }
+// console.log(setAlarm(true, true));

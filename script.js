@@ -4141,7 +4141,21 @@
 // У всех животных праздник! Каждое животное приносит одно блюдо. Есть только одно правило: блюдо должно начинаться и заканчиваться теми же буквами, что и имя животного. Например, большая голубая цапля приносит чесночный наан, а синица приносит шоколадный торт.
 // Напишите функцию feast, которая принимает имя животного и блюдо в качестве аргументов и возвращает true или false, чтобы указать, разрешено ли животному приносить блюдо на пир.
 // Предположим, что зверь и блюдо всегда являются строками нижнего регистра и каждая из них состоит как минимум из двух букв. зверь и блюдо могут содержать дефисы и пробелы, но они не будут появляться ни в начале, ни в конце строки. Они не будут содержать цифр.
-function feast(beast, dish) {
-  return beast[0] == dish[0] && beast.at(-1) == dish.at(-1)
-}
-console.log(feast("great blue heron", "garlic naan")); //true
+// function feast(beast, dish) {
+//   return beast[0] == dish[0] && beast.at(-1) == dish.at(-1)
+// }
+// console.log(feast("great blue heron", "garlic naan")); //true
+
+// Competition	Goals
+// La Liga	43
+// Champions League	10
+// Copa del Rey	5
+// Создайте эти три переменные и сохраните соответствующие значения, используя приведенную выше таблицу:
+// laLigaGoals
+// championsLeagueGoals
+// copaDelReyGoals
+// Создайте четвертую переменную с именем totalGoals, в которой хранится сумма всех голов Месси за этот год.
+// var laLigaGoals = 43
+// var championsLeagueGoals = 10
+// var copaDelReyGoals = 5
+// var totalGoals = laLigaGoals+championsLeagueGoals+copaDelReyGoals

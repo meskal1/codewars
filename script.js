@@ -4159,3 +4159,16 @@
 // var championsLeagueGoals = 10
 // var copaDelReyGoals = 5
 // var totalGoals = laLigaGoals+championsLeagueGoals+copaDelReyGoals
+
+// Создайте метод, чтобы увидеть, является ли строка ВСЕМИ ЗАГЛАВНЫМИ.
+// "c" -> False
+// "C" -> True
+// "hello I AM DONALD" -> False
+// "HELLO I AM DONALD" -> True
+// "ACSKLDFJSgSKLDFJSKLDFJ" -> False
+// "ACSKLDFJSGSKLDFJSKLDFJ" -> True
+// В этом Ката говорится, что строка написана ВСЕ ЗАГЛАВНЫМИ буквами, если она не содержит строчных букв, поэтому любая строка, вообще не содержащая букв, тривиально считается написанной ВСЕМИ ЗАГЛАВНЫМИ буквами.
+// String.prototype.isUpperCase = function () {
+//   return this.toUpperCase() == this
+// };
+// console.log("hello I AM DONALD".isUpperCase());

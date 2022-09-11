@@ -23,3 +23,11 @@
 //   return health > 0
 // }
 // console.log(checkAlive(5)) //true
+
+// Напишите функцию, которая будет принимать два параметра: переменную и тип, и проверяйте, соответствует ли тип переменной типу. Возвращает true, если типы совпадают, или false, если нет.
+// 42, "number"   --> true
+// "42", "number" --> false
+// function typeValidation(variable, type) {
+//   return typeof variable === type
+// }
+// console.log(typeValidation(42, 'number')) //true

@@ -49,3 +49,9 @@
 //   return array[n] ? Math.pow(array[n], n) : -1
 // }
 // console.log(index([1, 2, 3, 4], 2)) //9
+
+// Простое использование сортировки. Создайте функцию, которая возвращает элементы входного массива/списка, отсортированные в лексикографическом порядке.
+// const sortme = names => {
+//   return names.sort()
+// }
+// console.log(sortme(['one', 'two', 'three'])) //["one", "three", "two"]

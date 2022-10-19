@@ -63,3 +63,21 @@
 // }
 // console.log(bump('__nn_nnnn__n_n___n____nn__nnn')) //"Woohoo!"
 // console.log(bump('_nnnnnnn_n__n______nn__nn_nnn')) //"Car Dead"
+
+// Ваша задача — реализовать эти функции на данном языке. Убедитесь, что он не редактирует массив; это вызовет проблемы! Вот шпаргалка:
+// | HEAD | <----------- TAIL ------------> |
+// [  1,  2,  3,  4,  5,  6,  7,  8,  9,  10]
+// | <----------- INIT ------------> | LAST |
+// head [x] = x
+// tail [x] = []
+// init [x] = []
+// last [x] = x
+// head([1,2,3,4,5]); => 1
+// tail([1,2,3,4,5]); => [2,3,4,5]
+// const head = arr => arr[0]
+// const tail = arr => (arr.length > 1 ? arr.slice(1) : [])
+// const init = arr => (arr.length > 1 ? arr.slice(0, arr.length - 1) : [])
+// const last = arr => arr.slice(-1)[0]
+// console.log(init([1, 2, 3, 4, 5]))
+// console.log(init([36]))
+// console.log(tail([20, 19, 16, 11, 36]))

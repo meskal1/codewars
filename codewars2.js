@@ -81,3 +81,18 @@
 // console.log(init([1, 2, 3, 4, 5]))
 // console.log(init([36]))
 // console.log(tail([20, 19, 16, 11, 36]))
+
+// Вам предоставляется словарь/хэш/объект, содержащий несколько языков и результаты вашего теста на данных языках. Верните список языков, на которых ваша тестовая оценка не ниже 60, в порядке убывания результатов.
+// Примечание: баллы всегда будут уникальными (поэтому не будет повторяющихся значений).
+// {"Java": 10, "Ruby": 80, "Python": 65}    -->  ["Ruby", "Python"]
+// {"Hindi": 60, "Dutch" : 93, "Greek": 71}  -->  ["Dutch", "Greek", "Hindi"]
+// {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
+// function myLanguages(results) {
+//   const arr = []
+//   for (let i of Object.entries(results)) {
+//     if (i[1] > 59) arr.push(i)
+//   }
+//   return arr.sort((a, b) => b[1] - a[1]).map(el => el[0])
+// }
+// console.log(myLanguages({ Java: 10, Ruby: 80, Python: 65 }))
+// console.log(myLanguages({ Hindi: 60, Greek: 71, Dutch: 93 }))

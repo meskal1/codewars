@@ -96,3 +96,15 @@
 // }
 // console.log(myLanguages({ Java: 10, Ruby: 80, Python: 65 }))
 // console.log(myLanguages({ Hindi: 60, Greek: 71, Dutch: 93 }))
+
+// Учитывая строку, состоящую из цифр [0-9], вернуть строку, в которой каждая цифра повторяется количество раз, равное ее значению.
+// explode("312")
+// should return :
+// "333122"
+// explode("102269")
+// should return :
+// "12222666666999999999
+function explode(s) {
+  return s
+}
+console.log(explode('312'))

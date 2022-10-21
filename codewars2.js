@@ -104,7 +104,19 @@
 // explode("102269")
 // should return :
 // "12222666666999999999
-function explode(s) {
-  return s
-}
-console.log(explode('312'))
+// function explode(s) {
+//   return s
+//     .split('')
+//     .map(el => {
+//       let a = ''
+//       for (let i = 0; i < +el; i++) {
+//         a += el
+//       }
+//       return a
+//     })
+//     .join('')
+// }
+// console.log(explode('312'))
+// function explode(s) {
+// 	return s.split("").map((e) => e.repeat(+e)).join("");
+//  }

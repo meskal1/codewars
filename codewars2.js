@@ -1,3 +1,4 @@
+'use strict'
 // Отладка конвертера Цельсия
 // Ваш друг едет за границу в Соединенные Штаты, поэтому он написал программу для преобразования Фаренгейта в Цельсий. К сожалению, в его коде есть ошибки.
 // Найдите ошибки в коде, чтобы конвертер Цельсия работал правильно.
@@ -120,3 +121,137 @@
 // function explode(s) {
 // 	return s.split("").map((e) => e.repeat(+e)).join("");
 //  }
+
+// Функция проверки палиндрома
+
+// const isPalindrome = (string) => {
+// 	return (
+// 	  string.toLowerCase() == string.toLowerCase().split("").reverse().join("")
+// 	);
+//  };
+
+// =========
+
+// Функция поиска самого короткого слова
+
+//  const findShort = (string) => {
+// 	return string.split(" ").sort((a, b) => a.length - b.length)[0];
+//  };
+
+// =========
+
+// Функция создания инициалов
+
+//  const toInitials = (initials) => {
+// 	return initials
+// 	  .split(" ")
+// 	  .map((el) => el[0].toUpperCase() + ".")
+// 	  .join("");
+//  };
+
+// =========
+
+// Функция суммирования всех цифр числа
+
+//  const sumDigits = (digits) => {
+// 	const num = digits < 0 ? -digits : digits;
+// 	return (num + "").split("").reduce((a, b) => +a + +b);
+//  };
+
+// =========
+
+// Функция поиска минимального и максимального значений в массиве
+
+//  const minMax = (arr) => {
+// 	const sortArr = arr.sort((a, b) => a - b);
+// 	return [sortArr[0], sortArr.at(-1)];
+//  };
+
+// Функция создания набора дубликатов символов строки
+
+//  const accum = (string) => {
+// 	return string
+// 	  .split("")
+// 	  .map((el, index) => {
+// 		 let letters = el.toUpperCase();
+// 		 for (let i = 0; i < index; i++) {
+// 			letters += el.toLowerCase();
+// 		 }
+// 		 return letters;
+// 	  })
+// 	  .join("-");
+//  };
+
+// =========
+
+// Функция возврата индексов заглавных букв строки
+
+//  const capitals = (string) => {
+// 	const capitalsIndex = [];
+// 	string.split("").map((el, i) => {
+// 	  //Наверно запушить менее ресурсоемко чем юзать filter, но это не точно))
+// 	  if (el === el.toUpperCase()) {
+// 		 capitalsIndex.push(i);
+// 	  }
+// 	  return el;
+// 	});
+// 	return capitalsIndex;
+//  };
+
+// =========
+
+// Функция вывода чисел от 1 до n (n - передаваемый аргумент)
+
+//  const fooBar = (num) => {
+// 	const arr = [];
+// 	for (let i = 1; i < num; i++) {
+// 	  if (i % 5 == 0 && i % 3 == 0) arr.push("foobar");
+// 	  else if (i % 5 == 0) arr.push("bar");
+// 	  else if (i % 3 == 0) arr.push("foo");
+// 	  else arr.push(i);
+// 	}
+// 	return arr;
+//Второй вариант показался страшным))
+//   return new Array(num).fill(1).map((el, i) => {
+//     return (i + 1) % 5 == 0 && (i + 1) % 3 == 0 ? 'foobar' : (i + 1) % 3 == 0 ? 'foo' : (i + 1) % 5 == 0 ? 'bar' : i + 1
+//   })
+//  };
+
+// =========
+
+// Функция возврата уникальных значений из нескольких массивов
+
+//  const uniteUnique = (...arr) => {
+// 	return [...new Set(arr.flat())];
+//  };
+
+// =========
+
+// const arr = ['cat', 'pig', 'dog', 'cat', 'dog', 'cat'] необходимо получить массив с уникальными значениями, и отсортированной по частоте упоминания в массиве.
+
+//  const filterArr = (arr) => {
+// 	const objAmount = {};
+// 	for (let i = 0; i < arr.length; i++) {
+// 	  if (arr[i] in objAmount) {
+// 		 objAmount[arr[i]] = objAmount[arr[i]] + 1;
+// 	  } else {
+// 		 objAmount[arr[i]] = 1;
+// 	  }
+// 	}
+// 	return Object.entries(objAmount)
+// 	  .sort((a, b) => b[1] - a[1])
+// 	  .map((el) => el[0]);
+//  };
+
+// =========
+
+// Про замыкание. Нужно создать функцию inc(), которая будет возвращать число больше предыдущего на 1. При этом запрещено создавать глобальные переменные или другие объекты, в коде должна быть реализована только 1 эта функция
+
+//  const incNum = () => {
+// 	let num = 0;
+// 	const fun = () => {
+// 	  return ++num;
+// 	};
+// 	return fun;
+//  };
+//  let inc = incNum();

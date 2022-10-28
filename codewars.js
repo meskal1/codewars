@@ -498,6 +498,7 @@
 // console.log(isPalindrome(`olllo`)); //false
 // console.log(isPalindrome(``)); //true
 // const isPalindrome = x => x.toLowerCase().split('').reverse().join('') == x.toLowerCase();
+// const isPalindrome = string => string.toLowerCase() == string.toLowerCase().split('').reverse().join('');
 
 // Учитывая строку, вы должны вернуть строку, в которой каждый символ (с учетом регистра) повторяется один раз.
 // Examples (Input -> Output):

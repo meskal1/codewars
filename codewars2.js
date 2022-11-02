@@ -255,3 +255,16 @@
 // 	return fun;
 //  };
 //  let inc = incNum();
+
+// Создайте функцию, которая принимает 2 строковых аргумента и возвращает целое число, соответствующее количеству вхождений второго аргумента в первом.
+// Если вхождений не найдено, должно быть возвращено число 0.
+// ("Hello", "o")  ==>  1
+// ("Hello", "l")  ==>  2
+// ("", "z")       ==>  0
+// function strCount(str, letter) {
+//   return str.split('').filter(el => el === letter).length
+// }
+// console.log(strCount('', 'l'))
+// function strCount(str, letter) {
+//   return str.split(letter).length - 1
+// }

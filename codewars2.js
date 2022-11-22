@@ -280,3 +280,9 @@
 //   return name === 'Zach' ? 18 : 0
 // }
 // console.log(howManyLightsabersDoYouOwn('Zach'))
+
+// Теперь вам нужно написать функцию, которая принимает аргумент и возвращает его квадрат.
+// function square(num) {
+//   return num ** 2
+// }
+// console.log(square(3))

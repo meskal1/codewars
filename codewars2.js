@@ -330,3 +330,34 @@
 // console.log(score([2, 3, 4, 6, 2])) //400
 // const score = dice =>
 //   (dice.sort().join(``).match(/(\d)\1{2}|[15]/g) || []).reduce((pre, val) => pre + 100 * ({111: 10, 1: 1, 5: .5}[val] || val[0]), 0);
+
+// Ваша задача — написать функцию, которая увеличивает строку, чтобы создать новую строку.
+// Если строка уже заканчивается числом, число должно быть увеличено на 1.
+// Если строка не заканчивается цифрой. число 1 должно быть добавлено к новой строке.
+// foo -> foo1
+// foobar23 -> foobar24
+// foo0042 -> foo0043
+// foo9 -> foo10
+// foo099 -> foo100
+// Внимание: Если в числе есть ведущие нули, следует учитывать количество цифр.
+// function incrementString(string) {
+//   let startNum = string.split('').reverse()
+//   let stringStr = ''
+//   for (let i = 0; i < startNum.length; i++) {
+//     if (+string) startNum = string
+//     if (!(+startNum[i] + 1)) {
+//       startNum = string.slice(string.length - i)
+//       stringStr = string.slice(0, string.length - i)
+//     }
+//   }
+//   const stringZeros = startNum.length - (+startNum + '').length
+//   for (let i = 0; i < stringZeros; i++) {
+//     if (string.length <= (stringStr + (+startNum + 1)).length) continue
+//     stringStr += 0
+//   }
+//   stringStr += +startNum + 1
+//   return stringStr
+// }
+// console.log(incrementString('009'))
+// console.log(incrementString('foo0142'))
+// const incrementString = s => s.replace(/[0-8]?9*$/, m => String(++m))

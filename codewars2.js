@@ -361,3 +361,12 @@
 // console.log(incrementString('009'))
 // console.log(incrementString('foo0142'))
 // const incrementString = s => s.replace(/[0-8]?9*$/, m => String(++m))
+
+// Отладка функции sayHello
+// Звездолет «Энтерпрайз» столкнулся с проблемой при создании программы для приветствия всех,
+// кто поднимается на борт. Ваша задача — исправить код и заставить программу снова работать!
+// Example output:
+// Hello, Mr. Spock
+// function sayHello(name) {
+// 	return `Hello, ${name}`
+//  }

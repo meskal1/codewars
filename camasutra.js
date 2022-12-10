@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 // console.log(typeof "yo!") // "string"
 // console.log(typeof typeof 10) // "number" -> "string"
 
@@ -23,8 +23,6 @@
 // console.log(typeof (() => { })) // "function"
 
 // console.log(yo, hey)
-
-
 
 // const ted = bob // #345
 // const alex = ted
@@ -87,7 +85,6 @@
 // 	rec();
 // }
 
-
 //Обязательно:
 //https://www.youtube.com/watch?v=qMRhXenpz6Q&ab_channel=BoringFrontEnd
 
@@ -130,23 +127,23 @@
 
 // Task 01
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
-function sum(n) {
-	let a = n
-	return function (n) {
-		return a + n
-	}
-}
+// function sum(n) {
+// 	let a = n
+// 	return function (n) {
+// 		return a + n
+// 	}
+// }
 // console.log(sum(3)(6));
 
 // Task 02
 // Реализовать функцию makeCounter которая работает следующим образом:
-function makeCounter() {
-	let count = 0
-	return function () {
-		count++
-		return count
-	}
-}
+// function makeCounter() {
+// 	let count = 0
+// 	return function () {
+// 		count++
+// 		return count
+// 	}
+// }
 // const counter = makeCounter();
 // console.log(counter()); // 1
 // console.log(counter()); // 2
@@ -179,3 +176,4 @@ function makeCounter() {
 
 // Task 06
 // написать функцию, которая повторяет функционал метода flat массива на всю глубину.
+

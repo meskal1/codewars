@@ -370,3 +370,23 @@
 // function sayHello(name) {
 // 	return `Hello, ${name}`
 //  }
+
+// Основная идея заключается в подсчете всех встречающихся символов в строке. Если у вас есть строка like aba, то результат должен быть{'a': 2, 'b': 1}.
+// Что делать, если строка пуста? Тогда результатом должен быть пустой объектный литерал, {}.
+// function count(string) {
+//   const map = new Map()
+//   string.split('').map(el => {
+//     if (!map.has(el)) return map.set(el, 1)
+//     map.set(el, map.get(el) + 1)
+//   })
+//   return Object.fromEntries(map.entries())
+// }
+// console.log(count('asdasdgfttthkjyuj'))
+// function count(string) {
+//   const count = {}
+//   string.split('').map(s => {
+//     count[s] ? count[s]++ : (count[s] = 1)
+//   })
+//   return count
+// }
+// console.log(count('asdasdgfttthkjyuj'))

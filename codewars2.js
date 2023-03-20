@@ -390,3 +390,29 @@
 //   return count
 // }
 // console.log(count('asdasdgfttthkjyuj'))
+
+// Для заданной строки s найдите символ c (или C) с самым длинным последовательным повторением и вернитесь:
+// [c, l]
+// где l (или L) — длина повторения. Если есть два или более символов с одинаковым l, вернуть первый в порядке появления.
+// Для возврата пустой строки:
+// ["", 0]
+// В JavaScript: если вы используете Array.sort в своем решении, у вас могут возникнуть проблемы со случайными тестами, поскольку Array.sort нестабилен в версии Node.js, используемой CodeWars. Это не проблема ката.
+// function longestRepetition(s) {
+//   const charArray = s.split('')
+//   const countArray = []
+//   let counter = ''
+//   const maxLength = Math.max(...countArray.map(el => el.length))
+//   charArray.map((el, index) => {
+//     if (el === charArray[index + 1]) {
+//       counter === '' ? (counter = el + el) : (counter += el)
+//     } else {
+//       counter === '' ? (counter = el) : counter === ''
+//       countArray.push(counter)
+//       counter = ''
+//     }
+//   })
+//   return s ? [countArray.filter(el => el.length === maxLength)[0][0], maxLength] : ['', 0]
+// }
+// console.log(longestRepetition('bbbaaabaaaa'))
+// console.log(longestRepetition('aabb'))
+// const longestRepetition = s => s.match(/(.)\1*|$/g).reduce(([c, l], val) => (val.length > l ? [val[0], val.length] : [c, l]), [``, 0])

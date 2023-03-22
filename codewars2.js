@@ -416,3 +416,54 @@
 // console.log(longestRepetition('bbbaaabaaaa'))
 // console.log(longestRepetition('aabb'))
 // const longestRepetition = s => s.match(/(.)\1*|$/g).reduce(([c, l], val) => (val.length > l ? [val[0], val.length] : [c, l]), [``, 0])
+
+// Вы можете использовать предварительно загруженный словарь под названием NATO.
+// Набор используемых знаков препинания ,.!?.
+// В возвращаемой строке должны быть сохранены знаки препинания, но не пробелы.
+// Рентген не должен иметь тире внутри.
+// Каждое слово и знак препинания должны быть разделены пробелом ' '.
+// Не должно быть пробелов в конце
+// Input:
+// If, you can read?
+// Output:
+// India Foxtrot , Yankee Oscar Uniform Charlie Alfa November Romeo Echo Alfa Delta ?
+// function to_nato(words) {
+//   const alphabetArray = [
+//     'Alfa',
+//     'Bravo',
+//     'Charlie',
+//     'Delta',
+//     'Echo',
+//     'Foxtrot',
+//     'Golf',
+//     'Hotel',
+//     'India',
+//     'Juliett',
+//     'Kilo',
+//     'Lima',
+//     'Mike',
+//     'November',
+//     'Oscar',
+//     'Papa',
+//     'Quebec',
+//     'Romeo',
+//     'Sierra',
+//     'Tango',
+//     'Uniform',
+//     'Victor',
+//     'Whiskey',
+//     'Xray',
+//     'Yankee',
+//     'Zulu',
+//   ]
+//   return words
+//     .toUpperCase()
+//     .replace(/ /g, '')
+//     .split('')
+//     .map(el => alphabetArray.filter(char => char.split('')[0] === el).toString() || el)
+//     .join(' ')
+// }
+// console.log(to_nato('go for it!'))
+// function to_nato(words) {
+// 	return words.replace(/\s/g, '').toLowerCase().split('').map(e => NATO[e] ? NATO[e] : e).join(' ');
+//  }
